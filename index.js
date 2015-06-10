@@ -34,6 +34,17 @@ var allStops = routeRows.map(function(row) {
 
 var stopData = {};
 
+var makeDate = function(datestr) {
+  var date = datestr.split(' ')[0];
+  var time = datestr.split(' ')[1];
+  var year = date.split('/')[2];
+  var month = date.split('/')[0];
+  var day = date.split('/')[1];
+  var hour = time.split(':')[0];
+  var minute = time.split(':')[1];
+  return new Date(year, month, day, hour, minute);
+}
+
 allStops.forEach(function(stop) {
   stopData[stop] = {
     timeFromLast: [],
@@ -42,11 +53,18 @@ allStops.forEach(function(stop) {
   };
   var lastRow;
   routeRows.forEach(function(row, index) {
-    var timeFromLast = row.arrival - lastRow.arrival;
-    var arrivalMinusScheduled = row.arrival - row.scheduled;
-    var departureMinusScheduled = row.departure - row.scheduled;
+    if(row.stop === stop) {
+      var timeFromLast = makeDate(row.arrival) - makeDate(lastRow.arrival);
+      var arrivalMinusScheduled = makeDate(row.arrival) - makeDate(row.scheduled);
+      var departureMinusScheduled = makeDate(row.departure) - makeDate(row.scheduled);
+      stopData[stop].timeFromLast.push(timeFromLast);
+      stopDate[stop].arrivalMinusScheduled.push(arrivalMinusScheduled);
+      stopData[stop].departureMinusScheduled.push(departureMinusScheduled);
+    }
     lastRow = row;
   });
 });
+
+console.log(stopData[0]);
 
 });
