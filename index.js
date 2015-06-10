@@ -54,6 +54,20 @@ var getMinDiff = function(date1, date2) {
   return millis / 1000 / 60;
 }
 
+var mean = function(nums) {
+  var sum = nums.reduce(function(prev, curr) {
+    return prev + curr;
+  }, 0);
+  return sum / nums.length;
+}
+
+var median = function(nums) {
+  nums.sort();
+  var above = Math.ceil(nums.length / 2);
+  var below = Math.floor(nums.length / 2);
+  return mean([nums[above], nums[below]]);
+}
+
 allStops.forEach(function(stop) {
   stopData[stop] = {
     timeFromLast: [],
@@ -64,7 +78,9 @@ allStops.forEach(function(stop) {
   routeRows.forEach(function(row, index) {
     if(row.stop === stop) {
       var timeFromLast;
-      if(lastRow) timeFromLast = getMinDiff(row.arrival, lastRow.arrival);
+      if(lastRow && makeDate(lastRow.scheduled).getDate() === makeDate(row.scheduled).getDate()) {
+        timeFromLast = getMinDiff(row.arrival, lastRow.arrival);
+      }
       var arrivalMinusScheduled = getMinDiff(row.arrival, row.scheduled);
       var departureMinusScheduled = getMinDiff(row.departure, row.scheduled);
       stopData[stop].timeFromLast.push(timeFromLast);
@@ -73,6 +89,11 @@ allStops.forEach(function(stop) {
     }
     lastRow = row;
   });
+  var div = document.createElement('div');
+  var meanTFL = mean(stopData[stop].timeFromLast);
+  var medianTFL = median(stopData[stop].timeFromLast);
+  div.textContent = stop + ': { timeFromLast: { mean: ' + meanTFL + ', median: ' + medianTFL + ' } }';
+  document.body.appendChild(div);
 });
 
 console.log(makeDate(routeRows[7].arrival), makeDate(routeRows[7].scheduled), getMinDiff(routeRows[7].arrival, routeRows[7].scheduled)); //stopData[Object.keys(stopData)[0]]);
