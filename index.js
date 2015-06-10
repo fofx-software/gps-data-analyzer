@@ -75,6 +75,6 @@ allStops.forEach(function(stop) {
   });
 });
 
-console.log(makeDate(routeRows[0].arrival)); //stopData[Object.keys(stopData)[0]]);
+console.log(makeDate(routeRows[7].arrival)); //stopData[Object.keys(stopData)[0]]);
 
 });
