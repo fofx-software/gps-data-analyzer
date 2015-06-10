@@ -95,7 +95,7 @@ allStops.forEach(function(stop) {
         if(lastDate === thisDate) {
           timeFromLast = getMinDiff(row.arrival, lastRow.departure);
           if(!stopData[stop].scheduledTime) {
-            stopData[stop].scheduledTime = getMinDiff(row.schduled, lastRow.scheduled);
+            stopData[stop].scheduledTime = getMinDiff(row.scheduled, lastRow.scheduled);
           }
         }
       }
