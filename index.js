@@ -91,8 +91,8 @@ allStops.forEach(function(stop) {
     lastRow = row;
   });
   var div = document.createElement('div');
-  var meanTFL = mean(stopData[stop].timeFromLast);
-  var medianTFL = median(stopData[stop].timeFromLast);
+  var meanTFL = Math.ceil(mean(stopData[stop].timeFromLast));
+  var medianTFL = Math.ceil(median(stopData[stop].timeFromLast));
   div.textContent = stop + ': { timeFromLast: { mean: ' + meanTFL + ', median: ' + medianTFL + ' } }';
   document.body.appendChild(div);
 });
