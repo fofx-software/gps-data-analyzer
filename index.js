@@ -1,8 +1,16 @@
 $.get('6.1-6.5_cypress.txt', function(data) {
 
-var splitLines = data.split('\n');
+var splitLines = data.split('\n').slice(1);
 
-var headers = splitLines.shift().split(',');
+var headers = [
+  'date',
+  'route',
+  'stop',
+  'vehicle',
+  'arrival',
+  'departure',
+  'scheduled'
+];
 
 var stopData = splitLines.map(function(line) {
   var obj = {}, line = line.split(',');
