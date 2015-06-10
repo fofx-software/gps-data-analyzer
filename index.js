@@ -20,14 +20,14 @@ var stopData = splitLines.map(function(line) {
   return obj;
 });
 
+if(!stopData.slice(-1)) stopData.pop();
+
 function onlyUnique(value, index, self) { 
   return self.indexOf(value) === index;
 }
 
 var allStops = stopData.map(function(row, index) {
-  if(row.stop) {
-    return row.stop;
-  } else { console.log(stopData[index-1]); }
+  return row.stop;
 }).filter(onlyUnique);
 
 console.log(allStops);
