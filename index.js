@@ -71,6 +71,12 @@ var median = function(nums) {
   return mean([nums[above], nums[below]]);
 }
 
+var table = document.createElement('table');
+var header = document.createElement('tr');
+var timeFromLastHeader = document.createElement('th');
+$(header).append(timeFromLastHeader.text('Time from Last Stop'));
+$(table).append(header).appendTo(document.body);
+
 allStops.forEach(function(stop) {
   stopData[stop] = {
     timeFromLast: [],
