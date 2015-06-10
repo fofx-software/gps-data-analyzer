@@ -20,7 +20,7 @@ var stopData = splitLines.map(function(line) {
   return obj;
 });
 
-if(!stopData.slice(-1)) stopData.pop();
+if(!stopData.slice(-1)[0]) stopData.pop();
 
 function onlyUnique(value, index, self) { 
   return self.indexOf(value) === index;
