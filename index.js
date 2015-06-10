@@ -1,4 +1,4 @@
-$.get('6.1-6.5_am.txt', function(data) {
+$.get('6.1-6.5_am', function(data) {
 
 var splitLines = data.split('\n').slice(1);
 
