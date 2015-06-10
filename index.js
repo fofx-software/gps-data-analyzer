@@ -56,7 +56,7 @@ var getMinDiff = function(date1, date2) {
 
 var mean = function(nums) {
   var sum = nums.reduce(function(prev, curr) {
-    curr = curr == curr ? curr : 0; 
+    curr = (curr && curr == curr) ? curr : 0; 
     return prev + curr;
   }, 0);
   return sum / nums.length;
