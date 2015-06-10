@@ -79,6 +79,7 @@ allStops.forEach(function(stop) {
   routeRows.forEach(function(row, index) {
     if(row.stop === stop) {
       var timeFromLast;
+      console.log(makeDate(row.scheduled));
       if(lastRow && makeDate(lastRow.scheduled).getDate() === makeDate(row.scheduled).getDate()) {
         timeFromLast = getMinDiff(row.arrival, lastRow.arrival);
       }
