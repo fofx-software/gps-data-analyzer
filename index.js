@@ -61,7 +61,7 @@ allStops.forEach(function(stop) {
       var arrivalMinusScheduled = makeDate(row.arrival) - makeDate(row.scheduled);
       var departureMinusScheduled = makeDate(row.departure) - makeDate(row.scheduled);
       stopData[stop].timeFromLast.push(timeFromLast);
-      stopDate[stop].arrivalMinusScheduled.push(arrivalMinusScheduled);
+      stopData[stop].arrivalMinusScheduled.push(arrivalMinusScheduled);
       stopData[stop].departureMinusScheduled.push(departureMinusScheduled);
     }
     lastRow = row;
