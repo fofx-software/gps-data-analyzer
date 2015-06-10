@@ -110,7 +110,7 @@ allStops.forEach(function(stop) {
   var meanTFL = Math.ceil(mean(stopData[stop].timeFromLast));
   var medianTFL = Math.ceil(median(stopData[stop].timeFromLast));
   var td = $(document.createElement('td')).appendTo(tr);
-  td.text(meanTFL);
+  td.text('mean: ' + meanTFL + ', median: ' + medianTFL);
 });
 
 });
