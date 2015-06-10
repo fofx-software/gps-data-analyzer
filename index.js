@@ -35,7 +35,7 @@ var allStops = routeRows.map(function(row) {
 var stopData = {};
 
 var makeDate = function(datestr) {
-  if(dateStr) {
+  if(datestr) {
     var date = datestr.split(' ')[0];
     var time = datestr.split(' ')[1];
     var year = date.split('/')[2];
