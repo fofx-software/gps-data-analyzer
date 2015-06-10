@@ -27,7 +27,7 @@ function onlyUnique(value, index, self) {
 var allStops = stopData.map(function(row, index) {
   if(row.stop) {
     return row.stop;
-  } else { console.log(index); }
+  } else { console.log(row); }
 }).filter(onlyUnique);
 
 console.log(allStops);
