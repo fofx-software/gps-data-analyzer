@@ -82,7 +82,9 @@ allStops.forEach(function(stop) {
     if(row.stop === stop) {
       var timeFromLast;
       if(lastRow) {
-        if(makeDate(lastRow.scheduled).getDate() === makeDate(row.scheduled).getDate()) {
+        var lastDate = makeDate(lastRow.scheduled).getDate();
+        var thisDate = makeDate(row.scheduled).getDate();
+        if(lastDate === thisDate) {
           timeFromLast = getMinDiff(row.arrival, lastRow.arrival);
         }
       }
