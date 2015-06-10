@@ -16,7 +16,7 @@ var routeRows = [];
 
 splitLines.forEach(function(line) {
   var obj = {}, line = line.split(',');
-  if(line) {
+  if(line[0]) {
     headers.forEach(function(header, index) {
       obj[header] = line[index];
     });
