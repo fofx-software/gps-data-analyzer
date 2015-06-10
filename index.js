@@ -71,10 +71,10 @@ var median = function(nums) {
   return mean([nums[above], nums[below]]);
 }
 
-var table = document.createElement('table');
+var table = document.createElement('table').attr('border', 1);
 var header = document.createElement('tr');
 var emptyHeader = $(document.createElement('th'));
-var timeFromLastHeader = $(document.createElement('th')).attr({ colspan: 2, border: 1 });
+var timeFromLastHeader = $(document.createElement('th')).attr('colspan', 2);
 $(header).append(emptyHeader).append(timeFromLastHeader.text('Time from Last Stop'));
 $(table).append(header).appendTo(document.body);
 
