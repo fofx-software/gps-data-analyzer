@@ -73,8 +73,9 @@ var median = function(nums) {
 
 var table = document.createElement('table');
 var header = document.createElement('tr');
+var emptyHeader = $(document.createElement('th'));
 var timeFromLastHeader = $(document.createElement('th'));
-$(header).append(timeFromLastHeader.text('Time from Last Stop'));
+$(header).append(emptyHeader).append(timeFromLastHeader.text('Time from Last Stop'));
 $(table).append(header).appendTo(document.body);
 
 allStops.forEach(function(stop) {
@@ -103,11 +104,13 @@ allStops.forEach(function(stop) {
     }
     lastRow = row;
   });
-  var div = document.createElement('div');
+  var tr = $(document.createElement('tr'));
+  var td = $(document.createElement('td'));
+  tr.append(td.text(stop)).appendTo(table);
   var meanTFL = Math.ceil(mean(stopData[stop].timeFromLast));
   var medianTFL = Math.ceil(median(stopData[stop].timeFromLast));
-  div.textContent = stop + ': { timeFromLast: { mean: ' + meanTFL + ', median: ' + medianTFL + ' } }';
-  document.body.appendChild(div);
+  var td = $(document.createElement('td')).appendTo(tr);
+  td.text(meanTFL);
 });
 
 });
