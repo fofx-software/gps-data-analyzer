@@ -12,17 +12,17 @@ var headers = [
   'scheduled'
 ];
 
-var routeRows = splitLines.map(function(line) {
+var routeRows = [];
+
+splitLines.forEach(function(line) {
   var obj = {}, line = line.split(',');
   if(line) {
     headers.forEach(function(header, index) {
       obj[header] = line[index];
     });
-    return obj;
+    routeRows.push(obj);
   }
 });
-
-if(!routeRows.slice(-1)[0]) routeRows.pop();
 
 function onlyUnique(value, index, self) { 
   return self.indexOf(value) === index;
@@ -81,7 +81,7 @@ allStops.forEach(function(stop) {
   routeRows.forEach(function(row, index) {
     if(row.stop === stop) {
       var timeFromLast;
-      if(lastRow && row.scheduled) {
+      if(lastRow) {
         if(makeDate(lastRow.scheduled).getDate() === makeDate(row.scheduled).getDate()) {
           timeFromLast = getMinDiff(row.arrival, lastRow.arrival);
         }
