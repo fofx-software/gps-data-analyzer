@@ -71,7 +71,7 @@ var median = function(nums) {
   return mean([nums[above], nums[below]]);
 }
 
-var table = document.createElement('table').attr('border', 1);
+var table = $(document.createElement('table')).attr('border', 1);
 var header = document.createElement('tr');
 var emptyHeader = $(document.createElement('th'));
 var timeFromLastHeader = $(document.createElement('th')).attr('colspan', 2);
