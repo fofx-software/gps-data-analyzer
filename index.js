@@ -53,8 +53,9 @@ allStops.forEach(function(stop) {
   };
   var lastRow;
   routeRows.forEach(function(row, index) {
-    if(row.stop === stop) {
-      var timeFromLast = makeDate(row.arrival) - makeDate(lastRow.arrival);
+    if(row.stop === stop &&) {
+      var timeFromLast;
+      if(lastRow) timeFromLast = makeDate(row.arrival) - makeDate(lastRow.arrival);
       var arrivalMinusScheduled = makeDate(row.arrival) - makeDate(row.scheduled);
       var departureMinusScheduled = makeDate(row.departure) - makeDate(row.scheduled);
       stopData[stop].timeFromLast.push(timeFromLast);
