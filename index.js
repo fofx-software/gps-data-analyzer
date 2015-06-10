@@ -36,8 +36,8 @@ var stopData = {};
 
 var makeDate = function(datestr) {
   if(datestr) {
-    var date = parseInt(datestr.split(' ')[0]);
-    var time = parseInt(datestr.split(' ')[1]);
+    var date = datestr.split(' ')[0];
+    var time = datestr.split(' ')[1];
     var year = parseInt(date.split('/')[2]);
     var month = parseInt(date.split('/')[0]);
     var day = parseInt(date.split('/')[1]);
