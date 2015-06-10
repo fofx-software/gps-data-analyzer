@@ -74,7 +74,7 @@ var median = function(nums) {
 var table = document.createElement('table');
 var header = document.createElement('tr');
 var emptyHeader = $(document.createElement('th'));
-var timeFromLastHeader = $(document.createElement('th'));
+var timeFromLastHeader = $(document.createElement('th')).attr('colspan', 2);
 $(header).append(emptyHeader).append(timeFromLastHeader.text('Time from Last Stop'));
 $(table).append(header).appendTo(document.body);
 
@@ -110,7 +110,9 @@ allStops.forEach(function(stop) {
   var meanTFL = Math.ceil(mean(stopData[stop].timeFromLast));
   var medianTFL = Math.ceil(median(stopData[stop].timeFromLast));
   var td = $(document.createElement('td')).appendTo(tr);
-  td.text('mean: ' + meanTFL + ', median: ' + medianTFL);
+  td.text('mean: ' + meanTFL);
+  var td = $(document.createElement('td')).appendTo(tr);
+  td.text('median: ' + medianTFL);
 });
 
 });
