@@ -96,6 +96,4 @@ allStops.forEach(function(stop) {
   document.body.appendChild(div);
 });
 
-console.log(makeDate(routeRows[7].arrival), makeDate(routeRows[7].scheduled), getMinDiff(routeRows[7].arrival, routeRows[7].scheduled)); //stopData[Object.keys(stopData)[0]]);
-
 });
