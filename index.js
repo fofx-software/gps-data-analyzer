@@ -68,6 +68,6 @@ allStops.forEach(function(stop) {
   });
 });
 
-console.log(stopData[0]);
+console.log(stopData[Object.keys(stopData)[0]]);
 
 });
