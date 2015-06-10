@@ -39,7 +39,7 @@ var makeDate = function(datestr) {
     var date = datestr.split(' ')[0];
     var time = datestr.split(' ')[1];
     var year = parseInt(date.split('/')[2]);
-    var month = parseInt(date.split('/')[0]);
+    var month = parseInt(date.split('/')[0]) - 1;
     var day = parseInt(date.split('/')[1]);
     var hour = parseInt(time.split(':')[0]);
     var minute = parseInt(time.split(':')[1]);
@@ -75,6 +75,6 @@ allStops.forEach(function(stop) {
   });
 });
 
-console.log(makeDate(routeRows[7].arrival)); //stopData[Object.keys(stopData)[0]]);
+console.log(makeDate(routeRows[7].arrival), makeDate(routeRows[7].scheduled), getMinDiff(routeRows[7].arrival, routeRows[7].scheduled)); //stopData[Object.keys(stopData)[0]]);
 
 });
