@@ -74,7 +74,7 @@ var median = function(nums) {
 var table = $(document.createElement('table')).attr('border', 1);
 var header = document.createElement('tr');
 var emptyHeader = $(document.createElement('th'));
-var timeFromLastHeader = $(document.createElement('th')).attr('colspan', 3);
+var timeFromLastHeader = $(document.createElement('th')).attr('colspan', 4);
 $(header).append(emptyHeader).append(timeFromLastHeader.text('Time from Last Stop'));
 $(table).append(header).appendTo(document.body);
 
@@ -93,7 +93,10 @@ allStops.forEach(function(stop) {
         if(!(makeDate(row.scheduled) instanceof Date)) { console.log(row, index); }
         var thisDate = makeDate(row.scheduled).getDate();
         if(lastDate === thisDate) {
-          timeFromLast = getMinDiff(row.arrival, lastRow.arrival);
+          timeFromLast = getMinDiff(row.arrival, lastRow.departure);
+          if(!stopData[stop].scheduledTime) {
+            stopData[stop].scheduledTime = getMinDiff(row.schduled, lastRow.scheduled);
+          }
         }
       }
       var arrivalMinusScheduled = getMinDiff(row.arrival, row.scheduled);
@@ -114,7 +117,10 @@ allStops.forEach(function(stop) {
     var td = $(document.createElement('td')).appendTo(tr);
     td.text(text);
     return appendTd;
-  })('median: ' + medianTFL)('mean: ' + meanTFL)('data points: ' + stopData[stop].timeFromLast.length)
+  })('median: ' + medianTFL)
+    ('mean: ' + meanTFL)
+    ('scheduled: ' + stopData[stop].scheduledTime)
+    ('data points: ' + stopData[stop].timeFromLast.length);
 });
 
 });
