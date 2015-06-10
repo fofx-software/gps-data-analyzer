@@ -50,8 +50,10 @@ var makeDate = function(datestr) {
 var getMinDiff = function(date1, date2) {
   date1 = makeDate(date1);
   date2 = makeDate(date2);
-  millis = date1 - date2;
-  return millis / 1000 / 60;
+  if(date1 instanceof Date && date2 instanceof Date) {
+    millis = date1 - date2;
+    return millis / 1000 / 60;
+  }
 }
 
 var mean = function(nums) {
@@ -79,15 +81,16 @@ allStops.forEach(function(stop) {
   routeRows.forEach(function(row, index) {
     if(row.stop === stop) {
       var timeFromLast;
-      console.log(makeDate(row.scheduled));
-      if(lastRow && makeDate(lastRow.scheduled).getDate() === makeDate(row.scheduled).getDate()) {
-        timeFromLast = getMinDiff(row.arrival, lastRow.arrival);
+      if(lastRow && row.scheduled) {
+        if(makeDate(lastRow.scheduled).getDate() === makeDate(row.scheduled).getDate()) {
+          timeFromLast = getMinDiff(row.arrival, lastRow.arrival);
+        }
       }
       var arrivalMinusScheduled = getMinDiff(row.arrival, row.scheduled);
       var departureMinusScheduled = getMinDiff(row.departure, row.scheduled);
-      stopData[stop].timeFromLast.push(timeFromLast);
-      stopData[stop].arrivalMinusScheduled.push(arrivalMinusScheduled);
-      stopData[stop].departureMinusScheduled.push(departureMinusScheduled);
+      if(timeFromLast) stopData[stop].timeFromLast.push(timeFromLast);
+      if(arrivalMinusScheduled) stopData[stop].arrivalMinusScheduled.push(arrivalMinusScheduled);
+      if(departureMinusScheduled) stopData[stop].departureMinusScheduled.push(departureMinusScheduled);
     }
     lastRow = row;
   });
