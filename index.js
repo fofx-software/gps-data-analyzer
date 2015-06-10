@@ -51,7 +51,7 @@ var getMinDiff = function(date1, date2) {
   date1 = makeDate(date1);
   date2 = makeDate(date2);
   millis = date1 - date2;
-  return millis * 1000 * 60;
+  return millis / 1000 / 60;
 }
 
 allStops.forEach(function(stop) {
