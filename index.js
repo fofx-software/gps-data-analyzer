@@ -36,13 +36,13 @@ var stopData = {};
 
 var makeDate = function(datestr) {
   if(datestr) {
-    var date = datestr.split(' ')[0];
-    var time = datestr.split(' ')[1];
-    var year = date.split('/')[2];
-    var month = date.split('/')[0];
-    var day = date.split('/')[1];
-    var hour = time.split(':')[0];
-    var minute = time.split(':')[1];
+    var date = parseInt(datestr.split(' ')[0]);
+    var time = parseInt(datestr.split(' ')[1]);
+    var year = parseInt(date.split('/')[2]);
+    var month = parseInt(date.split('/')[0]);
+    var day = parseInt(date.split('/')[1]);
+    var hour = parseInt(time.split(':')[0]);
+    var minute = parseInt(time.split(':')[1]);
     return new Date(year, month, day, hour, minute);
   }
 }
