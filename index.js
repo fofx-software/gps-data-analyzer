@@ -20,7 +20,7 @@ var stopData = splitLines.map(function(line) {
   return obj;
 });
 
-if(!stopData.slice(-1)[0].hasOwnProperty('route')) stopData.pop();
+if(typeof stopData.slice(-1)[0].route === 'undefined') stopData.pop();
 
 function onlyUnique(value, index, self) { 
   return self.indexOf(value) === index;
