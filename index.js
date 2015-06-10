@@ -73,7 +73,7 @@ var median = function(nums) {
 
 var table = document.createElement('table');
 var header = document.createElement('tr');
-var timeFromLastHeader = document.createElement('th');
+var timeFromLastHeader = $(document.createElement('th'));
 $(header).append(timeFromLastHeader.text('Time from Last Stop'));
 $(table).append(header).appendTo(document.body);
 
