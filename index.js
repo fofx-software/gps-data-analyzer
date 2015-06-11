@@ -129,7 +129,7 @@ allStops.forEach(function(stop) {
   (function appendTd(text) {
     var td = $(document.createElement('td')).appendTo(tr);
     td.text(text);
-    var svgNS = http://www.w3.org/2000/svg;
+    var svgNS = 'http://www.w3.org/2000/svg';
     var svg = document.createElementNS(svgNS, 'svg');
     svg.setAttributeNS(svgNS, 'width', '200');
     svg.setAttributeNS(svgNS, 'height', '200');
