@@ -89,7 +89,7 @@ routeRows.forEach(function(row, index) {
     travelTimes: {},
     arriveDiffs: {}
   };
-  if(!((index + 1) % allStops.length)) {
+  if(!(index % (allStops.length - 1))) {
     loopStart = row.scheduled.split(' ')[1];
   }
   var travelTimes = thisStop.travelTimes[loopStart] = thisStop.travelTimes[loopStart] || [];
