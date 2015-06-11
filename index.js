@@ -50,7 +50,7 @@ for(var i = 0; i < routeRows2.length; i += allStops.length) {
       var date2 = makeDate(routeRows2[i].scheduled);
       var time1 = date1.getHours() * 100 + date1.getMinutes();
       var time2 = date2.getHours() * 100 + date2.getMinutes();
-      if(time2 > time1) {
+      if(time1 > time2) {
         var removed = routeRows2.slice(i, i + allStops.length);
         routeRows.splice.apply(routeRows, [j, 0].concat(removed));
         found = true;
