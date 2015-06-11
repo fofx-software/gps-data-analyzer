@@ -56,7 +56,7 @@ for(var i = 0; i < routeRows2.length; i += allStops.length) {
       routeRows = routeRows.concat(routeRows2.slice(i, i + allStops.length));
     }
   } else {
-    for(var k = i; routeRows2[k].stop !== allStops[0]; k--);
+    for(var k = i; k && routeRows2[k].stop !== allStops[0]; k--);
     i = k - allStops.length;
   }
 }
