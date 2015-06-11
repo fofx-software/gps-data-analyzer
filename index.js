@@ -47,6 +47,7 @@ for(var i = 0; i < routeRows2.length; i += allStops.length) {
     var found = false;
     for(var j = 0; j < routeRows.length && !found; j += allStops.length) {
       if(makeDate(routeRows[j].scheduled) > makeDate(routeRows2[i].scheduled)) {
+       console.log(routeRows2[i].scheduled);
         var removed = routeRows2.slice(i, i + allStops.length);
         routeRows.splice.apply(routeRows, [j, 0].concat(removed));
         found = true;
