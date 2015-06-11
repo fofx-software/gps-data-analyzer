@@ -152,9 +152,15 @@ allStops.forEach(function(stop, stopIndex) {
     var td1 = $(document.createElement('td'));
     var td2 = $(document.createElement('td'));
     tr.append(td1).append(td2);
+    
+    arriveDiff[stopTime].forEach(function(diff) {
+      var addTo = diff < 0 ? td1 : td2;
+      addTo.text(addTo.text() + diff);
+    });
+    
   });
 });    
-      
+
 /*
   (function appendTd(text) {
     var td = $(document.createElement('td')).appendTo(tr);
