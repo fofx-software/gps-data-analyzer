@@ -32,14 +32,21 @@ splitLines.forEach(function(line) {
 var allStops = [];
 
 routeRows.some(function(row) {
- if(allStops.indexOf(row.stop) > -1) {
-   return true;
- } else {
-   allStops.push(row.stop);
- }
+  if(allStops.indexOf(row.stop) > -1) {
+    return true;
+  } else {
+    allStops.push(row.stop);
+  }
 });
 
-var stopData = {};
+for(var i = 0; i < routeRows.length; i+= allStops.length) {
+  for(var j = 0; j < routeRows.length; j += allStops.length) {
+    if(makeDate(routeRows[j].scheduled) < makeDate(routeRows[i].scheduled)) {
+      var removed = routeRows.splice(i, allStops.length);
+      routeRows.splice.apply(routeRows, [j, 0].concat(args));
+    }
+  }
+}
 
 var makeDate = function(datestr) {
   if(datestr) {
