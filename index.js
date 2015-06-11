@@ -78,9 +78,11 @@ var median = function(nums) {
 
 var table = $(document.createElement('table')).attr('border', 1);
 var header = document.createElement('tr');
-var emptyHeader = $(document.createElement('th'));
+var emptyHeader = $(document.createElement('th')).appendTo(header);
 var timeFromLastHeader = $(document.createElement('th')).attr('colspan', 4);
-$(header).append(emptyHeader).append(timeFromLastHeader.text('Time from Last Stop'));
+header.append(timeFromLastHeader.text('Time from Last Stop'));
+var arrivalMinusScheduledHeader = $(document.createElement('th')).attr('colspan', 3);
+header.append(arrivalMinusScheduledHeader.text('Arrival Minus Scheduled'));
 $(table).append(header).appendTo(document.body);
 
 allStops.forEach(function(stop) {
@@ -125,7 +127,11 @@ allStops.forEach(function(stop) {
   })('median: ' + medianTFL)
     ('mean: ' + meanTFL)
     ('scheduled: ' + stopData[stop].scheduledTime)
-    ('data points: ' + stopData[stop].timeFromLast.length);
+    ('data points: ' + stopData[stop].timeFromLast.length)
+    ('median: ' + Math.ceil(median(stopData[stop].arrivalMinusScheduled)))
+    ('mean: ' + Math.ceil(mean(stopData[stop].arrivalMinusScheduled)))
+    ('data points: ' + stopData[stop].arrivalMinusScheduled.length);
+    
 });
 
 }
