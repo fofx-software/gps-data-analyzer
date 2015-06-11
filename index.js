@@ -90,8 +90,12 @@ routeRows.forEach(function(row, index) {
     arriveDiffs: {}
   };
   var scheduled = row.scheduled.split(' ')[1];
-  var travelTimes = thisStop.travelTimes[scheduled] = thisStop.travelTimes[scheduled] || [];
-  var arriveDiffs = thisStop.arriveDiffs[scheduled] = thisStop.arriveDiffs[scheduled] || [];
+  var travelTimes = thisStop.travelTimes[scheduled];
+  var arriveDiffs = thisStop.arriveDiffs[scheduled];
+  if(!((index + 1) % allStops.length)) {
+    if(!travelTimes) travelTimes = thisStop.travelTimes[scheduled] = [];
+    if(!arriveDiffs) arriveDiffs = thisStop.arriveDiffs[scheduled] = [];
+  }
   if(index) {
     var lastRow = routeRows[index - 1];
     var lastDate = makeDate(lastRow.scheduled).getDate();
