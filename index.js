@@ -92,7 +92,7 @@ header.append(arrivalMinusScheduledHeader.text('Arrival Minus Scheduled'));
 $(table).append(header).appendTo(document.body);
 
 allStops.forEach(function(stop) {
-  stopData[stop] = {
+  stopData = {
     timeFromLast: [],
     arrivalMinusScheduled: [],
     departureMinusScheduled: []
@@ -107,24 +107,24 @@ allStops.forEach(function(stop) {
         var thisDate = makeDate(row.scheduled).getDate();
         if(lastDate === thisDate) {
           timeFromLast = getMinDiff(row.arrival, lastRow.departure);
-          if(!stopData[stop].scheduledTime) {
-            stopData[stop].scheduledTime = getMinDiff(row.scheduled, lastRow.scheduled);
+          if(!stopData.scheduledTime) {
+            stopData.scheduledTime = getMinDiff(row.scheduled, lastRow.scheduled);
           }
         }
       }
       var arrivalMinusScheduled = getMinDiff(row.arrival, row.scheduled);
       var departureMinusScheduled = getMinDiff(row.departure, row.scheduled);
-      if(timeFromLast) stopData[stop].timeFromLast.push(timeFromLast);
-      if(arrivalMinusScheduled) stopData[stop].arrivalMinusScheduled.push(arrivalMinusScheduled);
-      if(departureMinusScheduled) stopData[stop].departureMinusScheduled.push(departureMinusScheduled);
+      if(timeFromLast) stopData.timeFromLast.push(timeFromLast);
+      if(arrivalMinusScheduled) stopData.arrivalMinusScheduled.push(arrivalMinusScheduled);
+      if(departureMinusScheduled) stopData.departureMinusScheduled.push(departureMinusScheduled);
     }
     lastRow = row;
   });
   var tr = $(document.createElement('tr'));
   var td = $(document.createElement('td'));
   tr.append(td.text(stop)).appendTo(table);
-  var meanTFL = Math.ceil(mean(stopData[stop].timeFromLast));
-  var medianTFL = Math.ceil(median(stopData[stop].timeFromLast));
+  var meanTFL = Math.ceil(mean(stopData.timeFromLast));
+  var medianTFL = Math.ceil(median(stopData.timeFromLast));
 
   (function appendTd(text) {
     var td = $(document.createElement('td')).appendTo(tr);
@@ -137,11 +137,11 @@ allStops.forEach(function(stop) {
     return appendTd;
   })('median: ' + medianTFL)
     ('mean: ' + meanTFL)
-    ('scheduled: ' + stopData[stop].scheduledTime)
-    ('data points: ' + stopData[stop].timeFromLast.length)
-    ('median: ' + Math.ceil(median(stopData[stop].arrivalMinusScheduled)))
-    ('mean: ' + Math.ceil(mean(stopData[stop].arrivalMinusScheduled)))
-    ('data points: ' + stopData[stop].arrivalMinusScheduled.length);
+    ('scheduled: ' + stopData.scheduledTime)
+    ('data points: ' + stopData.timeFromLast.length)
+    ('median: ' + Math.ceil(median(stopData.arrivalMinusScheduled)))
+    ('mean: ' + Math.ceil(mean(stopData.arrivalMinusScheduled)))
+    ('data points: ' + stopData.arrivalMinusScheduled.length);
     
 });
 
