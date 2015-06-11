@@ -116,6 +116,7 @@ routeRows.forEach(function(row, index) {
   if(!(index % allStops.length)) {
     loopStart = row.scheduled.split(' ')[1];
   }
+  console.log(loopStart, stopData[row.stop].arriveDiffs, stopData[row.stop].arriveDiffs[loopStart]);
   if(!stopData[row.stop].travelTimes[loopStart]) stopData[row.stop].travelTimes[loopStart] = [];
   if(!stopData[row.stop].arriveDiffs[loopStart]) stopData[row.stop].arriveDiffs[loopStart] = [];
   if(index) {
