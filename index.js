@@ -55,10 +55,6 @@ for(var i = 0; i < routeRows2.length; i += allStops.length) {
     if(!found) {
       routeRows = routeRows.concat(routeRows2.slice(i, i + allStops.length));
     }
-  } else {
-    var k = i;
-    for(; k && routeRows2[k].stop !== allStops[0]; k--);
-    i = k - allStops.length;
   }
 }
 
