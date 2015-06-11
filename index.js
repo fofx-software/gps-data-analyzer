@@ -39,14 +39,21 @@ routeRows.some(function(row) {
   }
 });
 
-for(var i = 0; i < routeRows.length; i += allStops.length) {
-  if(routeRows[i].stop === allStops[0]) {
-    for(var j = 0, found = false; j < i && !found; j += allStops.length) {
-      if(makeDate(routeRows[j].scheduled) > makeDate(routeRows[i].scheduled)) {
-        var removed = routeRows.splice(i, allStops.length);
-        routeRows.splice.apply(routeRows, [j, 0].concat(removed));
+var routeRows2 = routeRows.slice();
+var routeRows = [];
+
+for(var i = 0; i < routeRows2.length; i += allStops.length) {
+  if(routeRows2[i].stop === allStops[0]) {
+    var found = false;
+    for(var j = 0; j < routeRows.length && !found; j += allStops.length) {
+      if(makeDate(routeRows[j].scheduled) > makeDate(routeRows2[i].scheduled)) {
+        var removed = routeRows2.slice(i, allStops.length);
+        routeRows2.splice.apply(routeRows2, [j, 0].concat(removed));
         found = true;
       }
+    }
+    if(!found) {
+      routeRows = routeRows.concat(routeRows2.slice(i, allStops.length));
     }
   }
 }
