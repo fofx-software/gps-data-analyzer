@@ -40,7 +40,7 @@ routeRows.some(function(row) {
 });
 
 var routeRows2 = routeRows.slice();
-var routeRows = [];
+routeRows = [];
 
 for(var i = 0; i < routeRows2.length; i += allStops.length) {
   if(routeRows2[i].stop === allStops[0]) {
