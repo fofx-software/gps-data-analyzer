@@ -65,7 +65,7 @@ var getMinDiff = function(date1, date2) {
 
 var mean = function(nums) {
   var sum = nums.reduce(function(prev, curr) {
-    curr = (curr && curr == curr) ? curr : 0; 
+    curr = (curr && curr == curr) ? curr : 0;
     return prev + curr;
   }, 0);
   return sum / nums.length;
@@ -129,6 +129,11 @@ allStops.forEach(function(stop) {
   (function appendTd(text) {
     var td = $(document.createElement('td')).appendTo(tr);
     td.text(text);
+    var svgNS = http://www.w3.org/2000/svg;
+    var svg = document.createElementNS(svgNS, 'svg');
+    svg.setAttributeNS(svgNS, 'width', '200');
+    svg.setAttributeNS(svgNS, 'height', '200');
+    td.append(svg);
     return appendTd;
   })('median: ' + medianTFL)
     ('mean: ' + meanTFL)
