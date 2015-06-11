@@ -39,9 +39,9 @@ routeRows.some(function(row) {
   }
 });
 
-for(var i = 0, found = false; i < routeRows.length && !found; i += allStops.length) {
+for(var i = 0; i < routeRows.length && !found; i += allStops.length) {
   if(routeRows[i].stop === allStops[0]) {
-    for(var j = 0; j < routeRows.length; j += allStops.length) {
+    for(var j = 0, found = false; !found; j += allStops.length) {
       if(makeDate(routeRows[j].scheduled) > makeDate(routeRows[i].scheduled)) {
         var removed = routeRows.splice(i, allStops.length);
         routeRows.splice.apply(routeRows, [j, 0].concat(removed));
@@ -49,7 +49,7 @@ for(var i = 0, found = false; i < routeRows.length && !found; i += allStops.leng
       }
     }
   } else {
-    for(var k = 0, found2 = false; k < allStops.length && !found2; k++) {
+    for(var k = 0, found2 = false; !found2; k++) {
       i -= k;
       if(routeRows[i].stop === allStops[0]) {
         i -= allStops.length;
