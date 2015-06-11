@@ -147,10 +147,11 @@ allStops.forEach(function(stop, stopIndex) {
   Object.keys(arriveDiffs).forEach(function(stopTime) {
     if(!stopIndex) {
       var th = $(document.createElement('th'));
-      header.append(th.text(stopTime));
+      header.append(th.text(stopTime).attr('colspan', 2));
     }
-    var td = $(document.createElement('td'));
-    tr.append(td);
+    var td1 = $(document.createElement('td'));
+    var td2 = $(document.createElement('td'));
+    tr.append(td1).append(td2);
   });
 });    
       
