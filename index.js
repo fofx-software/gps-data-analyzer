@@ -59,6 +59,10 @@ for(var i = 0; i < routeRows2.length; i += allStops.length) {
     if(!found) {
       routeRows = routeRows.concat(routeRows2.slice(i, i + allStops.length));
     }
+  } else {
+    for(var k = i; k > 0; k--) {
+      if(routeRows2[k].stop === allStops[0]) i = k - allStops.length;
+    }
   }
 }
 
@@ -116,7 +120,6 @@ routeRows.forEach(function(row, index) {
   if(!(index % allStops.length)) {
     loopStart = row.scheduled.split(' ')[1];
   }
-  console.log(loopStart, stopData[row.stop].arriveDiffs, stopData[row.stop].arriveDiffs[loopStart]);
   if(!stopData[row.stop].travelTimes[loopStart]) stopData[row.stop].travelTimes[loopStart] = [];
   if(!stopData[row.stop].arriveDiffs[loopStart]) stopData[row.stop].arriveDiffs[loopStart] = [];
   if(index) {
