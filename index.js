@@ -89,7 +89,7 @@ routeRows.forEach(function(row, index) {
     travelTimes: {},
     arriveDiffs: {}
   };
-  var scheduled = row.scheduled;
+  var scheduled = row.scheduled.split(' ')[1];
   var travelTimes = thisStop.travelTimes[scheduled] = thisStop.travelTimes[scheduled] || [];
   var arriveDiffs = thisStop.arriveDiffs[scheduled] = thisStop.arriveDiffs[scheduled] || [];
   if(index) {
