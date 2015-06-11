@@ -43,17 +43,21 @@ var routeRows2 = routeRows.slice();
 routeRows = [];
 
 for(var i = 0; i < routeRows2.length; i += allStops.length) {
-  var found = false;
-  for(var j = 0; j < routeRows.length && !found; j += allStops.length) {
-   console.log(routeRows2[i].scheduled)
-    if(makeDate(routeRows[j].scheduled) > makeDate(routeRows2[i].scheduled)) {
-      var removed = routeRows2.slice(i, i + allStops.length);
-      routeRows.splice.apply(routeRows, [j, 0].concat(removed));
-      found = true;
+  if(routeRows2[i].stop === allStops[0]) {
+    var found = false;
+    for(var j = 0; j < routeRows.length && !found; j += allStops.length) {
+      if(makeDate(routeRows[j].scheduled) > makeDate(routeRows2[i].scheduled)) {
+        var removed = routeRows2.slice(i, i + allStops.length);
+        routeRows.splice.apply(routeRows, [j, 0].concat(removed));
+        found = true;
+      }
     }
-  }
-  if(!found) {
-    routeRows = routeRows.concat(routeRows2.slice(i, i + allStops.length));
+    if(!found) {
+      routeRows = routeRows.concat(routeRows2.slice(i, i + allStops.length));
+    }
+  } else {
+    for(var k = i; routeRows2[k] !== allStops[0]; k--)
+    i = k - allStops.length;
   }
 }
 
