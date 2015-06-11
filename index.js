@@ -49,7 +49,7 @@ for(var i = 0; i < routeRows.length; i += allStops.length) {
       }
     }
   } else {
-    for(var k = 0, found2 = false; !found2; k++) {
+    for(var k = 0, found2 = false; k < allStops.length && !found2; k++) {
       i -= k;
       if(routeRows[i].stop === allStops[0]) {
         i -= allStops.length;
