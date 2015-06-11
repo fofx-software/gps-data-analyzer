@@ -29,13 +29,15 @@ splitLines.forEach(function(line) {
   }
 });
 
-function onlyUnique(value, index, self) { 
-  return self.indexOf(value) === index;
-}
+var allStops = [];
 
-var allStops = routeRows.map(function(row) {
-  return row.stop;
-}).filter(onlyUnique);
+routeRows.some(function(row) {
+ if(allStops.indexOf(row.stop) > -1) {
+   return true;
+ } else {
+   allStops.push(row.stop);
+ }
+});
 
 var stopData = {};
 
@@ -71,9 +73,13 @@ var mean = function(nums) {
 
 var median = function(nums) {
   nums.sort();
-  var above = Math.ceil(nums.length / 2);
-  var below = Math.floor(nums.length / 2);
-  return mean([nums[above], nums[below]]);
+  if(nums.length % 2) {
+   return nums[(nums.length - 1) / 2];
+  } else {
+    var above = nums.length / 2 + 1;
+    var below = nums.length / 2;
+    return mean([nums[above], nums[below]]);
+  }
 }
 
 var table = $(document.createElement('table')).attr('border', 1);
