@@ -127,7 +127,7 @@ routeRows.forEach(function(row, index) {
     }
   }
   var arriveDiff = getMinDiff(row.arrival, row.scheduled);
-  if(arriveDiff) {
+  if(typeof arriveDiff === 'number' && arriveDiff == arriveDiff) {
     arriveDiffs.push(arriveDiff);
   }
 });
