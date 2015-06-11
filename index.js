@@ -105,11 +105,14 @@ var median = function(nums) {
 
 var stopData = {}, loopStart;
 
-routeRows.forEach(function(row, index) {
-  if(!stopData[row.stop]) stopData[row.stop] = {
+allStops.forEach(function(stop) {
+  stopData[stop] = {
     travelTimes: {},
     arriveDiffs: {}
-  };
+  }
+});
+
+routeRows.forEach(function(row, index) {
   if(!(index % allStops.length)) {
     loopStart = row.scheduled.split(' ')[1];
   }
@@ -130,7 +133,6 @@ routeRows.forEach(function(row, index) {
   //if(typeof arriveDiff === 'number' && arriveDiff == arriveDiff) {
     stopData[row.stop].arriveDiffs[loopStart].push(arriveDiff);
   //}
-  console.log(row, stopData[row.stop].arriveDiffs);
 });
 
 var table = $(document.createElement('table')).attr('border', '1').css('border-collapse', 'collapse');
