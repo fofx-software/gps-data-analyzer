@@ -48,7 +48,7 @@ for(var i = 0; i < routeRows.length; i+= allStops.length) {
   }
 }
 
-var makeDate = function(datestr) {
+function makeDate(datestr) {
   if(datestr) {
     var date = datestr.split(' ')[0];
     var time = datestr.split(' ')[1];
