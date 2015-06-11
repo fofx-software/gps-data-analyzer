@@ -43,7 +43,7 @@ for(var i = 0; i < routeRows.length; i+= allStops.length) {
   for(var j = 0; j < routeRows.length; j += allStops.length) {
     if(makeDate(routeRows[j].scheduled) < makeDate(routeRows[i].scheduled)) {
       var removed = routeRows.splice(i, allStops.length);
-      routeRows.splice.apply(routeRows, [j, 0].concat(args));
+      routeRows.splice.apply(routeRows, [j, 0].concat(removed));
     }
   }
 }
