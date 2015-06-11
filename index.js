@@ -106,15 +106,15 @@ var median = function(nums) {
 var stopData = {}, loopStart;
 
 routeRows.forEach(function(row, index) {
-  var thisStop = stopData[row.stop] = stopData[row.stop] || {
+  var thisStop = stopData[row.stop] = (stopData[row.stop] || {
     travelTimes: {},
     arriveDiffs: {}
-  };
+  });
   if(!(index % allStops.length)) {
     loopStart = row.scheduled.split(' ')[1];
   }
-  var travelTimes = thisStop.travelTimes[loopStart] = thisStop.travelTimes[loopStart] || [];
-  var arriveDiffs = thisStop.arriveDiffs[loopStart] = thisStop.arriveDiffs[loopStart] ||  [];
+  var travelTimes = thisStop.travelTimes[loopStart] = (thisStop.travelTimes[loopStart] || []);
+  var arriveDiffs = thisStop.arriveDiffs[loopStart] = (thisStop.arriveDiffs[loopStart] || []);
   if(index) {
     var lastRow = routeRows[index - 1];
     var lastDate = makeDate(lastRow.scheduled).getDate();
