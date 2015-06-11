@@ -130,6 +130,7 @@ routeRows.forEach(function(row, index) {
   //if(typeof arriveDiff === 'number' && arriveDiff == arriveDiff) {
     stopData[row.stop].arriveDiffs[loopStart].push(arriveDiff);
   //}
+  console.log(row, stopData[row.stop].arriveDiffs);
 });
 
 var table = $(document.createElement('table')).attr('border', '1').css('border-collapse', 'collapse');
