@@ -49,10 +49,9 @@ for(var i = 0; i < routeRows.length; i += allStops.length) {
       }
     }
   } else {
-    for(var k = 0, found2 = false; k < allStops.length && !found2; k++) {
-      i -= k;
-      if(routeRows[i].stop === allStops[0]) {
-        i -= allStops.length;
+    for(var k = i, found2 = false; k > 0 && !found2; k--) {
+      if(routeRows[k].stop === allStops[0]) {
+        i = k - allStops.length;
         found2 = true;
       }
     }
