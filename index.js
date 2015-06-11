@@ -39,7 +39,7 @@ routeRows.some(function(row) {
   }
 });
 
-for(var i = 0; i < routeRows.length && !found; i += allStops.length) {
+for(var i = 0; i < routeRows.length; i += allStops.length) {
   if(routeRows[i].stop === allStops[0]) {
     for(var j = 0, found = false; !found; j += allStops.length) {
       if(makeDate(routeRows[j].scheduled) > makeDate(routeRows[i].scheduled)) {
