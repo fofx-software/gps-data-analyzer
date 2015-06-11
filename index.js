@@ -82,50 +82,53 @@ var median = function(nums) {
   }
 }
 
+var stopData = {};
+
+routeRows.forEach(function(row, index) {
+  var thisStop = stopData[row.stop] = stopData[row.stop] || {
+    travelTimes: {},
+    arriveDiffs: {}
+  };
+  var scheduled = row.scheduled;
+  var travelTimes = thisStop.travelTimes[scheduled] = thisStop.travelTimes[scheduled] || [];
+  var arriveDiffs = thisStop.arriveDiffs[scheduled] = thisStop.arriveDiffs[scheduled] || [];
+  if(index) {
+    var lastRow = routeRows[index - 1];
+    var lastDate = makeDate(lastRow.scheduled).getDate();
+    var thisDate = makeDate(row.scheduled).getDate();
+    if(lastDate === thisDate) {
+      var travelTime = getMinDiff(row.arrival, lastRow.arrival);
+      if(travelTime) {
+        travelTimes.push(travelTime);
+      }
+    }
+  }
+  var arriveDiff = getMinDiff(row.arrival, row.scheduled);
+  if(arriveDiff) {
+    arriveDiffs.push(arriveDiff);
+  }
+});
+
 var table = $(document.createElement('table')).attr('border', 1);
 var header = $(document.createElement('tr'));
 var emptyHeader = $(document.createElement('th')).appendTo(header);
-var timeFromLastHeader = $(document.createElement('th')).attr('colspan', 4);
-header.append(timeFromLastHeader.text('Time from Last Stop'));
-var arrivalMinusScheduledHeader = $(document.createElement('th')).attr('colspan', 3);
-header.append(arrivalMinusScheduledHeader.text('Arrival Minus Scheduled'));
 $(table).append(header).appendTo(document.body);
 
 allStops.forEach(function(stop) {
-  stopData = {
-    timeFromLast: [],
-    arrivalMinusScheduled: [],
-    departureMinusScheduled: []
-  };
-  var lastRow;
-  routeRows.forEach(function(row, index) {
-    if(row.stop === stop) {
-      var timeFromLast;
-      if(lastRow) {
-        var lastDate = makeDate(lastRow.scheduled).getDate();
-        if(!(makeDate(row.scheduled) instanceof Date)) { console.log(row, index); }
-        var thisDate = makeDate(row.scheduled).getDate();
-        if(lastDate === thisDate) {
-          timeFromLast = getMinDiff(row.arrival, lastRow.departure);
-          if(!stopData.scheduledTime) {
-            stopData.scheduledTime = getMinDiff(row.scheduled, lastRow.scheduled);
-          }
-        }
-      }
-      var arrivalMinusScheduled = getMinDiff(row.arrival, row.scheduled);
-      var departureMinusScheduled = getMinDiff(row.departure, row.scheduled);
-      if(timeFromLast) stopData.timeFromLast.push(timeFromLast);
-      if(arrivalMinusScheduled) stopData.arrivalMinusScheduled.push(arrivalMinusScheduled);
-      if(departureMinusScheduled) stopData.departureMinusScheduled.push(departureMinusScheduled);
-    }
-    lastRow = row;
-  });
   var tr = $(document.createElement('tr'));
   var td = $(document.createElement('td'));
   tr.append(td.text(stop)).appendTo(table);
-  var meanTFL = Math.ceil(mean(stopData.timeFromLast));
-  var medianTFL = Math.ceil(median(stopData.timeFromLast));
-
+  
+  var arriveDiffs = stopData[stop].arriveDiffs;
+  Object.keys(arriveDiffs).forEach(function(stopTime) {
+    var th = $(document.createElement('th'));
+    header.append(th.text(stopTime));
+    var td = $(document.createElement('td'));
+    tr.append(td);
+  });
+});    
+      
+/*
   (function appendTd(text) {
     var td = $(document.createElement('td')).appendTo(tr);
     td.text(text);
@@ -142,7 +145,6 @@ allStops.forEach(function(stop) {
     ('median: ' + Math.ceil(median(stopData.arrivalMinusScheduled)))
     ('mean: ' + Math.ceil(mean(stopData.arrivalMinusScheduled)))
     ('data points: ' + stopData.arrivalMinusScheduled.length);
-    
-});
+*/
 
 }
