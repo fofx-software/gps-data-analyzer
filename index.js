@@ -1,6 +1,11 @@
-$.get('6.1-6.5_am', function(data) {
+var csv;
 
-var splitLines = data.split('\n').slice(1);
+$.get('6.1-6.5_am', function(data) { csv = data; })
+ .done(processData);
+
+function processData() { 
+
+var splitLines = csv.split('\n').slice(1);
 
 var headers = [
   'date',
@@ -123,4 +128,4 @@ allStops.forEach(function(stop) {
     ('data points: ' + stopData[stop].timeFromLast.length);
 });
 
-});
+}
