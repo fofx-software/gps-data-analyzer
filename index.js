@@ -106,15 +106,15 @@ var median = function(nums) {
 var stopData = {}, loopStart;
 
 routeRows.forEach(function(row, index) {
-  var thisStop = stopData[row.stop] = (stopData[row.stop] || {
+  if(!stopData[row.stop]) stopData[row.stop] = {
     travelTimes: {},
     arriveDiffs: {}
-  });
+  };
   if(!(index % allStops.length)) {
     loopStart = row.scheduled.split(' ')[1];
   }
-  var travelTimes = thisStop.travelTimes[loopStart] = (thisStop.travelTimes[loopStart] || []);
-  var arriveDiffs = thisStop.arriveDiffs[loopStart] = (thisStop.arriveDiffs[loopStart] || []);
+  iF(!stopData[row.stop].travelTimes[loopStart]) stopData[row.stop].travelTimes[loopStart] = [];
+  if(!stopData[row.stop].arriveDiffs[loopStart]) stopData[row.stop].arriveDiffs[loopStart] = [];
   if(index) {
     var lastRow = routeRows[index - 1];
     var lastDate = makeDate(lastRow.scheduled).getDate();
@@ -122,13 +122,13 @@ routeRows.forEach(function(row, index) {
     if(lastDate === thisDate) {
       var travelTime = getMinDiff(row.arrival, lastRow.arrival);
       if(travelTime) {
-        travelTimes.push(travelTime);
+        stopData[row.stop].travelTimes[loopStart].push(travelTime);
       }
     }
   }
   var arriveDiff = getMinDiff(row.arrival, row.scheduled);
   //if(typeof arriveDiff === 'number' && arriveDiff == arriveDiff) {
-    arriveDiffs.push(arriveDiff);
+    stopData[row.stop].arriveDiffs[loopStart].push(arriveDiff);
   //}
 });
 
