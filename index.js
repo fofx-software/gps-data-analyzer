@@ -116,15 +116,18 @@ var header = $(document.createElement('tr'));
 var emptyHeader = $(document.createElement('th')).appendTo(header);
 $(table).append(header).appendTo(document.body);
 
-allStops.forEach(function(stop) {
+allStops.forEach(function(stop, stopIndex) {
   var tr = $(document.createElement('tr'));
   var td = $(document.createElement('td'));
   tr.append(td.text(stop)).appendTo(table);
   
   var arriveDiffs = stopData[stop].arriveDiffs;
+  
   Object.keys(arriveDiffs).forEach(function(stopTime) {
-    var th = $(document.createElement('th'));
-    header.append(th.text(stopTime));
+    if(!stopIndex) {
+      var th = $(document.createElement('th'));
+      header.append(th.text(stopTime));
+    }
     var td = $(document.createElement('td'));
     tr.append(td);
   });
