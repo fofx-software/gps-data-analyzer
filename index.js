@@ -116,7 +116,7 @@ routeRows.forEach(function(row, index) {
   var oldTravelTimes = thisStop.travelTimes[loopStart];
   var travelTimes = thisStop.travelTimes[loopStart] = (thisStop.travelTimes[loopStart] || []);
   var arriveDiffs = thisStop.arriveDiffs[loopStart] = (thisStop.arriveDiffs[loopStart] || []);
-  console.log(oldTravelTimes, oldTravelTimes === thisStop.travelTimes[loopStart]);
+  console.log(oldTravelTimes, thisStop.travelTimes[loopStart], oldTravelTimes === thisStop.travelTimes[loopStart]);
   if(index) {
     var lastRow = routeRows[index - 1];
     var lastDate = makeDate(lastRow.scheduled).getDate();
