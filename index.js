@@ -48,13 +48,6 @@ for(var i = 0; i < routeRows.length; i += allStops.length) {
         found = true;
       }
     }
-  } else {
-    for(var k = i, found2 = false; k > 0 && !found2; k--) {
-      if(routeRows[k].stop === allStops[0]) {
-        i = k - allStops.length;
-        found2 = true;
-      }
-    }
   }
 }
 
