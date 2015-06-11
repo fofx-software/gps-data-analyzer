@@ -46,8 +46,11 @@ for(var i = 0; i < routeRows2.length; i += allStops.length) {
   if(routeRows2[i].stop === allStops[0]) {
     var found = false;
     for(var j = 0; j < routeRows.length && !found; j += allStops.length) {
-      console.log(routeRows[j].scheduled, routeRows2[i].scheduled);
-      if(makeDate(routeRows[j].scheduled) > makeDate(routeRows2[i].scheduled)) {
+      var date1 = makeDate(routeRows[j].scheduled);
+      var date2 = makeDate(routeRows2[i].scheduled);
+      var time1 = date1.getHours() * 100 + date1.getMinutes();
+      var time2 = date2.getHours() * 100 + date2.getMinutes();
+      if(time2 > time1) {
         var removed = routeRows2.slice(i, i + allStops.length);
         routeRows.splice.apply(routeRows, [j, 0].concat(removed));
         found = true;
