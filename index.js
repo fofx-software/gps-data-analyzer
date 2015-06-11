@@ -132,7 +132,7 @@ routeRows.forEach(function(row, index) {
   }
 });
 
-var table = $(document.createElement('table')).attr('border', 1);
+var table = $(document.createElement('table')).css('border', '1px solid black');
 var header = $(document.createElement('tr'));
 var emptyHeader = $(document.createElement('th')).appendTo(header);
 $(table).append(header).appendTo(document.body);
