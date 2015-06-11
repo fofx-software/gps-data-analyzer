@@ -82,20 +82,18 @@ var median = function(nums) {
   }
 }
 
-var stopData = {};
+var stopData = {}, loopStart;
 
 routeRows.forEach(function(row, index) {
   var thisStop = stopData[row.stop] = stopData[row.stop] || {
     travelTimes: {},
     arriveDiffs: {}
   };
-  var scheduled = row.scheduled.split(' ')[1];
-  var travelTimes = thisStop.travelTimes[scheduled];
-  var arriveDiffs = thisStop.arriveDiffs[scheduled];
   if(!((index + 1) % allStops.length)) {
-    if(!travelTimes) travelTimes = thisStop.travelTimes[scheduled] = [];
-    if(!arriveDiffs) arriveDiffs = thisStop.arriveDiffs[scheduled] = [];
+    loopStart = row.scheduled.split(' ')[1];
   }
+  var travelTimes = thisStop.travelTimes[loopStart] = thisStop.travelTimes[loopStart] || [];
+  var arriveDiffs = thisStop.arriveDiffs[loopStart] = thisStop.arriveDiffs[loopStart] ||  [];
   if(index) {
     var lastRow = routeRows[index - 1];
     var lastDate = makeDate(lastRow.scheduled).getDate();
