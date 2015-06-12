@@ -164,13 +164,13 @@ routeRows.forEach(function(row) {
       }).appendTo(svg);
     }
     
-    var toolTip = addTo.find('div');
+    var toolTip = circle.find('div');
     if(!toolTip.length) {
       toolTip = $(document.createElement('div')).css({
         position: 'fixed',
         backgroundColor: 'black',
         color: 'white'
-      }).text(row.arrival).appendTo(addTo).hide();
+      }).text(row.arrival).appendTo(circle).hide();
     } else {
       toolTip.html(toolTip.html() + '<br />' + row.arrival);
     }
@@ -180,7 +180,6 @@ routeRows.forEach(function(row) {
         toolTip.css({
           left: $(e).pageX, top: $(e).pageY
         }).show();
-        console.log(toolTip.html());
       },
       mouseout: function() {
         toolTip.hide();
