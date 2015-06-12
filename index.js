@@ -190,10 +190,15 @@ Object.keys(stopData).forEach(function(stopTime, stopIndex) {
       backgroundColor: 'black',
       color: 'white'
     }).text(stopData[stopTime].arrivals[diffIndex]);
-    $(circle).on('mousemove', function(e) {
-      toolTip.css({
-        left: $(e).pageX, top: $(e).pageY
-      }).appendTo(addTo);
+    $(circle).on({
+      mousemove: function(e) {
+        toolTip.css({
+          left: $(e).pageX, top: $(e).pageY
+        }).appendTo(addTo);
+      },
+      mouseout: function() {
+        toolTip.remove();
+      }
     });
   });
 });
