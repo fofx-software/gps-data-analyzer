@@ -182,7 +182,7 @@ allStops.forEach(function(stop, stopIndex) {
       var circle = document.createElementNS(svgNS, 'circle');
       var x;
       if(diff < 0) {
-        x = (parseInt(svg.getAttribute('width')) + diff) * 5 - 5;
+        x = parseInt(svg.getAttribute('width')) + (diff * 5 - 5);
       } else {
         x = diff * 5 + 5;
       }
