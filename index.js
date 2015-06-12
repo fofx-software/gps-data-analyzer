@@ -180,6 +180,7 @@ routeRows.forEach(function(row) {
         toolTip.css({
           left: $(e).pageX, top: $(e).pageY
         }).show();
+        console.log(toolTip.html());
       },
       mouseout: function() {
         toolTip.hide();
