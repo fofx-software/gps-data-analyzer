@@ -164,7 +164,7 @@ routeRows.forEach(function(row) {
       }).appendTo(svg);
     }
     
-    var toolTip = addto.find('div');
+    var toolTip = addTo.find('div');
     if(!toolTip) {
       toolTip = $(document.createElement('div')).css({
         position: 'fixed',
