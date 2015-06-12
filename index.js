@@ -200,7 +200,7 @@ routeRows.forEach(function(row) {
       position: 'fixed',
       backgroundColor: 'black',
       color: 'white'
-    }).text(row.arrived);
+    }).text(row.arrival);
     $(circle).on({
       mousemove: function(e) {
         toolTip.css({
