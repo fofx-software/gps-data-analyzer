@@ -174,6 +174,7 @@ routeRows.forEach(function(row) {
         color: 'white'
       }).attr('data-arrive-diff', arriveDiff).text(row.arrival).appendTo(addTo).hide();
     } else {
+      console.log('hey');
       toolTip.append('<br/>' + row.arrival);
     }
     
