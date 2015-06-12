@@ -175,7 +175,8 @@ allStops.forEach(function(stop, stopIndex) {
     arriveDiffs[stopTime].forEach(function(diff) {
       var addTo = diff < 0 ? td1 : td2;
       var svg = addTo.find('svg')[0];
-      if(Math.abs(diff) > parseInt(svg.getAttribute('width'))) svg.setAttribute('width', Math.abs(diff));
+      if(Math.abs(diff) * 5 > parseInt(svg.getAttribute('width'))) 
+        svg.setAttribute('width', Math.abs(diff) * 5);
       var circle = document.createElementNS(svgNS, 'circle');
       var x = (parseInt(svg.getAttribute('width')) + diff) * 5;
       circle.setAttribute('cx', x);
