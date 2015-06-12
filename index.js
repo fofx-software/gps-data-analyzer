@@ -109,7 +109,7 @@ var median = function(nums) {
     return mean([nums[above], nums[below]]);
   }
 }
-
+/*
 var stopData = {};
 
 routeRows.forEach(function(row, index) {
@@ -142,6 +142,7 @@ routeRows.forEach(function(row, index) {
     stopData[stopTime].arriveDiffs.push(arriveDiff);
   }
 });
+*/
 
 var table = $(document.createElement('table')).attr('border', '1').css('border-collapse', 'collapse');
 var header = $(document.createElement('tr'));
