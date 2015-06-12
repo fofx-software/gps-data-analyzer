@@ -178,10 +178,14 @@ allStops.forEach(function(stop, stopIndex) {
       var isNeg = 1;
       if(Math.abs(diff) * 5 > parseInt(svg.getAttribute('width'))) { 
         svg.setAttribute('width', Math.abs(diff) * 10 + 10);
-        isNeg = -1;
       }
       var circle = document.createElementNS(svgNS, 'circle');
-      var x = (parseInt(svg.getAttribute('width')) + diff) * 5 + isNeg * 5;
+      var x;
+      if(diff < 0) {
+        x = (parseInt(svg.getAttribute('width')) + diff) * 5 - 5;
+      } else {
+        x = diff * 5 + 5;
+      }
       circle.setAttribute('cx', x);
       circle.setAttribute('cy', 5);
       circle.setAttribute('r', 5);
