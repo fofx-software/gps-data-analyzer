@@ -146,9 +146,12 @@ var header = $(document.createElement('tr'));
 $(table).append(header).appendTo(document.body);
 
 Object.keys(stopData).forEach(function(stopTime, stopIndex) {
+  var stopName = stopData[stopTime].stopName;
   var tr = $(document.createElement('tr'));
   var td = $(document.createElement('td'));
-  tr.append(td.text(stopTime + ' ' + stopData[stopTime].stopName)).appendTo(table);
+  tr.append(td.text(stopTime + ' ' + stopName)).appendTo(table);
+  
+  if(stopName === 'Vienna Metro') tr.css('background-color', 'yellow');
   
   var td1 = $(document.createElement('td'));
   var td2 = $(document.createElement('td'));
