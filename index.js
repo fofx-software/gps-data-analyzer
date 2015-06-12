@@ -118,6 +118,7 @@ routeRows.forEach(function(row, index) {
     stopData[stopTime] = {
       travelTimes: [],
       arriveDiffs: [],
+      arrivals: [],
       stopName: row.stop
     }
   }
@@ -134,6 +135,7 @@ routeRows.forEach(function(row, index) {
   }
   var arriveDiff = getMinDiff(row.arrival, row.scheduled);
   if(typeof arriveDiff === 'number' && arriveDiff == arriveDiff) {
+    stopData[stopTime].arrivals.push(row.arrival);
     stopData[stopTime].arriveDiffs.push(arriveDiff);
   }
 });
@@ -166,7 +168,7 @@ Object.keys(stopData).forEach(function(stopTime, stopIndex) {
     td[0].appendChild(svg);
   });
 
-  stopData[stopTime].arriveDiffs.forEach(function(diff) {
+  stopData[stopTime].arriveDiffs.forEach(function(diff, diffIndex) {
     var addTo = diff < 0 ? td1 : td2;
     var svg = addTo.find('svg')[0];
     if(Math.abs(diff) * 10 > parseInt(svg.getAttribute('width'))) { 
@@ -184,6 +186,17 @@ Object.keys(stopData).forEach(function(stopTime, stopIndex) {
     circle.setAttribute('cy', 5);
     circle.setAttribute('r', 5);
     svg.appendChild(circle);
+    var toolTip = $(document.createElement('div')).css({
+      position: 'fixed',
+      backgroundColor: 'black',
+      color: 'white',
+      display: 'none'
+    }).text(stopData[stopTime].arrivals[diffIndex]);
+    circle.on('mousemove', function(e) {
+      toolTip.css({
+        left: e.pageX, top: pageY
+      }).show();
+    });
   });
 });
 
