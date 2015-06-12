@@ -62,8 +62,8 @@ for(var i = 0; i < routeRows2.length; i += allStops.length) {
   } else {
     if(routeRows2.length - i >= allStops.length) {
       var oldi = i;
-      for(var k = i; k > oldi - allStops.length; k--) {
-        if(routeRows2[k].stop === allStops[0]) i = k - allStops.length;
+      for(var k = i, found = false; k > oldi - allStops.length && found; k--) {
+        if(routeRows2[k].stop === allStops[0]) i = k - allStops.length, found = true;
       }
     }
   }
@@ -110,12 +110,15 @@ var median = function(nums) {
   }
 }
 
-var stopData = {}, loopStart;
+var stopData = {};
 
 routeRows.forEach(function(row, index) {
   var stopTime = row.scheduled.split(' ')[1];
-  if(!stopData[stopTime]) {
-    stopData[stopTime] = {
+  if(!stopData[row.stop]) {
+    stopData[row.stop] = {};
+  }
+  if(!stopData[row.stop][stopTime]) {
+    stopData[row.stop][stopTime] = {
       travelTimes: [],
       arriveDiffs: [],
       arrivals: [],
@@ -147,39 +150,46 @@ var header = $(document.createElement('tr'));
 });
 $(table).append(header).appendTo(document.body);
 
-Object.keys(stopData).forEach(function(stopTime, stopIndex) {
-  var stopName = stopData[stopTime].stopName;
-  var tr = $(document.createElement('tr'));
-  var td = $(document.createElement('td'));
-  tr.append(td.text(stopTime + ' ' + stopName)).appendTo(table);
-  
-  if(stopName === 'Vienna Metro') tr.css('background-color', 'yellow');
-  
-  var td1 = $(document.createElement('td'));
-  var td2 = $(document.createElement('td'));
-  tr.append(td1).append(td2);
-
+routeRows.forEach(function(row) {
+  var scheduled = row.scheduled.split(' ')[1];
+  var trId = row.stop + scheduled.replace(/:/,'');
+  var tr = $(document.getElementById(trId));
+  var td1 = tr.find('td').eq(1);
+  var td2 = tr.find('td').eq(2);
   var svgNS = 'http://www.w3.org/2000/svg';
-  
-  [td1, td2].forEach(function(td) {
-    var svg = document.createElementNS(svgNS, 'svg');
-    svg.setAttribute('height', 10);
-    svg.setAttribute('width', 0);
-    td[0].appendChild(svg);
-  });
 
-  stopData[stopTime].arriveDiffs.forEach(function(diff, diffIndex) {
-    var addTo = diff < 0 ? td1 : td2;
+  if(!tr.length) {
+    tr = $(document.createElement('tr')).attr('id', trId);
+    var td = $(document.createElement('td'));
+    tr.append(td.text(scheduled + ' ' + row.stop)).appendTo(table);
+  
+    if(row.stop === 'Vienna Metro') tr.css('background-color', 'yellow');
+  
+    td1 = $(document.createElement('td'));
+    td2 = $(document.createElement('td'));
+    tr.append(td1).append(td2);
+  
+    [td1, td2].forEach(function(td) {
+      var svg = document.createElementNS(svgNS, 'svg');
+      svg.setAttribute('height', 10);
+      svg.setAttribute('width', 0);
+      td[0].appendChild(svg);
+    });
+  }
+
+  var arriveDiff = getMinDiff(row.arrival, row.scheduled);
+  if(typeof arriveDiff === 'number' && arriveDiff == arriveDiff) {
+    var addTo = arriveDiff < 0 ? td1 : td2;
     var svg = addTo.find('svg')[0];
-    if(Math.abs(diff) * 10 > parseInt(svg.getAttribute('width'))) { 
-      svg.setAttribute('width', Math.abs(diff) * 10);
+    if(Math.abs(arriveDiff) * 10 > parseInt(svg.getAttribute('width'))) { 
+      svg.setAttribute('width', Math.abs(arriveDiff) * 10);
     }
     var circle = document.createElementNS(svgNS, 'circle');
     var x;
     if(diff < 0) {
-      x = parseInt(svg.getAttribute('width')) + (diff * 10) + 5;
+      x = parseInt(svg.getAttribute('width')) + (arriveDiff * 10) + 5;
     } else {
-      x = diff * 10 - 5;
+      x = arriveDiff * 10 - 5;
     }
     circle.setAttribute('cx', x);
     circle.setAttribute('cy', 5);
@@ -189,7 +199,7 @@ Object.keys(stopData).forEach(function(stopTime, stopIndex) {
       position: 'fixed',
       backgroundColor: 'black',
       color: 'white'
-    }).text(stopData[stopTime].arrivals[diffIndex]);
+    }).text(row.arrived);
     $(circle).on({
       mousemove: function(e) {
         toolTip.css({
@@ -199,8 +209,8 @@ Object.keys(stopData).forEach(function(stopTime, stopIndex) {
       mouseout: function() {
         toolTip.remove();
       }
-    });
-  });
+    });    
+  }
 });
 
 }
