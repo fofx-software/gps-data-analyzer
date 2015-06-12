@@ -169,9 +169,8 @@ routeRows.forEach(function(row) {
       toolTip = $(document.createElement('div')).css({
         position: 'fixed',
         backgroundColor: 'black',
-        color: 'white',
-        display: 'none'
-      }).text(row.arrival).appendTo(addTo);
+        color: 'white'
+      }).text(row.arrival).appendTo(addTo).hide();
     } else {
       toolTip.html(toolTip.html() + '<br />' + row.arrival);
     }
