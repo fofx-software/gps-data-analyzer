@@ -166,7 +166,7 @@ routeRows.forEach(function(row) {
       }).appendTo(svg);
     }
     
-    var toolTip = addTo.find('div[data-arrive-diff=' + arriveDiff + ']');
+    var toolTip = addTo.find('div[data-arrive-diff="' + arriveDiff + '"]');
     if(!toolTip.length) {
       toolTip = $(document.createElement('div')).css({
         position: 'fixed',
@@ -179,6 +179,7 @@ routeRows.forEach(function(row) {
     
     $(circle).on({
       mousemove: function(e) {
+        console.log(addTo.find('div').length);
         toolTip.css({
           left: $(e).pageX, top: $(e).pageY
         }).show();
