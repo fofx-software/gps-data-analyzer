@@ -148,7 +148,7 @@ $(table).append(header).appendTo(document.body);
 Object.keys(stopData).forEach(function(stopTime, stopIndex) {
   var tr = $(document.createElement('tr'));
   var td = $(document.createElement('td'));
-  tr.append(td.text(stopData[stopTime].stopName + ' ' + stopTime)).appendTo(table);
+  tr.append(td.text(stopTime + ' ' + stopData[stopTime].stopName)).appendTo(table);
   
   var td1 = $(document.createElement('td'));
   var td2 = $(document.createElement('td'));
