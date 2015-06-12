@@ -188,13 +188,12 @@ Object.keys(stopData).forEach(function(stopTime, stopIndex) {
     var toolTip = $(document.createElement('div')).css({
       position: 'fixed',
       backgroundColor: 'black',
-      color: 'white',
-      display: 'none'
+      color: 'white'
     }).text(stopData[stopTime].arrivals[diffIndex]);
     $(circle).on('mousemove', function(e) {
       toolTip.css({
         left: $(e).pageX, top: $(e).pageY
-      }).show();
+      }).appendTo(addTo);
     });
   });
 });
