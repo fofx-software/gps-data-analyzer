@@ -151,12 +151,14 @@ routeRows.forEach(function(row) {
     if(Math.abs(arriveDiff) * 10 > parseInt(svg.attr('width'))) { 
       svg.attr('width', Math.abs(arriveDiff) * 10);
     }
+    
     var x;
     if(arriveDiff < 0) {
       x = parseInt(svg.attr('width')) + (arriveDiff * 10) + 5;
     } else {
       x = arriveDiff * 10 - 5;
     }
+    
     var circle = svg.find('circle[cx="' + x + '"]');
     if(!circle.length) {
       circle = $(document.createElementNS(svgNS, 'circle')).attr({
@@ -164,13 +166,13 @@ routeRows.forEach(function(row) {
       }).appendTo(svg);
     }
     
-    var toolTip = circle.find('div');
+    var toolTip = addTo.find('div[data-circle="' + x + '"]');
     if(!toolTip.length) {
       toolTip = $(document.createElement('div')).css({
         position: 'fixed',
         backgroundColor: 'black',
         color: 'white'
-      }).text(row.arrival).appendTo(circle).hide();
+      }).attr('data-circle', x).text(row.arrival).appendTo(addTo).hide();
     } else {
       toolTip.html(toolTip.html() + '<br />' + row.arrival);
     }
