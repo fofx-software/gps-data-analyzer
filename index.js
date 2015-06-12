@@ -178,7 +178,6 @@ Object.keys(stopData).forEach(function(stopTime, stopIndex) {
     var x;
     if(diff < 0) {
       x = parseInt(svg.getAttribute('width')) + (diff * 10) + 5;
-      console.log(stop, stopTime, diff);
     } else {
       x = diff * 10 - 5;
     }
@@ -194,7 +193,7 @@ Object.keys(stopData).forEach(function(stopTime, stopIndex) {
     }).text(stopData[stopTime].arrivals[diffIndex]);
     $(circle).on('mousemove', function(e) {
       toolTip.css({
-        left: e.pageX, top: pageY
+        left: $(e).pageX, top: $(e).pageY
       }).show();
     });
   });
