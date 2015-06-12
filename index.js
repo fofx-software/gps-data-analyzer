@@ -137,9 +137,9 @@ routeRows.forEach(function(row, index) {
     }
   }
   var arriveDiff = getMinDiff(row.arrival, row.scheduled);
-  //if(typeof arriveDiff === 'number' && arriveDiff == arriveDiff) {
+  if(typeof arriveDiff === 'number' && arriveDiff == arriveDiff) {
     stopData[row.stop].arriveDiffs[loopStart].push(arriveDiff);
-  //}
+  }
 });
 
 var table = $(document.createElement('table')).attr('border', '1').css('border-collapse', 'collapse');
