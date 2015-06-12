@@ -187,7 +187,7 @@ routeRows.forEach(function(row) {
     }
     var circle = document.createElementNS(svgNS, 'circle');
     var x;
-    if(diff < 0) {
+    if(arriveDiff < 0) {
       x = parseInt(svg.getAttribute('width')) + (arriveDiff * 10) + 5;
     } else {
       x = arriveDiff * 10 - 5;
