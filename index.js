@@ -167,19 +167,19 @@ allStops.forEach(function(stop, stopIndex) {
       
     [td1, td2].forEach(function(td) {
       var svg = document.createElementNS(svgNS, 'svg');
-      svg.setAttributeNS(svgNS, 'height', 10);
+      svg.setAttribute('height', 10);
       td[0].appendChild(svg);
     });
     
     arriveDiffs[stopTime].forEach(function(diff) {
       var addTo = diff < 0 ? td1 : td2;
       var svg = addTo.find('svg')[0];
-      if(Math.abs(diff) > svg.getAttribute('width')) svg.setAttributeNS(svgNS, 'width', Math.abs(diff));
+      if(Math.abs(diff) > svg.getAttribute('width')) svg.setAttribute('width', Math.abs(diff));
       var circle = document.createElementNS(svgNS, 'circle');
       var x = (parseInt(svg.getAttribute('width')) + diff) * 5;
-      circle.setAttributeNS(svgNS, 'cx', x);
-      circle.setAttributeNS(svgNS, 'cy', 5);
-      circle.setAttributeNS(svgNS, 'r', 5);
+      circle.setAttribute('cx', x);
+      circle.setAttribute('cy', 5);
+      circle.setAttribute('r', 5);
       circle.style.stroke = 'black';
       svg.appendChild(circle);
     });
