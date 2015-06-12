@@ -175,7 +175,6 @@ allStops.forEach(function(stop, stopIndex) {
     arriveDiffs[stopTime].forEach(function(diff) {
       var addTo = diff < 0 ? td1 : td2;
       var svg = addTo.find('svg')[0];
-      var isNeg = 1;
       if(Math.abs(diff) * 10 > parseInt(svg.getAttribute('width'))) { 
         svg.setAttribute('width', Math.abs(diff) * 10);
       }
@@ -183,6 +182,7 @@ allStops.forEach(function(stop, stopIndex) {
       var x;
       if(diff < 0) {
         x = parseInt(svg.getAttribute('width')) + (diff * 10) + 5;
+        console.log(stop, stopTime, diff);
       } else {
         x = diff * 10 - 5;
       }
