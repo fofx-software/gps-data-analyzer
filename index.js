@@ -168,7 +168,7 @@ allStops.forEach(function(stop, stopIndex) {
     [td1, td2].forEach(function(td) {
       var svg = document.createElementNS(svgNS, 'svg');
       svg.setAttributeNS(svgNS, 'height', 10);
-      td.append(svg);
+      td[0].appendChild(svg);
     });
     
     arriveDiffs[stopTime].forEach(function(diff) {
