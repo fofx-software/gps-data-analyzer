@@ -174,9 +174,7 @@ routeRows.forEach(function(row) {
         color: 'white'
       }).attr('data-circle', x).text(row.arrival).appendTo(addTo).hide();
     } else {
-      var orig = toolTip.html();
-      toolTip.html(toolTip.html() + '<br />' + row.arrival);
-      console.log(orig,toolTip.html());
+      toolTip.append('<br/>' + row.arrival);
     }
     
     $(circle).on({
