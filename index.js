@@ -109,40 +109,6 @@ var median = function(nums) {
     return mean([nums[above], nums[below]]);
   }
 }
-/*
-var stopData = {};
-
-routeRows.forEach(function(row, index) {
-  var stopTime = row.scheduled.split(' ')[1];
-  if(!stopData[row.stop]) {
-    stopData[row.stop] = {};
-  }
-  if(!stopData[row.stop][stopTime]) {
-    stopData[row.stop][stopTime] = {
-      travelTimes: [],
-      arriveDiffs: [],
-      arrivals: [],
-      stopName: row.stop
-    }
-  }
-  if(index) {
-    var lastRow = routeRows[index - 1];
-    var lastDate = makeDate(lastRow.scheduled).getDate();
-    var thisDate = makeDate(row.scheduled).getDate();
-    if(lastDate === thisDate) {
-      var travelTime = getMinDiff(row.arrival, lastRow.arrival);
-      if(travelTime) {
-        stopData[stopTime].travelTimes.push(travelTime);
-      }
-    }
-  }
-  var arriveDiff = getMinDiff(row.arrival, row.scheduled);
-  if(typeof arriveDiff === 'number' && arriveDiff == arriveDiff) {
-    stopData[stopTime].arrivals.push(row.arrival);
-    stopData[stopTime].arriveDiffs.push(arriveDiff);
-  }
-});
-*/
 
 var table = $(document.createElement('table')).attr('border', '1').css('border-collapse', 'collapse');
 var header = $(document.createElement('tr'));
@@ -185,30 +151,39 @@ routeRows.forEach(function(row) {
     if(Math.abs(arriveDiff) * 10 > parseInt(svg.getAttribute('width'))) { 
       svg.setAttribute('width', Math.abs(arriveDiff) * 10);
     }
-    var circle = document.createElementNS(svgNS, 'circle');
     var x;
     if(arriveDiff < 0) {
       x = parseInt(svg.getAttribute('width')) + (arriveDiff * 10) + 5;
     } else {
       x = arriveDiff * 10 - 5;
     }
-    circle.setAttribute('cx', x);
-    circle.setAttribute('cy', 5);
-    circle.setAttribute('r', 5);
-    svg.appendChild(circle);
-    var toolTip = $(document.createElement('div')).css({
-      position: 'fixed',
-      backgroundColor: 'black',
-      color: 'white'
-    }).text(row.arrival);
+    var circle = svg.find('circle[cx="' + x + '"]');
+    if(!circle.length) {
+      circle = $(document.createElementNS(svgNS, 'circle')).attr({
+        cx: x, cy: 5, r: 5
+      }).appendTo(svg);
+    }
+    
+    var toolTip = addto.find('div');
+    if(!toolTip) {
+      toolTip = $(document.createElement('div')).css({
+        position: 'fixed',
+        backgroundColor: 'black',
+        color: 'white',
+        display: 'none'
+      }).text(row.arrival).appendTo(addTo);
+    } else {
+      toolTip.html(toolTip.html() + '<br />' + row.arrival);
+    }
+    
     $(circle).on({
       mousemove: function(e) {
         toolTip.css({
           left: $(e).pageX, top: $(e).pageY
-        }).appendTo(addTo);
+        }).show();
       },
       mouseout: function() {
-        toolTip.remove();
+        toolTip.hide();
       }
     });    
   }
