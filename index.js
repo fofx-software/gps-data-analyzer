@@ -177,7 +177,7 @@ allStops.forEach(function(stop, stopIndex) {
       var svg = addTo.find('svg')[0];
       var isNeg = 1;
       if(Math.abs(diff) * 5 > parseInt(svg.getAttribute('width'))) { 
-        svg.setAttribute('width', Math.abs(diff) * 5 + 10);
+        svg.setAttribute('width', Math.abs(diff) * 10 + 10);
         isNeg = -1;
       }
       var circle = document.createElementNS(svgNS, 'circle');
