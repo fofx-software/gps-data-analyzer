@@ -112,19 +112,15 @@ var median = function(nums) {
 
 var stopData = {}, loopStart;
 
-allStops.forEach(function(stop) {
-  stopData[stop] = {
-    travelTimes: {},
-    arriveDiffs: {}
-  }
-});
-
 routeRows.forEach(function(row, index) {
-  if(!(index % allStops.length)) {
-    loopStart = row.scheduled.split(' ')[1];
+  var stopTime = row.scheduled.split(' ')[1];
+  if(!stopData[stopTime]) {
+    stopData[stopTime] = {
+      travelTimes: [],
+      arriveDiffs: [],
+      stopName: row.stop
+    }
   }
-  if(!stopData[row.stop].travelTimes[loopStart]) stopData[row.stop].travelTimes[loopStart] = [];
-  if(!stopData[row.stop].arriveDiffs[loopStart]) stopData[row.stop].arriveDiffs[loopStart] = [];
   if(index) {
     var lastRow = routeRows[index - 1];
     var lastDate = makeDate(lastRow.scheduled).getDate();
@@ -132,66 +128,59 @@ routeRows.forEach(function(row, index) {
     if(lastDate === thisDate) {
       var travelTime = getMinDiff(row.arrival, lastRow.arrival);
       if(travelTime) {
-        stopData[row.stop].travelTimes[loopStart].push(travelTime);
+        stopData[stopTime].travelTimes.push(travelTime);
       }
     }
   }
   var arriveDiff = getMinDiff(row.arrival, row.scheduled);
   if(typeof arriveDiff === 'number' && arriveDiff == arriveDiff) {
-    stopData[row.stop].arriveDiffs[loopStart].push(arriveDiff);
+    stopData[stopTime].arriveDiffs.push(arriveDiff);
   }
 });
 
 var table = $(document.createElement('table')).attr('border', '1').css('border-collapse', 'collapse');
 var header = $(document.createElement('tr'));
-var emptyHeader = $(document.createElement('th')).appendTo(header);
+['stop', 'early arrival', 'late arrival'].forEach(function(thText) {
+  $(document.createElement('th')).text(thText).appendTo(header);
+});
 $(table).append(header).appendTo(document.body);
 
-allStops.forEach(function(stop, stopIndex) {
+Object.keys(stopData).forEach(function(stopTime, stopIndex) {
   var tr = $(document.createElement('tr'));
   var td = $(document.createElement('td'));
-  tr.append(td.text(stop)).appendTo(table);
+  tr.append(td.text(stopData[stopTime].stopName + ' ' + stopTime)).appendTo(table);
   
-  var arriveDiffs = stopData[stop].arriveDiffs;
+  var td1 = $(document.createElement('td'));
+  var td2 = $(document.createElement('td'));
+  tr.append(td1).append(td2);
+
+  var svgNS = 'http://www.w3.org/2000/svg';
   
-  Object.keys(arriveDiffs).forEach(function(stopTime) {
-    if(!stopIndex) {
-      var th = $(document.createElement('th'));
-      header.append(th.text(stopTime).attr('colspan', 2));
+  [td1, td2].forEach(function(td) {
+    var svg = document.createElementNS(svgNS, 'svg');
+    svg.setAttribute('height', 10);
+    svg.setAttribute('width', 0);
+    td[0].appendChild(svg);
+  });
+
+  stopData[stopTime].arriveDiffs.forEach(function(diff) {
+    var addTo = diff < 0 ? td1 : td2;
+    var svg = addTo.find('svg')[0];
+    if(Math.abs(diff) * 10 > parseInt(svg.getAttribute('width'))) { 
+      svg.setAttribute('width', Math.abs(diff) * 10);
     }
-    var td1 = $(document.createElement('td'));
-    var td2 = $(document.createElement('td'));
-    tr.append(td1).append(td2);
-    
-    var svgNS = 'http://www.w3.org/2000/svg';
-      
-    [td1, td2].forEach(function(td) {
-      var svg = document.createElementNS(svgNS, 'svg');
-      svg.setAttribute('height', 10);
-      svg.setAttribute('width', 0);
-      td[0].appendChild(svg);
-    });
-    
-    arriveDiffs[stopTime].forEach(function(diff) {
-      var addTo = diff < 0 ? td1 : td2;
-      var svg = addTo.find('svg')[0];
-      if(Math.abs(diff) * 10 > parseInt(svg.getAttribute('width'))) { 
-        svg.setAttribute('width', Math.abs(diff) * 10);
-      }
-      var circle = document.createElementNS(svgNS, 'circle');
-      var x;
-      if(diff < 0) {
-        x = parseInt(svg.getAttribute('width')) + (diff * 10) + 5;
-        console.log(stop, stopTime, diff);
-      } else {
-        x = diff * 10 - 5;
-      }
-      circle.setAttribute('cx', x);
-      circle.setAttribute('cy', 5);
-      circle.setAttribute('r', 5);
-      svg.appendChild(circle);
-    });
-    
+    var circle = document.createElementNS(svgNS, 'circle');
+    var x;
+    if(diff < 0) {
+      x = parseInt(svg.getAttribute('width')) + (diff * 10) + 5;
+      console.log(stop, stopTime, diff);
+    } else {
+      x = diff * 10 - 5;
+    }
+    circle.setAttribute('cx', x);
+    circle.setAttribute('cy', 5);
+    circle.setAttribute('r', 5);
+    svg.appendChild(circle);
   });
 });
 
