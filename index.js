@@ -168,6 +168,7 @@ allStops.forEach(function(stop, stopIndex) {
     [td1, td2].forEach(function(td) {
       var svg = document.createElementNS(svgNS, 'svg');
       svg.setAttribute('height', 10);
+      svg.setAttribute('width', 0);
       td[0].appendChild(svg);
     });
     
