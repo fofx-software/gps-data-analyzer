@@ -166,13 +166,13 @@ routeRows.forEach(function(row) {
       }).appendTo(svg);
     }
     
-    var toolTip = addTo.find('div[data-circle="' + x + '"]');
+    var toolTip = addTo.find('div[data-arrive-diff=' + arriveDiff + ']');
     if(!toolTip.length) {
       toolTip = $(document.createElement('div')).css({
         position: 'fixed',
         backgroundColor: 'black',
         color: 'white'
-      }).attr('data-circle', x).text(row.arrival).appendTo(addTo).hide();
+      }).attr('data-arrive-diff', arriveDiff).text(row.arrival).appendTo(addTo).hide();
     } else {
       toolTip.append('<br/>' + row.arrival);
     }
