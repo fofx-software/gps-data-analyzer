@@ -153,7 +153,7 @@ routeRows.forEach(function(row) {
     }
     var x;
     if(arriveDiff < 0) {
-      x = parseInt(svg.getAttribute('width')) + (arriveDiff * 10) + 5;
+      x = parseInt(svg.attr('width')) + (arriveDiff * 10) + 5;
     } else {
       x = arriveDiff * 10 - 5;
     }
