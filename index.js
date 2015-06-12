@@ -147,9 +147,9 @@ routeRows.forEach(function(row) {
   var arriveDiff = getMinDiff(row.arrival, row.scheduled);
   if(typeof arriveDiff === 'number' && arriveDiff == arriveDiff) {
     var addTo = arriveDiff < 0 ? td1 : td2;
-    var svg = addTo.find('svg')[0];
-    if(Math.abs(arriveDiff) * 10 > parseInt(svg.getAttribute('width'))) { 
-      svg.setAttribute('width', Math.abs(arriveDiff) * 10);
+    var svg = addTo.find('svg');
+    if(Math.abs(arriveDiff) * 10 > parseInt(svg.attr('width'))) { 
+      svg.attr('width', Math.abs(arriveDiff) * 10);
     }
     var x;
     if(arriveDiff < 0) {
