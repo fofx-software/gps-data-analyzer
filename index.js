@@ -165,7 +165,7 @@ routeRows.forEach(function(row) {
     }
     
     var toolTip = addTo.find('div');
-    if(!toolTip) {
+    if(!toolTip.length) {
       toolTip = $(document.createElement('div')).css({
         position: 'fixed',
         backgroundColor: 'black',
