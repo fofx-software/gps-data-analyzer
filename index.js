@@ -174,13 +174,12 @@ allStops.forEach(function(stop, stopIndex) {
     arriveDiffs[stopTime].forEach(function(diff) {
       var addTo = diff < 0 ? td1 : td2;
       var svg = addTo.find('svg')[0];
-      if(Math.abs(diff) > svg.getAttribute('width')) svg.setAttribute('width', Math.abs(diff));
+      if(Math.abs(diff) > parseInt(svg.getAttribute('width'))) svg.setAttribute('width', Math.abs(diff));
       var circle = document.createElementNS(svgNS, 'circle');
       var x = (parseInt(svg.getAttribute('width')) + diff) * 5;
       circle.setAttribute('cx', x);
       circle.setAttribute('cy', 5);
       circle.setAttribute('r', 5);
-      circle.style.stroke = 'black';
       svg.appendChild(circle);
     });
     
