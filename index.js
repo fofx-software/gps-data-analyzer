@@ -163,31 +163,27 @@ allStops.forEach(function(stop, stopIndex) {
     var td2 = $(document.createElement('td'));
     tr.append(td1).append(td2);
     
+    var svgNS = 'http://www.w3.org/2000/svg';
+      
+    [td1, td2].forEach(function(td) {
+      var svg = document.createElementNS(svgNS, 'svg');
+      svg.setAttributeNS(svgNS, 'height', 10);
+      td.append(svg);
+    });
+    
     arriveDiffs[stopTime].forEach(function(diff) {
       var addTo = diff < 0 ? td1 : td2;
-      addTo.text(addTo.text() + diff);
+      var svg = addTo.find('svg')[0];
+      if(Math.abs(diff) > svg.width) svg.setAttributeNS(svgNS, 'width', Math.abs(diff));
+      var width = svg.width;
+      var circle = document.createElementNS(svgNS, 'circle');
+      circle.setAttributeNS(svgNS, 'cx', svg.width + diff);
+      circle.setAttributeNS(svgNS, 'cy', 5);
+      circle.setAttributeNS(svgNS, 'r', 5);
+      svg.appendChild(circle);
     });
     
   });
-});    
-
-/*
-  (function appendTd(text) {
-    var td = $(document.createElement('td')).appendTo(tr);
-    td.text(text);
-    var svgNS = 'http://www.w3.org/2000/svg';
-    var svg = document.createElementNS(svgNS, 'svg');
-    svg.setAttributeNS(svgNS, 'width', '200');
-    svg.setAttributeNS(svgNS, 'height', '200');
-    td.append(svg);
-    return appendTd;
-  })('median: ' + medianTFL)
-    ('mean: ' + meanTFL)
-    ('scheduled: ' + stopData.scheduledTime)
-    ('data points: ' + stopData.timeFromLast.length)
-    ('median: ' + Math.ceil(median(stopData.arrivalMinusScheduled)))
-    ('mean: ' + Math.ceil(mean(stopData.arrivalMinusScheduled)))
-    ('data points: ' + stopData.arrivalMinusScheduled.length);
-*/
+});
 
 }
