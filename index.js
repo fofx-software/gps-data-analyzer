@@ -168,6 +168,7 @@ routeRows.forEach(function(row) {
     
     var toolTip = addTo.find('div[data-arrive-diff="' + arriveDiff + '"]');
     if(!toolTip.length) {
+     console.log(row.stop, row.scheduled, arriveDiff);
       toolTip = $(document.createElement('div')).css({
         position: 'fixed',
         backgroundColor: 'black',
