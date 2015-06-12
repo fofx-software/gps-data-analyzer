@@ -192,7 +192,7 @@ Object.keys(stopData).forEach(function(stopTime, stopIndex) {
       color: 'white',
       display: 'none'
     }).text(stopData[stopTime].arrivals[diffIndex]);
-    circle.on('mousemove', function(e) {
+    $(circle).on('mousemove', function(e) {
       toolTip.css({
         left: e.pageX, top: pageY
       }).show();
