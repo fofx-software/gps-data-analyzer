@@ -180,6 +180,7 @@ allStops.forEach(function(stop, stopIndex) {
       circle.setAttributeNS(svgNS, 'cx', x);
       circle.setAttributeNS(svgNS, 'cy', 5);
       circle.setAttributeNS(svgNS, 'r', 5);
+      circle.style.stroke = 'black';
       svg.appendChild(circle);
     });
     
