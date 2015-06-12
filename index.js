@@ -176,15 +176,15 @@ allStops.forEach(function(stop, stopIndex) {
       var addTo = diff < 0 ? td1 : td2;
       var svg = addTo.find('svg')[0];
       var isNeg = 1;
-      if(Math.abs(diff) * 10 + 10 > parseInt(svg.getAttribute('width'))) { 
-        svg.setAttribute('width', Math.abs(diff) * 10 + 10);
+      if(Math.abs(diff) * 10 > parseInt(svg.getAttribute('width'))) { 
+        svg.setAttribute('width', Math.abs(diff) * 10);
       }
       var circle = document.createElementNS(svgNS, 'circle');
       var x;
       if(diff < 0) {
-        x = parseInt(svg.getAttribute('width')) + (diff * 5 - 5);
+        x = parseInt(svg.getAttribute('width')) + (diff * 10) + 5;
       } else {
-        x = diff * 5 + 5;
+        x = diff * 10 - 5;
       }
       circle.setAttribute('cx', x);
       circle.setAttribute('cy', 5);
