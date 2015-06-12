@@ -62,7 +62,7 @@ for(var i = 0; i < routeRows2.length; i += allStops.length) {
   } else {
     if(routeRows2.length - i >= allStops.length) {
       var oldi = i;
-      for(var k = i; k > i - allStops.length; k--) {
+      for(var k = i; k > oldi - allStops.length; k--) {
         if(routeRows2[k].stop === allStops[0]) i = k - allStops.length;
       }
     }
