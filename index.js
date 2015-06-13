@@ -1,73 +1,22 @@
-var csv;
+window.onload = function() {
 
-$.get('6.1-6.5_am', function(data) { csv = data; })
- .done(processData);
+var routeRows = [], allStops = [];
 
-function processData() { 
+data.forEach(function(row) {
+  var arriveDiff = getMinDiff(row.arrivalTime, row.scheduledTime);
 
-var splitLines = csv.split('\n').slice(1);
+  if(typeof arriveDiff !== 'number' || arriveDiff != arriveDiff) arriveDiff = null;
 
-var headers = [
-  'date',
-  'route',
-  'stop',
-  'vehicle',
-  'arrival',
-  'departure',
-  'scheduled'
-];
-
-var routeRows = [];
-
-splitLines.forEach(function(line) {
-  var obj = {}, line = line.split(',');
-  if(line[0]) {
-    headers.forEach(function(header, index) {
-      obj[header] = line[index];
-    });
-    routeRows.push(obj);
-  }
+  routeRows.push({
+    scheduledTime: row.scheduledTime.split(' ')[1].replace(/:00/,''),
+    stopName: row.stopName,
+    arriveDiff: arriveDiff,
+    arrivalDate: row.arrivalTime ? row.arrivalTime.split(' ')[0].replace(/:00/,'') : '',
+    arrivalTime: row.arrivalTime ? row.arrivalTime.split(' ')[1].replace(/:00/,'') : ''
+  });
+  if(allStops.indexOf(row.stopName + row.scheduledTime.split(' ')[1]) === -1)
+    allStops.push(row.stopName + row.scheduledTime.split(' ')[1]);
 });
-
-var allStops = [];
-
-routeRows.some(function(row) {
-  if(allStops.indexOf(row.stop) > -1) {
-    return true;
-  } else {
-    allStops.push(row.stop);
-  }
-});
-
-var routeRows2 = routeRows.slice();
-routeRows = [];
-
-for(var i = 0; i < routeRows2.length; i += allStops.length) {
-  if(routeRows2[i].stop === allStops[0]) {
-    var found = false;
-    for(var j = 0; j < routeRows.length && !found; j += allStops.length) {
-      var date1 = makeDate(routeRows[j].scheduled);
-      var date2 = makeDate(routeRows2[i].scheduled);
-      var time1 = date1.getHours() * 100 + date1.getMinutes();
-      var time2 = date2.getHours() * 100 + date2.getMinutes();
-      if(time1 > time2) {
-        var removed = routeRows2.slice(i, i + allStops.length);
-        routeRows.splice.apply(routeRows, [j, 0].concat(removed));
-        found = true;
-      }
-    }
-    if(!found) {
-      routeRows = routeRows.concat(routeRows2.slice(i, i + allStops.length));
-    }
-  } else {
-    if(routeRows2.length - i >= allStops.length) {
-      var oldi = i;
-      for(var k = i, found = false; k > oldi - allStops.length && found; k--) {
-        if(routeRows2[k].stop === allStops[0]) i = k - allStops.length, found = true;
-      }
-    }
-  }
-}
 
 function makeDate(datestr) {
   if(datestr) {
@@ -82,7 +31,7 @@ function makeDate(datestr) {
   }
 }
 
-var getMinDiff = function(date1, date2) {
+function getMinDiff(date1, date2) {
   date1 = makeDate(date1);
   date2 = makeDate(date2);
   if(date1 instanceof Date && date2 instanceof Date) {
@@ -110,86 +59,83 @@ var median = function(nums) {
   }
 }
 
-var table = $(document.createElement('table')).attr('border', '1').css('border-collapse', 'collapse');
-var header = $(document.createElement('tr'));
-['stop', 'early arrival', 'late arrival'].forEach(function(thText) {
-  $(document.createElement('th')).text(thText).appendTo(header);
-});
-$(table).append(header).appendTo(document.body);
+var table = $('<table>').css('border-collapse', 'collapse').appendTo(document.body);
 
 routeRows.forEach(function(row) {
-  var scheduled = row.scheduled.split(' ')[1];
-  var trId = row.stop + scheduled.replace(/:/,'');
+  var trId = row.stopName.toLowerCase().replace(/ /,'') + row.scheduledTime.replace(/:/,'');
   var tr = $(document.getElementById(trId));
   var td1 = tr.find('td').eq(1);
   var td2 = tr.find('td').eq(2);
-  var svgNS = 'http://www.w3.org/2000/svg';
 
   if(!tr.length) {
     tr = $(document.createElement('tr')).attr('id', trId);
     var td = $(document.createElement('td'));
-    tr.append(td.text(scheduled + ' ' + row.stop)).appendTo(table);
+    tr.append(td.append('<b>' + row.scheduledTime + '</b> ' + row.stopName)).appendTo(table);
   
-    if(row.stop === 'Vienna Metro') tr.css('background-color', 'yellow');
+    if(row.stopName === 'Vienna Metro') tr.css({ borderTop: '1px solid black' });
   
-    td1 = $(document.createElement('td'));
-    td2 = $(document.createElement('td'));
+    td1 = $(document.createElement('td')).css({ position: 'relative' });
+    td2 = $(document.createElement('td')).css({ position: 'relative' });
     tr.append(td1).append(td2);
-  
-    [td1, td2].forEach(function(td) {
-      var svg = document.createElementNS(svgNS, 'svg');
-      svg.setAttribute('height', 10);
-      svg.setAttribute('width', 0);
-      td[0].appendChild(svg);
-    });
   }
 
-  var arriveDiff = getMinDiff(row.arrival, row.scheduled);
-  if(typeof arriveDiff === 'number' && arriveDiff == arriveDiff) {
-    var addTo = arriveDiff < 0 ? td1 : td2;
-    var svg = addTo.find('svg');
-    if(Math.abs(arriveDiff) * 10 > parseInt(svg.attr('width'))) { 
-      svg.attr('width', Math.abs(arriveDiff) * 10);
-    }
-    
-    var x;
-    if(arriveDiff < 0) {
-      x = parseInt(svg.attr('width')) + (arriveDiff * 10) + 5;
-    } else {
-      x = arriveDiff * 10 - 5;
-    }
-    
-    var circle = svg.find('circle[cx="' + x + '"]');
-    if(!circle.length) {
-      circle = $(document.createElementNS(svgNS, 'circle')).attr({
-        cx: x, cy: 5, r: 5
-      }).appendTo(svg);
-    }
-    
-    var toolTip = addTo.find('div[data-arrive-diff="' + arriveDiff + '"]');
-    if(!toolTip.length) {
-     console.log(row.stop, row.scheduled, arriveDiff);
-      toolTip = $(document.createElement('div')).css({
-        position: 'fixed',
-        backgroundColor: 'black',
-        color: 'white'
-      }).attr('data-arrive-diff', arriveDiff).text(row.arrival).appendTo(addTo).hide();
-    } else {
-      console.log('hey');
-      toolTip.append('<br/>' + row.arrival);
-    }
-    
-    $(circle).on({
-      mousemove: function(e) {
-        console.log(addTo.find('div').length);
-        toolTip.css({
-          left: $(e).pageX, top: $(e).pageY
-        }).show();
-      },
-      mouseout: function() {
-        toolTip.hide();
+  if(row.arriveDiff !== null) {
+    var addTo = row.arriveDiff < 0 ? td1 : td2;
+
+    var bar = td2.find('div[data-arrive-diff="' + row.arriveDiff + '"]');
+    if(!bar.length) {
+      var x, diam = 10;
+      if(row.arriveDiff < 0) {
+        x = (row.arriveDiff - 1) * diam + diam / 2;
+      } else {
+        x = row.arriveDiff * diam - diam / 2;
       }
-    });    
+
+      bar = $(document.createElement('div')).css({
+        position: 'absolute',
+        height: '100%',
+        width: diam,
+        top: 0,
+        left: x,
+        display: 'inline-block'
+      }).attr('data-arrive-diff', row.arriveDiff).appendTo(td2);
+
+      if(Math.abs(row.arriveDiff) * diam > addTo.width())
+        addTo.width(Math.abs(row.arriveDiff) * diam);
+
+      bar.on({
+        mouseenter: function(e) {
+          $(this).find('.tooltip').show();
+        },
+        mouseleave: function() {
+          $(this).find('.tooltip').hide();
+        }
+      });
+    }
+
+    var toolTip = bar.find('.tooltip');
+    if(!toolTip.length) {
+      toolTip = $(document.createElement('div')).css({
+        position: 'absolute',
+        left: 10,
+        top: 10,
+        backgroundColor: 'black',
+        color: 'white',
+        'z-index': 1000,
+        padding: 5,
+        textAlign:'center'
+      }).addClass('tooltip')
+        .append($('<div>').text(row.arrivalTime))
+        .appendTo(bar).hide();
+    }
+    toolTip.append($('<div>').text(row.arrivalDate));
+
+    var quant = 255 - Math.round((toolTip.find('div').length - 1) / (routeRows.length / allStops.length) * 255);
+    bar.css('background-color', 'rgba(' +
+      (row.arriveDiff < 0 ? 0 : 255) + ',0,' +
+      (row.arriveDiff < 0 ? 255 : 0) + ',' +
+      (255 - quant) / 255 + ')'
+    );
   }
 });
 
