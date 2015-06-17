@@ -1,11 +1,48 @@
 <!doctype html>
 <html>
 <head>
-  <script type="text/javascript" src="../../js/jquery-1.11.2.min.js"></script>
-  <script type="text/javascript" src="6.1-6.5_am.js"></script>
-  <script type="text/javascript" src="6.8-6.12_am.js"></script>
-  <script type="text/javascript" src="index.js"></script>
+  <style>
+    table {
+      border-collapse: collapse;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .border-top {
+      border-top: 1px solid black;
+    }
+    td {
+      position: relative;
+    }
+    tr {
+      border-bottom: 1px solid gray;
+    }
+    .diff-td {
+      width: 10px;
+    }
+    .tooltip {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      background-color: black;
+      color: white;
+      z-index: 1000;
+      padding: 5px;
+      text-align: center;
+      display: none;
+    }
+  </style>
 </head>
 <body>
+  <table id="data-table"></table>
+  <script>
+    var shown;
+    document.addEventListener('mousemove', function(e) {
+      if(shown) shown.style.display = 'none';
+      if(/diff-td/.test(e.target.className) && e.target.getElementsByClassName('tooltip').length) {
+        shown = e.target.getElementsByClassName('tooltip')[0];
+        shown.style.display = 'block';
+      }
+    });
+  </script>
 </body>
 </html>

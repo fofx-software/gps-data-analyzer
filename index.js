@@ -18,22 +18,9 @@ data.forEach(function(row) {
     allStops.push(row.stopName + row.scheduledTime.split(' ')[1]);
 });
 
-function makeDate(datestr) {
-  if(datestr) {
-    var date = datestr.split(' ')[0];
-    var time = datestr.split(' ')[1];
-    var year = parseInt(date.split('/')[2]);
-    var month = parseInt(date.split('/')[0]) - 1;
-    var day = parseInt(date.split('/')[1]);
-    var hour = parseInt(time.split(':')[0]);
-    var minute = parseInt(time.split(':')[1]);
-    return new Date(year, month, day, hour, minute);
-  }
-}
-
 function getMinDiff(date1, date2) {
-  date1 = makeDate(date1);
-  date2 = makeDate(date2);
+  date1 = new Date(date1);
+  date2 = new Date(date2);
   if(date1 instanceof Date && date2 instanceof Date) {
     millis = date1 - date2;
     return millis / 1000 / 60;
