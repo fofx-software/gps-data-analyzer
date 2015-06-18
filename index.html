@@ -2,10 +2,16 @@
 <html>
 <head>
   <style>
+    body {
+      margin: 10px;
+    }
     table {
       border-collapse: collapse;
       margin-left: auto;
       margin-right: auto;
+    }
+    div {
+      overflow-y: auto;
     }
     .border-top {
       border-top: 1px solid black;
@@ -13,11 +19,23 @@
     td {
       position: relative;
     }
+    td:first-child {
+      border-right: 1px solid rgb(200,200,200);
+    }
     tr {
       border-bottom: 1px solid gray;
     }
+    tr:first-child {
+      position: fixed;
+      z-index: 999;
+      background-color: white;
+      top: 10px;
+    }
     .diff-td {
-      width: 10px;
+      min-width: 10px;
+      max-width: 10px;
+      border-right: 1px solid rgb(200,200,200);
+      text-align: center;
     }
     .tooltip {
       position: absolute;
@@ -33,7 +51,7 @@
   </style>
 </head>
 <body>
-  <table id="data-table"></table>
+  <div><table id="data-table"></table></div>
   <script>
     var shown;
     document.addEventListener('mousemove', function(e) {
@@ -43,6 +61,12 @@
         shown.style.display = 'block';
       }
     });
+    document.getElementsByTagName('div')[0].style.height = window.innerHeight - 22 + 'px';
+    var firstTR  = document.getElementsByTagName('tr')[0];
+    var secondTR = document.getElementsByTagName('tr')[1];
+    var firstTD = firstTR.getElementsByTagName('td')[0];
+    var secondTD = secondTR.getElementsByTagName('td')[0];
+    firstTD.style.width = window.getComputedStyle(secondTD).width;
   </script>
 </body>
 </html>

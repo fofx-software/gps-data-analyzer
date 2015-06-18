@@ -3,8 +3,10 @@ var moment = require('moment-timezone');
 var cheerio = require('cheerio');
 
 var routeInfo = {
-  contract: 'fairlakes',
-  sortByRoute: true,
+//  contract: 'fairlakes',
+//  sortByRoute: true,
+  contract: 'mitre',
+  sortByRoute: false,
   stopData: [],
   allStops: [],
   minDiff: 0,
@@ -51,11 +53,23 @@ routeInfo.stopData.forEach(function(stopDescr) {
   }
 });
 
+var minDiffEven = routeInfo.minDiff % 2 ? routeInfo.minDiff - 1 : routeInfo.minDiff;
+var maxDiffEven = routeInfo.maxDiff % 2 ? routeInfo.maxDiff + 1 : routeInfo.maxDiff;
+
 var $ = cheerio.load(fs.readFileSync('./index.html', 'utf-8'));
 var table = $('#data-table');
-var thText = 'Date range: ' + routeInfo.earliestDate.format('M/D/YY') + '-' + routeInfo.latestDate.format('M/D/YY');
-var th = $('<th>').attr('colspan', routeInfo.maxDiff - routeInfo.minDiff + 2).text(thText);
-table.append($('<tr>').append(th));
+var td = $('<td>');
+td.append($('<b>').text(routeInfo.earliestDate.format('M/D/YY') + ' - ' + routeInfo.latestDate.format('M/D/YY')));
+var tr = $('<tr>').append(td);
+for(var diff = minDiffEven; diff <= maxDiffEven; diff += 2) {
+  var sign = diff < 0 ? '-' : diff ? '+' : '';
+  var td = $('<td class="diff-td">').append(sign + '<br>' + Math.abs(diff));
+  if(diff) {
+    td.attr({ style: 'min-width:23px;max-width:23px;', colspan: '2' });
+  }
+  tr.append(td);
+}
+table.append(tr).append(tr.clone());
 
 routeInfo.stopData.forEach(function(stopDescr) {
   var display = function(time) { return time.format('h:mm A'); }
@@ -70,7 +84,7 @@ routeInfo.stopData.forEach(function(stopDescr) {
  
     if(stopDescr.stopName === 'Vienna Metro') tr.addClass('border-top');
 
-    for(var i = routeInfo.minDiff; i < routeInfo.maxDiff; i++) {
+    for(var i = minDiffEven; i <= maxDiffEven; i++) {
       var diffTd = $('<td>').attr({ class: 'diff-td', 'data-diff': i });
       tr.append(diffTd);
     }
@@ -88,7 +102,8 @@ routeInfo.stopData.forEach(function(stopDescr) {
 
     var quant = (toolTip.find('div').length - 1) / (routeInfo.stopData.length / routeInfo.allStops.length);
     diffTd.css('background-color', 'rgba(' +
-      (stopDescr.arriveDiff < 0 ? 0 : 255) + ',0,' +
+      (stopDescr.arriveDiff > 0 ? 255 : 0) + ',' +
+      (stopDescr.arriveDiff ? 0 : 255) + ',' +
       (stopDescr.arriveDiff < 0 ? 255 : 0) + ',' +
       quant + ')'
     );
