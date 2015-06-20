@@ -1,0 +1,432 @@
+﻿Group1,Route_ID,Textbox15,Textbox20,Textbox12,Route_Stop_ID,Textbox17,Textbox25,Texting_Key,textbox5,Ordinal,Vehicle_Name,Vehicle_Arrival_Time_Client,Vehicle_Departure_Time_Client,Scheduled_Departure_Time_Client1,Textbox29,timediff,Textbox31
+06/08,2) Magnolia PM,2.17,73.81%,,Vienna Metro,1,100.00%,,Magnolia PM - Vienna Metro,,,,,6/8/2015 4:50:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,Vienna Metro,1,100.00%,,Magnolia PM - Vienna Metro,,,,,6/8/2015 6:15:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,Vienna Metro,1,100.00%,,Magnolia PM - Vienna Metro,,MAGNOLIA,6/8/2015 7:11:00 PM,6/8/2015 7:18:00 PM,6/8/2015 7:15:00 PM,00:07:00,3,Late
+06/08,2) Magnolia PM,2.17,73.81%,,Windsor Apts,7,33.33%,,Magnolia PM - Windsor Apts,,MAGNOLIA,6/8/2015 5:21:00 PM,6/8/2015 5:21:00 PM,6/8/2015 5:08:00 PM,00:00:00,13,Late
+06/08,2) Magnolia PM,2.17,73.81%,,Windsor Apts,7,33.33%,,Magnolia PM - Windsor Apts,,MAGNOLIA,6/8/2015 6:39:00 PM,6/8/2015 6:39:00 PM,6/8/2015 6:33:00 PM,00:00:00,6,Late
+06/08,2) Magnolia PM,2.17,73.81%,,Windsor Apts,7,33.33%,,Magnolia PM - Windsor Apts,,MAGNOLIA,6/8/2015 7:32:00 PM,6/8/2015 7:32:00 PM,6/8/2015 7:30:00 PM,00:00:00,2,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,Camden Apts,2,66.67%,,Magnolia PM - Camden Apts,,,,,6/8/2015 5:09:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,Camden Apts,2,66.67%,,Magnolia PM - Camden Apts,,MAGNOLIA,6/8/2015 6:40:00 PM,6/8/2015 6:40:00 PM,6/8/2015 6:34:00 PM,00:00:00,6,Late
+06/08,2) Magnolia PM,2.17,73.81%,,Camden Apts,2,66.67%,,Magnolia PM - Camden Apts,,,,,6/8/2015 7:31:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,The Gates,-.33,100.00%,,Magnolia PM - The Gates,,,,,6/8/2015 5:12:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,The Gates,-.33,100.00%,,Magnolia PM - The Gates,,,,,6/8/2015 6:37:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,The Gates,-.33,100.00%,,Magnolia PM - The Gates,,MAGNOLIA,6/8/2015 7:33:00 PM,6/8/2015 7:33:00 PM,6/8/2015 7:34:00 PM,00:00:00,-1,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,Eaves Apts,,100.00%,,Magnolia PM - Eaves Apts,,,,,6/8/2015 5:15:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,Eaves Apts,,100.00%,,Magnolia PM - Eaves Apts,,,,,6/8/2015 6:40:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,Eaves Apts,,100.00%,,Magnolia PM - Eaves Apts,,,,,6/8/2015 7:37:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,Hyatt,2.67,66.67%,,Magnolia PM - Hyatt,,,,,6/8/2015 5:18:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,Hyatt,2.67,66.67%,,Magnolia PM - Hyatt,,MAGNOLIA,6/8/2015 6:51:00 PM,6/8/2015 6:51:00 PM,6/8/2015 6:43:00 PM,00:00:00,8,Late
+06/08,2) Magnolia PM,2.17,73.81%,,Hyatt,2.67,66.67%,,Magnolia PM - Hyatt,,,,,6/8/2015 7:40:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,East Market,3,66.67%,,Magnolia PM - East Market,,,,,6/8/2015 5:21:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,East Market,3,66.67%,,Magnolia PM - East Market,,MAGNOLIA,6/8/2015 6:55:00 PM,6/8/2015 6:55:00 PM,6/8/2015 6:46:00 PM,00:00:00,9,Late
+06/08,2) Magnolia PM,2.17,73.81%,,East Market,3,66.67%,,Magnolia PM - East Market,,,,,6/8/2015 7:43:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,The Arbors,3,66.67%,,Magnolia PM - The Arbors,,,,,6/8/2015 5:24:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,The Arbors,3,66.67%,,Magnolia PM - The Arbors,,MAGNOLIA,6/8/2015 6:57:00 PM,6/8/2015 6:58:00 PM,6/8/2015 6:49:00 PM,00:01:00,9,Late
+06/08,2) Magnolia PM,2.17,73.81%,,The Arbors,3,66.67%,,Magnolia PM - The Arbors,,,,,6/8/2015 7:46:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,Northrup Grumman,.5,100.00%,,Magnolia PM - Northrup Grumman,,,,,6/8/2015 4:15:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,Northrup Grumman,.5,100.00%,,Magnolia PM - Northrup Grumman,,MAGNOLIA,6/8/2015 5:38:00 PM,6/8/2015 5:41:00 PM,6/8/2015 5:40:00 PM,00:03:00,1,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,Parkway Woods,6.5,50.00%,,Magnolia PM - Parkway Woods,,,,,6/8/2015 4:18:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,Parkway Woods,6.5,50.00%,,Magnolia PM - Parkway Woods,,MAGNOLIA,6/8/2015 5:56:00 PM,6/8/2015 5:56:00 PM,6/8/2015 5:43:00 PM,00:00:00,13,Late
+06/08,2) Magnolia PM,2.17,73.81%,,SRA,,100.00%,,Magnolia PM - SRA,,,,,6/8/2015 4:21:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,SRA,,100.00%,,Magnolia PM - SRA,,,,,6/8/2015 5:46:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,Ellucian AFCEA,3,50.00%,,Magnolia PM - Ellucian AFCEA,,,,,6/8/2015 4:22:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,Ellucian AFCEA,3,50.00%,,Magnolia PM - Ellucian AFCEA,,MAGNOLIA,6/8/2015 5:53:00 PM,6/8/2015 5:53:00 PM,6/8/2015 5:47:00 PM,00:00:00,6,Late
+06/08,2) Magnolia PM,2.17,73.81%,,Fair Lakes II,,100.00%,,Magnolia PM - Fair Lakes II,,,,,6/8/2015 4:24:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,Fair Lakes II,,100.00%,,Magnolia PM - Fair Lakes II,,,,,6/8/2015 5:49:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,Fair Lakes I,-1,100.00%,,Magnolia PM - Fair Lakes I,,,,,6/8/2015 4:25:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,Fair Lakes I,-1,100.00%,,Magnolia PM - Fair Lakes I,,MAGNOLIA,6/8/2015 5:48:00 PM,6/8/2015 5:48:00 PM,6/8/2015 5:50:00 PM,00:00:00,-2,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,Avaya,3,50.00%,,Magnolia PM - Avaya,,MAGNOLIA,6/8/2015 4:28:00 PM,6/8/2015 4:28:00 PM,6/8/2015 4:28:00 PM,00:00:00,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,Avaya,3,50.00%,,Magnolia PM - Avaya,,MAGNOLIA,6/8/2015 5:59:00 PM,6/8/2015 5:59:00 PM,6/8/2015 5:53:00 PM,00:00:00,6,Late
+06/08,2) Magnolia PM,2.17,73.81%,,Argon Plaza,3,50.00%,,Magnolia PM - Argon Plaza,,,,,6/8/2015 4:30:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,Argon Plaza,3,50.00%,,Magnolia PM - Argon Plaza,,MAGNOLIA,6/8/2015 6:01:00 PM,6/8/2015 6:01:00 PM,6/8/2015 5:55:00 PM,00:00:00,6,Late
+06/08,2) Magnolia PM,2.17,73.81%,,CGI,3,50.00%,,Magnolia PM - CGI,,,,,6/8/2015 4:31:00 PM,0,0,On Time
+06/08,2) Magnolia PM,2.17,73.81%,,CGI,3,50.00%,,Magnolia PM - CGI,,MAGNOLIA,6/8/2015 6:02:00 PM,6/8/2015 6:02:00 PM,6/8/2015 5:56:00 PM,00:00:00,6,Late
+06/08,4) Cypress PM,1.98,86.36%,,Vienna Metro,1.33,66.67%,,Cypress PM - Vienna Metro,,CYPRESS,6/8/2015 4:05:00 PM,6/8/2015 4:06:00 PM,6/8/2015 4:05:00 PM,00:01:00,1,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Vienna Metro,1.33,66.67%,,Cypress PM - Vienna Metro,,CYPRESS,6/8/2015 5:35:00 PM,6/8/2015 5:36:00 PM,6/8/2015 5:30:00 PM,00:01:00,6,Late
+06/08,4) Cypress PM,1.98,86.36%,,Vienna Metro,1.33,66.67%,,Cypress PM - Vienna Metro,,CYPRESS,6/8/2015 6:51:00 PM,6/8/2015 6:52:00 PM,6/8/2015 6:55:00 PM,00:01:00,-3,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Windsor Apts,6,50.00%,,Cypress PM - Windsor Apts,,CYPRESS,6/8/2015 4:23:00 PM,6/8/2015 4:23:00 PM,6/8/2015 4:23:00 PM,00:00:00,0,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Windsor Apts,6,50.00%,,Cypress PM - Windsor Apts,,CYPRESS,6/8/2015 6:00:00 PM,6/8/2015 6:00:00 PM,6/8/2015 5:48:00 PM,00:00:00,12,Late
+06/08,4) Cypress PM,1.98,86.36%,,Camden Apts,5.5,50.00%,,Cypress PM - Camden Apts,,CYPRESS,6/8/2015 4:24:00 PM,6/8/2015 4:24:00 PM,6/8/2015 4:24:00 PM,00:00:00,0,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Camden Apts,5.5,50.00%,,Cypress PM - Camden Apts,,CYPRESS,6/8/2015 6:00:00 PM,6/8/2015 6:00:00 PM,6/8/2015 5:49:00 PM,00:00:00,11,Late
+06/08,4) Cypress PM,1.98,86.36%,,The Gates,,100.00%,,Cypress PM - The Gates,,,,,6/8/2015 4:27:00 PM,0,0,On Time
+06/08,4) Cypress PM,1.98,86.36%,,The Gates,,100.00%,,Cypress PM - The Gates,,,,,6/8/2015 5:52:00 PM,0,0,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Eaves Apts,7.5,50.00%,,Cypress PM - Eaves Apts,,,,,6/8/2015 4:30:00 PM,0,0,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Eaves Apts,7.5,50.00%,,Cypress PM - Eaves Apts,,CYPRESS,6/8/2015 6:09:00 PM,6/8/2015 6:10:00 PM,6/8/2015 5:55:00 PM,00:01:00,15,Late
+06/08,4) Cypress PM,1.98,86.36%,,Hyatt,-1.5,100.00%,,Cypress PM - Hyatt,,CYPRESS,6/8/2015 4:30:00 PM,6/8/2015 4:30:00 PM,6/8/2015 4:33:00 PM,00:00:00,-3,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Hyatt,-1.5,100.00%,,Cypress PM - Hyatt,,,,,6/8/2015 5:58:00 PM,0,0,On Time
+06/08,4) Cypress PM,1.98,86.36%,,East Market,7,50.00%,,Cypress PM - East Market,,CYPRESS,6/8/2015 4:34:00 PM,6/8/2015 4:35:00 PM,6/8/2015 4:36:00 PM,00:01:00,-1,On Time
+06/08,4) Cypress PM,1.98,86.36%,,East Market,7,50.00%,,Cypress PM - East Market,,CYPRESS,6/8/2015 6:13:00 PM,6/8/2015 6:16:00 PM,6/8/2015 6:01:00 PM,00:03:00,15,Late
+06/08,4) Cypress PM,1.98,86.36%,,The Arbors,7,50.00%,,Cypress PM - The Arbors,,,,,6/8/2015 4:39:00 PM,0,0,On Time
+06/08,4) Cypress PM,1.98,86.36%,,The Arbors,7,50.00%,,Cypress PM - The Arbors,,CYPRESS,6/8/2015 6:17:00 PM,6/8/2015 6:18:00 PM,6/8/2015 6:04:00 PM,00:01:00,14,Late
+06/08,4) Cypress PM,1.98,86.36%,,Northrup Grumman,1.33,100.00%,,Cypress PM - Northrup Grumman,,CYPRESS,6/8/2015 3:31:00 PM,6/8/2015 3:31:00 PM,6/8/2015 3:30:00 PM,00:00:00,1,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Northrup Grumman,1.33,100.00%,,Cypress PM - Northrup Grumman,,CYPRESS,6/8/2015 4:56:00 PM,6/8/2015 4:56:00 PM,6/8/2015 4:55:00 PM,00:00:00,1,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Northrup Grumman,1.33,100.00%,,Cypress PM - Northrup Grumman,,CYPRESS,6/8/2015 6:22:00 PM,6/8/2015 6:22:00 PM,6/8/2015 6:20:00 PM,00:00:00,2,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Parkway Woods,.33,100.00%,,Cypress PM - Parkway Woods,,,,,6/8/2015 3:33:00 PM,0,0,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Parkway Woods,.33,100.00%,,Cypress PM - Parkway Woods,,CYPRESS,6/8/2015 4:58:00 PM,6/8/2015 4:58:00 PM,6/8/2015 4:58:00 PM,00:00:00,0,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Parkway Woods,.33,100.00%,,Cypress PM - Parkway Woods,,CYPRESS,6/8/2015 6:24:00 PM,6/8/2015 6:24:00 PM,6/8/2015 6:23:00 PM,00:00:00,1,On Time
+06/08,4) Cypress PM,1.98,86.36%,,SRA,1,100.00%,,Cypress PM - SRA,,CYPRESS,6/8/2015 3:37:00 PM,6/8/2015 3:37:00 PM,6/8/2015 3:36:00 PM,00:00:00,1,On Time
+06/08,4) Cypress PM,1.98,86.36%,,SRA,1,100.00%,,Cypress PM - SRA,,CYPRESS,6/8/2015 5:02:00 PM,6/8/2015 5:02:00 PM,6/8/2015 5:01:00 PM,00:00:00,1,On Time
+06/08,4) Cypress PM,1.98,86.36%,,SRA,1,100.00%,,Cypress PM - SRA,,CYPRESS,6/8/2015 6:27:00 PM,6/8/2015 6:27:00 PM,6/8/2015 6:26:00 PM,00:00:00,1,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Ellucian AFCEA,1,100.00%,,Cypress PM - Ellucian AFCEA,,CYPRESS,6/8/2015 3:38:00 PM,6/8/2015 3:38:00 PM,6/8/2015 3:37:00 PM,00:00:00,1,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Ellucian AFCEA,1,100.00%,,Cypress PM - Ellucian AFCEA,,CYPRESS,6/8/2015 5:02:00 PM,6/8/2015 5:03:00 PM,6/8/2015 5:02:00 PM,00:01:00,1,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Ellucian AFCEA,1,100.00%,,Cypress PM - Ellucian AFCEA,,CYPRESS,6/8/2015 6:28:00 PM,6/8/2015 6:28:00 PM,6/8/2015 6:27:00 PM,00:00:00,1,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Fair Lakes II,.67,100.00%,,Cypress PM - Fair Lakes II,,CYPRESS,6/8/2015 3:39:00 PM,6/8/2015 3:40:00 PM,6/8/2015 3:39:00 PM,00:01:00,1,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Fair Lakes II,.67,100.00%,,Cypress PM - Fair Lakes II,,CYPRESS,6/8/2015 5:04:00 PM,6/8/2015 5:04:00 PM,6/8/2015 5:04:00 PM,00:00:00,0,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Fair Lakes II,.67,100.00%,,Cypress PM - Fair Lakes II,,CYPRESS,6/8/2015 6:29:00 PM,6/8/2015 6:30:00 PM,6/8/2015 6:29:00 PM,00:01:00,1,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Fair Lakes I,1,100.00%,,Cypress PM - Fair Lakes I,,CYPRESS,6/8/2015 3:40:00 PM,6/8/2015 3:41:00 PM,6/8/2015 3:40:00 PM,00:01:00,1,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Fair Lakes I,1,100.00%,,Cypress PM - Fair Lakes I,,CYPRESS,6/8/2015 5:05:00 PM,6/8/2015 5:06:00 PM,6/8/2015 5:05:00 PM,00:01:00,1,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Fair Lakes I,1,100.00%,,Cypress PM - Fair Lakes I,,CYPRESS,6/8/2015 6:30:00 PM,6/8/2015 6:31:00 PM,6/8/2015 6:30:00 PM,00:01:00,1,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Avaya,.33,100.00%,,Cypress PM - Avaya,,CYPRESS,6/8/2015 3:43:00 PM,6/8/2015 3:43:00 PM,6/8/2015 3:43:00 PM,00:00:00,0,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Avaya,.33,100.00%,,Cypress PM - Avaya,,CYPRESS,6/8/2015 5:07:00 PM,6/8/2015 5:08:00 PM,6/8/2015 5:08:00 PM,00:01:00,0,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Avaya,.33,100.00%,,Cypress PM - Avaya,,CYPRESS,6/8/2015 6:33:00 PM,6/8/2015 6:34:00 PM,6/8/2015 6:33:00 PM,00:01:00,1,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Argon Plaza,,100.00%,,Cypress PM - Argon Plaza,,CYPRESS,6/8/2015 3:45:00 PM,6/8/2015 3:45:00 PM,6/8/2015 3:45:00 PM,00:00:00,0,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Argon Plaza,,100.00%,,Cypress PM - Argon Plaza,,CYPRESS,6/8/2015 5:09:00 PM,6/8/2015 5:10:00 PM,6/8/2015 5:10:00 PM,00:01:00,0,On Time
+06/08,4) Cypress PM,1.98,86.36%,,Argon Plaza,,100.00%,,Cypress PM - Argon Plaza,,CYPRESS,6/8/2015 6:34:00 PM,6/8/2015 6:35:00 PM,6/8/2015 6:35:00 PM,00:01:00,0,On Time
+06/08,4) Cypress PM,1.98,86.36%,,CGI,1,100.00%,,Cypress PM - CGI,,CYPRESS,6/8/2015 3:46:00 PM,6/8/2015 3:47:00 PM,6/8/2015 3:46:00 PM,00:01:00,1,On Time
+06/08,4) Cypress PM,1.98,86.36%,,CGI,1,100.00%,,Cypress PM - CGI,,CYPRESS,6/8/2015 5:11:00 PM,6/8/2015 5:12:00 PM,6/8/2015 5:11:00 PM,00:01:00,1,On Time
+06/08,4) Cypress PM,1.98,86.36%,,CGI,1,100.00%,,Cypress PM - CGI,,CYPRESS,6/8/2015 6:36:00 PM,6/8/2015 6:37:00 PM,6/8/2015 6:36:00 PM,00:01:00,1,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,Vienna Metro,4.67,33.33%,,Magnolia PM - Vienna Metro,,MAGNOLIA,6/9/2015 4:46:00 PM,6/9/2015 4:55:00 PM,6/9/2015 4:50:00 PM,00:09:00,5,Late
+06/09,2) Magnolia PM,2.21,83.33%,,Vienna Metro,4.67,33.33%,,Magnolia PM - Vienna Metro,,MAGNOLIA,6/9/2015 6:16:00 PM,6/9/2015 6:20:00 PM,6/9/2015 6:15:00 PM,00:04:00,5,Late
+06/09,2) Magnolia PM,2.21,83.33%,,Vienna Metro,4.67,33.33%,,Magnolia PM - Vienna Metro,,MAGNOLIA,6/9/2015 7:10:00 PM,6/9/2015 7:19:00 PM,6/9/2015 7:15:00 PM,00:09:00,4,Late
+06/09,2) Magnolia PM,2.21,83.33%,,Windsor Apts,4.33,66.67%,,Magnolia PM - Windsor Apts,,MAGNOLIA,6/9/2015 5:12:00 PM,6/9/2015 5:12:00 PM,6/9/2015 5:08:00 PM,00:00:00,4,Late
+06/09,2) Magnolia PM,2.21,83.33%,,Windsor Apts,4.33,66.67%,,Magnolia PM - Windsor Apts,,MAGNOLIA,6/9/2015 6:41:00 PM,6/9/2015 6:41:00 PM,6/9/2015 6:33:00 PM,00:00:00,8,Late
+06/09,2) Magnolia PM,2.21,83.33%,,Windsor Apts,4.33,66.67%,,Magnolia PM - Windsor Apts,,MAGNOLIA,6/9/2015 7:31:00 PM,6/9/2015 7:31:00 PM,6/9/2015 7:30:00 PM,00:00:00,1,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,Camden Apts,,100.00%,,Magnolia PM - Camden Apts,,,,,6/9/2015 5:09:00 PM,0,0,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,Camden Apts,,100.00%,,Magnolia PM - Camden Apts,,,,,6/9/2015 6:34:00 PM,0,0,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,Camden Apts,,100.00%,,Magnolia PM - Camden Apts,,,,,6/9/2015 7:31:00 PM,0,0,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,The Gates,13,33.33%,,Magnolia PM - The Gates,,MAGNOLIA,6/9/2015 5:31:00 PM,6/9/2015 5:46:00 PM,6/9/2015 5:12:00 PM,00:15:00,34,Late
+06/09,2) Magnolia PM,2.21,83.33%,,The Gates,13,33.33%,,Magnolia PM - The Gates,,MAGNOLIA,6/9/2015 6:42:00 PM,6/9/2015 6:42:00 PM,6/9/2015 6:37:00 PM,00:00:00,5,Late
+06/09,2) Magnolia PM,2.21,83.33%,,The Gates,13,33.33%,,Magnolia PM - The Gates,,,,,6/9/2015 7:34:00 PM,0,0,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,Eaves Apts,,100.00%,,Magnolia PM - Eaves Apts,,,,,6/9/2015 5:15:00 PM,0,0,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,Eaves Apts,,100.00%,,Magnolia PM - Eaves Apts,,,,,6/9/2015 6:40:00 PM,0,0,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,Eaves Apts,,100.00%,,Magnolia PM - Eaves Apts,,,,,6/9/2015 7:37:00 PM,0,0,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,Hyatt,1.33,100.00%,,Magnolia PM - Hyatt,,MAGNOLIA,6/9/2015 5:22:00 PM,6/9/2015 5:22:00 PM,6/9/2015 5:18:00 PM,00:00:00,4,Late
+06/09,2) Magnolia PM,2.21,83.33%,,Hyatt,1.33,100.00%,,Magnolia PM - Hyatt,,,,,6/9/2015 6:43:00 PM,0,0,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,Hyatt,1.33,100.00%,,Magnolia PM - Hyatt,,,,,6/9/2015 7:40:00 PM,0,0,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,East Market,3.33,66.67%,,Magnolia PM - East Market,,MAGNOLIA,6/9/2015 5:25:00 PM,6/9/2015 5:25:00 PM,6/9/2015 5:21:00 PM,00:00:00,4,Late
+06/09,2) Magnolia PM,2.21,83.33%,,East Market,3.33,66.67%,,Magnolia PM - East Market,,MAGNOLIA,6/9/2015 6:52:00 PM,6/9/2015 6:52:00 PM,6/9/2015 6:46:00 PM,00:00:00,6,Late
+06/09,2) Magnolia PM,2.21,83.33%,,East Market,3.33,66.67%,,Magnolia PM - East Market,,MAGNOLIA,6/9/2015 7:41:00 PM,6/9/2015 7:43:00 PM,6/9/2015 7:43:00 PM,00:02:00,0,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,The Arbors,2.67,66.67%,,Magnolia PM - The Arbors,,MAGNOLIA,6/9/2015 5:27:00 PM,6/9/2015 5:27:00 PM,6/9/2015 5:24:00 PM,00:00:00,3,Late
+06/09,2) Magnolia PM,2.21,83.33%,,The Arbors,2.67,66.67%,,Magnolia PM - The Arbors,,MAGNOLIA,6/9/2015 6:54:00 PM,6/9/2015 6:56:00 PM,6/9/2015 6:49:00 PM,00:02:00,7,Late
+06/09,2) Magnolia PM,2.21,83.33%,,The Arbors,2.67,66.67%,,Magnolia PM - The Arbors,,MAGNOLIA,6/9/2015 7:44:00 PM,6/9/2015 7:44:00 PM,6/9/2015 7:46:00 PM,00:00:00,-2,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,Northrup Grumman,.5,100.00%,,Magnolia PM - Northrup Grumman,,MAGNOLIA,6/9/2015 4:12:00 PM,6/9/2015 4:16:00 PM,6/9/2015 4:15:00 PM,00:04:00,1,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,Northrup Grumman,.5,100.00%,,Magnolia PM - Northrup Grumman,,,,,6/9/2015 5:40:00 PM,0,0,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,Parkway Woods,,100.00%,,Magnolia PM - Parkway Woods,,,,,6/9/2015 4:18:00 PM,0,0,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,Parkway Woods,,100.00%,,Magnolia PM - Parkway Woods,,,,,6/9/2015 5:43:00 PM,0,0,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,SRA,,100.00%,,Magnolia PM - SRA,,,,,6/9/2015 4:21:00 PM,0,0,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,SRA,,100.00%,,Magnolia PM - SRA,,,,,6/9/2015 5:46:00 PM,0,0,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,Ellucian AFCEA,1,100.00%,,Magnolia PM - Ellucian AFCEA,,,,,6/9/2015 4:22:00 PM,0,0,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,Ellucian AFCEA,1,100.00%,,Magnolia PM - Ellucian AFCEA,,MAGNOLIA,6/9/2015 5:49:00 PM,6/9/2015 5:49:00 PM,6/9/2015 5:47:00 PM,00:00:00,2,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,Fair Lakes II,1,100.00%,,Magnolia PM - Fair Lakes II,,,,,6/9/2015 4:24:00 PM,0,0,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,Fair Lakes II,1,100.00%,,Magnolia PM - Fair Lakes II,,MAGNOLIA,6/9/2015 5:51:00 PM,6/9/2015 5:51:00 PM,6/9/2015 5:49:00 PM,00:00:00,2,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,Fair Lakes I,,100.00%,,Magnolia PM - Fair Lakes I,,,,,6/9/2015 4:25:00 PM,0,0,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,Fair Lakes I,,100.00%,,Magnolia PM - Fair Lakes I,,,,,6/9/2015 5:50:00 PM,0,0,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,Avaya,,100.00%,,Magnolia PM - Avaya,,,,,6/9/2015 4:28:00 PM,0,0,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,Avaya,,100.00%,,Magnolia PM - Avaya,,,,,6/9/2015 5:53:00 PM,0,0,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,Argon Plaza,,100.00%,,Magnolia PM - Argon Plaza,,,,,6/9/2015 4:30:00 PM,0,0,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,Argon Plaza,,100.00%,,Magnolia PM - Argon Plaza,,,,,6/9/2015 5:55:00 PM,0,0,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,CGI,,100.00%,,Magnolia PM - CGI,,,,,6/9/2015 4:31:00 PM,0,0,On Time
+06/09,2) Magnolia PM,2.21,83.33%,,CGI,,100.00%,,Magnolia PM - CGI,,MAGNOLIA,6/9/2015 5:56:00 PM,6/9/2015 5:56:00 PM,6/9/2015 5:56:00 PM,00:00:00,0,On Time
+06/09,4) Cypress PM,.45,97.73%,,Vienna Metro,,100.00%,,Cypress PM - Vienna Metro,,CYPRESS,6/9/2015 4:02:00 PM,6/9/2015 4:05:00 PM,6/9/2015 4:05:00 PM,00:03:00,0,On Time
+06/09,4) Cypress PM,.45,97.73%,,Vienna Metro,,100.00%,,Cypress PM - Vienna Metro,,CYPRESS,6/9/2015 5:29:00 PM,6/9/2015 5:31:00 PM,6/9/2015 5:30:00 PM,00:02:00,1,On Time
+06/09,4) Cypress PM,.45,97.73%,,Vienna Metro,,100.00%,,Cypress PM - Vienna Metro,,CYPRESS,6/9/2015 6:53:00 PM,6/9/2015 6:54:00 PM,6/9/2015 6:55:00 PM,00:01:00,-1,On Time
+06/09,4) Cypress PM,.45,97.73%,,Windsor Apts,.5,100.00%,,Cypress PM - Windsor Apts,,CYPRESS,6/9/2015 4:21:00 PM,6/9/2015 4:21:00 PM,6/9/2015 4:23:00 PM,00:00:00,-2,On Time
+06/09,4) Cypress PM,.45,97.73%,,Windsor Apts,.5,100.00%,,Cypress PM - Windsor Apts,,CYPRESS,6/9/2015 5:51:00 PM,6/9/2015 5:51:00 PM,6/9/2015 5:48:00 PM,00:00:00,3,Late
+06/09,4) Cypress PM,.45,97.73%,,Camden Apts,-.5,100.00%,,Cypress PM - Camden Apts,,CYPRESS,6/9/2015 4:21:00 PM,6/9/2015 4:21:00 PM,6/9/2015 4:24:00 PM,00:00:00,-3,On Time
+06/09,4) Cypress PM,.45,97.73%,,Camden Apts,-.5,100.00%,,Cypress PM - Camden Apts,,CYPRESS,6/9/2015 5:51:00 PM,6/9/2015 5:51:00 PM,6/9/2015 5:49:00 PM,00:00:00,2,On Time
+06/09,4) Cypress PM,.45,97.73%,,The Gates,,100.00%,,Cypress PM - The Gates,,,,,6/9/2015 4:27:00 PM,0,0,On Time
+06/09,4) Cypress PM,.45,97.73%,,The Gates,,100.00%,,Cypress PM - The Gates,,,,,6/9/2015 5:52:00 PM,0,0,On Time
+06/09,4) Cypress PM,.45,97.73%,,Eaves Apts,2,100.00%,,Cypress PM - Eaves Apts,,,,,6/9/2015 4:30:00 PM,0,0,On Time
+06/09,4) Cypress PM,.45,97.73%,,Eaves Apts,2,100.00%,,Cypress PM - Eaves Apts,,CYPRESS,6/9/2015 5:58:00 PM,6/9/2015 5:59:00 PM,6/9/2015 5:55:00 PM,00:01:00,4,Late
+06/09,4) Cypress PM,.45,97.73%,,Hyatt,,100.00%,,Cypress PM - Hyatt,,,,,6/9/2015 4:33:00 PM,0,0,On Time
+06/09,4) Cypress PM,.45,97.73%,,Hyatt,,100.00%,,Cypress PM - Hyatt,,,,,6/9/2015 5:58:00 PM,0,0,On Time
+06/09,4) Cypress PM,.45,97.73%,,East Market,.5,50.00%,,Cypress PM - East Market,,CYPRESS,6/9/2015 4:32:00 PM,6/9/2015 4:32:00 PM,6/9/2015 4:36:00 PM,00:00:00,-4,On Time
+06/09,4) Cypress PM,.45,97.73%,,East Market,.5,50.00%,,Cypress PM - East Market,,CYPRESS,6/9/2015 6:05:00 PM,6/9/2015 6:06:00 PM,6/9/2015 6:01:00 PM,00:01:00,5,Late
+06/09,4) Cypress PM,.45,97.73%,,The Arbors,-2,100.00%,,Cypress PM - The Arbors,,CYPRESS,6/9/2015 4:32:00 PM,6/9/2015 4:32:00 PM,6/9/2015 4:39:00 PM,00:00:00,-7,On Time
+06/09,4) Cypress PM,.45,97.73%,,The Arbors,-2,100.00%,,Cypress PM - The Arbors,,CYPRESS,6/9/2015 6:07:00 PM,6/9/2015 6:07:00 PM,6/9/2015 6:04:00 PM,00:00:00,3,Late
+06/09,4) Cypress PM,.45,97.73%,,Northrup Grumman,1,100.00%,,Cypress PM - Northrup Grumman,,CYPRESS,6/9/2015 3:17:00 PM,6/9/2015 3:31:00 PM,6/9/2015 3:30:00 PM,00:14:00,1,On Time
+06/09,4) Cypress PM,.45,97.73%,,Northrup Grumman,1,100.00%,,Cypress PM - Northrup Grumman,,CYPRESS,6/9/2015 4:56:00 PM,6/9/2015 4:56:00 PM,6/9/2015 4:55:00 PM,00:00:00,1,On Time
+06/09,4) Cypress PM,.45,97.73%,,Northrup Grumman,1,100.00%,,Cypress PM - Northrup Grumman,,CYPRESS,6/9/2015 6:11:00 PM,6/9/2015 6:21:00 PM,6/9/2015 6:20:00 PM,00:10:00,1,On Time
+06/09,4) Cypress PM,.45,97.73%,,Parkway Woods,,100.00%,,Cypress PM - Parkway Woods,,,,,6/9/2015 3:33:00 PM,0,0,On Time
+06/09,4) Cypress PM,.45,97.73%,,Parkway Woods,,100.00%,,Cypress PM - Parkway Woods,,CYPRESS,6/9/2015 4:58:00 PM,6/9/2015 4:58:00 PM,6/9/2015 4:58:00 PM,00:00:00,0,On Time
+06/09,4) Cypress PM,.45,97.73%,,Parkway Woods,,100.00%,,Cypress PM - Parkway Woods,,CYPRESS,6/9/2015 6:23:00 PM,6/9/2015 6:23:00 PM,6/9/2015 6:23:00 PM,00:00:00,0,On Time
+06/09,4) Cypress PM,.45,97.73%,,SRA,1,100.00%,,Cypress PM - SRA,,CYPRESS,6/9/2015 3:37:00 PM,6/9/2015 3:37:00 PM,6/9/2015 3:36:00 PM,00:00:00,1,On Time
+06/09,4) Cypress PM,.45,97.73%,,SRA,1,100.00%,,Cypress PM - SRA,,CYPRESS,6/9/2015 5:02:00 PM,6/9/2015 5:02:00 PM,6/9/2015 5:01:00 PM,00:00:00,1,On Time
+06/09,4) Cypress PM,.45,97.73%,,SRA,1,100.00%,,Cypress PM - SRA,,CYPRESS,6/9/2015 6:26:00 PM,6/9/2015 6:27:00 PM,6/9/2015 6:26:00 PM,00:01:00,1,On Time
+06/09,4) Cypress PM,.45,97.73%,,Ellucian AFCEA,.67,100.00%,,Cypress PM - Ellucian AFCEA,,CYPRESS,6/9/2015 3:37:00 PM,6/9/2015 3:38:00 PM,6/9/2015 3:37:00 PM,00:01:00,1,On Time
+06/09,4) Cypress PM,.45,97.73%,,Ellucian AFCEA,.67,100.00%,,Cypress PM - Ellucian AFCEA,,CYPRESS,6/9/2015 5:03:00 PM,6/9/2015 5:03:00 PM,6/9/2015 5:02:00 PM,00:00:00,1,On Time
+06/09,4) Cypress PM,.45,97.73%,,Ellucian AFCEA,.67,100.00%,,Cypress PM - Ellucian AFCEA,,CYPRESS,6/9/2015 6:27:00 PM,6/9/2015 6:27:00 PM,6/9/2015 6:27:00 PM,00:00:00,0,On Time
+06/09,4) Cypress PM,.45,97.73%,,Fair Lakes II,.67,100.00%,,Cypress PM - Fair Lakes II,,CYPRESS,6/9/2015 3:39:00 PM,6/9/2015 3:39:00 PM,6/9/2015 3:39:00 PM,00:00:00,0,On Time
+06/09,4) Cypress PM,.45,97.73%,,Fair Lakes II,.67,100.00%,,Cypress PM - Fair Lakes II,,CYPRESS,6/9/2015 5:05:00 PM,6/9/2015 5:05:00 PM,6/9/2015 5:04:00 PM,00:00:00,1,On Time
+06/09,4) Cypress PM,.45,97.73%,,Fair Lakes II,.67,100.00%,,Cypress PM - Fair Lakes II,,CYPRESS,6/9/2015 6:30:00 PM,6/9/2015 6:30:00 PM,6/9/2015 6:29:00 PM,00:00:00,1,On Time
+06/09,4) Cypress PM,.45,97.73%,,Fair Lakes I,1.33,100.00%,,Cypress PM - Fair Lakes I,,CYPRESS,6/9/2015 3:40:00 PM,6/9/2015 3:40:00 PM,6/9/2015 3:40:00 PM,00:00:00,0,On Time
+06/09,4) Cypress PM,.45,97.73%,,Fair Lakes I,1.33,100.00%,,Cypress PM - Fair Lakes I,,CYPRESS,6/9/2015 5:07:00 PM,6/9/2015 5:07:00 PM,6/9/2015 5:05:00 PM,00:00:00,2,On Time
+06/09,4) Cypress PM,.45,97.73%,,Fair Lakes I,1.33,100.00%,,Cypress PM - Fair Lakes I,,CYPRESS,6/9/2015 6:31:00 PM,6/9/2015 6:32:00 PM,6/9/2015 6:30:00 PM,00:01:00,2,On Time
+06/09,4) Cypress PM,.45,97.73%,,Avaya,.67,100.00%,,Cypress PM - Avaya,,CYPRESS,6/9/2015 3:41:00 PM,6/9/2015 3:43:00 PM,6/9/2015 3:43:00 PM,00:02:00,0,On Time
+06/09,4) Cypress PM,.45,97.73%,,Avaya,.67,100.00%,,Cypress PM - Avaya,,CYPRESS,6/9/2015 5:09:00 PM,6/9/2015 5:09:00 PM,6/9/2015 5:08:00 PM,00:00:00,1,On Time
+06/09,4) Cypress PM,.45,97.73%,,Avaya,.67,100.00%,,Cypress PM - Avaya,,CYPRESS,6/9/2015 6:33:00 PM,6/9/2015 6:34:00 PM,6/9/2015 6:33:00 PM,00:01:00,1,On Time
+06/09,4) Cypress PM,.45,97.73%,,Argon Plaza,,100.00%,,Cypress PM - Argon Plaza,,CYPRESS,6/9/2015 3:45:00 PM,6/9/2015 3:45:00 PM,6/9/2015 3:45:00 PM,00:00:00,0,On Time
+06/09,4) Cypress PM,.45,97.73%,,Argon Plaza,,100.00%,,Cypress PM - Argon Plaza,,CYPRESS,6/9/2015 5:10:00 PM,6/9/2015 5:10:00 PM,6/9/2015 5:10:00 PM,00:00:00,0,On Time
+06/09,4) Cypress PM,.45,97.73%,,Argon Plaza,,100.00%,,Cypress PM - Argon Plaza,,CYPRESS,6/9/2015 6:35:00 PM,6/9/2015 6:35:00 PM,6/9/2015 6:35:00 PM,00:00:00,0,On Time
+06/09,4) Cypress PM,.45,97.73%,,CGI,1,100.00%,,Cypress PM - CGI,,CYPRESS,6/9/2015 3:46:00 PM,6/9/2015 3:47:00 PM,6/9/2015 3:46:00 PM,00:01:00,1,On Time
+06/09,4) Cypress PM,.45,97.73%,,CGI,1,100.00%,,Cypress PM - CGI,,CYPRESS,6/9/2015 5:11:00 PM,6/9/2015 5:12:00 PM,6/9/2015 5:11:00 PM,00:01:00,1,On Time
+06/09,4) Cypress PM,.45,97.73%,,CGI,1,100.00%,,Cypress PM - CGI,,CYPRESS,6/9/2015 6:36:00 PM,6/9/2015 6:37:00 PM,6/9/2015 6:36:00 PM,00:01:00,1,On Time
+06/10,2) Magnolia PM,.9,97.62%,,Vienna Metro,4,100.00%,,Magnolia PM - Vienna Metro,,MAGNOLIA,6/10/2015 4:48:00 PM,6/10/2015 4:54:00 PM,6/10/2015 4:50:00 PM,00:06:00,4,Late
+06/10,2) Magnolia PM,.9,97.62%,,Vienna Metro,4,100.00%,,Magnolia PM - Vienna Metro,,MAGNOLIA,6/10/2015 6:14:00 PM,6/10/2015 6:19:00 PM,6/10/2015 6:15:00 PM,00:05:00,4,Late
+06/10,2) Magnolia PM,.9,97.62%,,Vienna Metro,4,100.00%,,Magnolia PM - Vienna Metro,,MAGNOLIA,6/10/2015 7:04:00 PM,6/10/2015 7:19:00 PM,6/10/2015 7:15:00 PM,00:15:00,4,Late
+06/10,2) Magnolia PM,.9,97.62%,,Windsor Apts,2.67,100.00%,,Magnolia PM - Windsor Apts,,MAGNOLIA,6/10/2015 5:12:00 PM,6/10/2015 5:12:00 PM,6/10/2015 5:08:00 PM,00:00:00,4,Late
+06/10,2) Magnolia PM,.9,97.62%,,Windsor Apts,2.67,100.00%,,Magnolia PM - Windsor Apts,,MAGNOLIA,6/10/2015 6:35:00 PM,6/10/2015 6:35:00 PM,6/10/2015 6:33:00 PM,00:00:00,2,On Time
+06/10,2) Magnolia PM,.9,97.62%,,Windsor Apts,2.67,100.00%,,Magnolia PM - Windsor Apts,,MAGNOLIA,6/10/2015 7:32:00 PM,6/10/2015 7:32:00 PM,6/10/2015 7:30:00 PM,00:00:00,2,On Time
+06/10,2) Magnolia PM,.9,97.62%,,Camden Apts,2.67,100.00%,,Magnolia PM - Camden Apts,,MAGNOLIA,6/10/2015 5:13:00 PM,6/10/2015 5:13:00 PM,6/10/2015 5:09:00 PM,00:00:00,4,Late
+06/10,2) Magnolia PM,.9,97.62%,,Camden Apts,2.67,100.00%,,Magnolia PM - Camden Apts,,MAGNOLIA,6/10/2015 6:36:00 PM,6/10/2015 6:36:00 PM,6/10/2015 6:34:00 PM,00:00:00,2,On Time
+06/10,2) Magnolia PM,.9,97.62%,,Camden Apts,2.67,100.00%,,Magnolia PM - Camden Apts,,MAGNOLIA,6/10/2015 7:33:00 PM,6/10/2015 7:33:00 PM,6/10/2015 7:31:00 PM,00:00:00,2,On Time
+06/10,2) Magnolia PM,.9,97.62%,,The Gates,5.67,66.67%,,Magnolia PM - The Gates,,MAGNOLIA,6/10/2015 5:29:00 PM,6/10/2015 5:29:00 PM,6/10/2015 5:12:00 PM,00:00:00,17,Late
+06/10,2) Magnolia PM,.9,97.62%,,The Gates,5.67,66.67%,,Magnolia PM - The Gates,,,,,6/10/2015 6:37:00 PM,0,0,On Time
+06/10,2) Magnolia PM,.9,97.62%,,The Gates,5.67,66.67%,,Magnolia PM - The Gates,,,,,6/10/2015 7:34:00 PM,0,0,On Time
+06/10,2) Magnolia PM,.9,97.62%,,Eaves Apts,.33,100.00%,,Magnolia PM - Eaves Apts,,,,,6/10/2015 5:15:00 PM,0,0,On Time
+06/10,2) Magnolia PM,.9,97.62%,,Eaves Apts,.33,100.00%,,Magnolia PM - Eaves Apts,,MAGNOLIA,6/10/2015 6:41:00 PM,6/10/2015 6:41:00 PM,6/10/2015 6:40:00 PM,00:00:00,1,On Time
+06/10,2) Magnolia PM,.9,97.62%,,Eaves Apts,.33,100.00%,,Magnolia PM - Eaves Apts,,,,,6/10/2015 7:37:00 PM,0,0,On Time
+06/10,2) Magnolia PM,.9,97.62%,,Hyatt,-.67,100.00%,,Magnolia PM - Hyatt,,,,,6/10/2015 5:18:00 PM,0,0,On Time
+06/10,2) Magnolia PM,.9,97.62%,,Hyatt,-.67,100.00%,,Magnolia PM - Hyatt,,MAGNOLIA,6/10/2015 6:44:00 PM,6/10/2015 6:44:00 PM,6/10/2015 6:43:00 PM,00:00:00,1,On Time
+06/10,2) Magnolia PM,.9,97.62%,,Hyatt,-.67,100.00%,,Magnolia PM - Hyatt,,MAGNOLIA,6/10/2015 7:37:00 PM,6/10/2015 7:37:00 PM,6/10/2015 7:40:00 PM,00:00:00,-3,On Time
+06/10,2) Magnolia PM,.9,97.62%,,East Market,.33,100.00%,,Magnolia PM - East Market,,MAGNOLIA,6/10/2015 5:23:00 PM,6/10/2015 5:23:00 PM,6/10/2015 5:21:00 PM,00:00:00,2,On Time
+06/10,2) Magnolia PM,.9,97.62%,,East Market,.33,100.00%,,Magnolia PM - East Market,,MAGNOLIA,6/10/2015 6:48:00 PM,6/10/2015 6:48:00 PM,6/10/2015 6:46:00 PM,00:00:00,2,On Time
+06/10,2) Magnolia PM,.9,97.62%,,East Market,.33,100.00%,,Magnolia PM - East Market,,MAGNOLIA,6/10/2015 7:39:00 PM,6/10/2015 7:40:00 PM,6/10/2015 7:43:00 PM,00:01:00,-3,On Time
+06/10,2) Magnolia PM,.9,97.62%,,The Arbors,-.67,100.00%,,Magnolia PM - The Arbors,,MAGNOLIA,6/10/2015 5:25:00 PM,6/10/2015 5:25:00 PM,6/10/2015 5:24:00 PM,00:00:00,1,On Time
+06/10,2) Magnolia PM,.9,97.62%,,The Arbors,-.67,100.00%,,Magnolia PM - The Arbors,,MAGNOLIA,6/10/2015 6:49:00 PM,6/10/2015 6:50:00 PM,6/10/2015 6:49:00 PM,00:01:00,1,On Time
+06/10,2) Magnolia PM,.9,97.62%,,The Arbors,-.67,100.00%,,Magnolia PM - The Arbors,,MAGNOLIA,6/10/2015 7:42:00 PM,6/10/2015 7:42:00 PM,6/10/2015 7:46:00 PM,00:00:00,-4,On Time
+06/10,2) Magnolia PM,.9,97.62%,,Northrup Grumman,,100.00%,,Magnolia PM - Northrup Grumman,,,,,6/10/2015 4:15:00 PM,0,0,On Time
+06/10,2) Magnolia PM,.9,97.62%,,Northrup Grumman,,100.00%,,Magnolia PM - Northrup Grumman,,,,,6/10/2015 5:40:00 PM,0,0,On Time
+06/10,2) Magnolia PM,.9,97.62%,,Parkway Woods,-1.5,100.00%,,Magnolia PM - Parkway Woods,,,,,6/10/2015 4:18:00 PM,0,0,On Time
+06/10,2) Magnolia PM,.9,97.62%,,Parkway Woods,-1.5,100.00%,,Magnolia PM - Parkway Woods,,MAGNOLIA,6/10/2015 5:40:00 PM,6/10/2015 5:40:00 PM,6/10/2015 5:43:00 PM,00:00:00,-3,On Time
+06/10,2) Magnolia PM,.9,97.62%,,SRA,,100.00%,,Magnolia PM - SRA,,,,,6/10/2015 4:21:00 PM,0,0,On Time
+06/10,2) Magnolia PM,.9,97.62%,,SRA,,100.00%,,Magnolia PM - SRA,,,,,6/10/2015 5:46:00 PM,0,0,On Time
+06/10,2) Magnolia PM,.9,97.62%,,Ellucian AFCEA,-.5,100.00%,,Magnolia PM - Ellucian AFCEA,,,,,6/10/2015 4:22:00 PM,0,0,On Time
+06/10,2) Magnolia PM,.9,97.62%,,Ellucian AFCEA,-.5,100.00%,,Magnolia PM - Ellucian AFCEA,,MAGNOLIA,6/10/2015 5:45:00 PM,6/10/2015 5:46:00 PM,6/10/2015 5:47:00 PM,00:01:00,-1,On Time
+06/10,2) Magnolia PM,.9,97.62%,,Fair Lakes II,-.5,100.00%,,Magnolia PM - Fair Lakes II,,,,,6/10/2015 4:24:00 PM,0,0,On Time
+06/10,2) Magnolia PM,.9,97.62%,,Fair Lakes II,-.5,100.00%,,Magnolia PM - Fair Lakes II,,MAGNOLIA,6/10/2015 5:48:00 PM,6/10/2015 5:48:00 PM,6/10/2015 5:49:00 PM,00:00:00,-1,On Time
+06/10,2) Magnolia PM,.9,97.62%,,Fair Lakes I,,100.00%,,Magnolia PM - Fair Lakes I,,,,,6/10/2015 4:25:00 PM,0,0,On Time
+06/10,2) Magnolia PM,.9,97.62%,,Fair Lakes I,,100.00%,,Magnolia PM - Fair Lakes I,,,,,6/10/2015 5:50:00 PM,0,0,On Time
+06/10,2) Magnolia PM,.9,97.62%,,Avaya,,100.00%,,Magnolia PM - Avaya,,,,,6/10/2015 4:28:00 PM,0,0,On Time
+06/10,2) Magnolia PM,.9,97.62%,,Avaya,,100.00%,,Magnolia PM - Avaya,,,,,6/10/2015 5:53:00 PM,0,0,On Time
+06/10,2) Magnolia PM,.9,97.62%,,Argon Plaza,-.5,100.00%,,Magnolia PM - Argon Plaza,,,,,6/10/2015 4:30:00 PM,0,0,On Time
+06/10,2) Magnolia PM,.9,97.62%,,Argon Plaza,-.5,100.00%,,Magnolia PM - Argon Plaza,,MAGNOLIA,6/10/2015 5:54:00 PM,6/10/2015 5:54:00 PM,6/10/2015 5:55:00 PM,00:00:00,-1,On Time
+06/10,2) Magnolia PM,.9,97.62%,,CGI,.5,100.00%,,Magnolia PM - CGI,,,,,6/10/2015 4:31:00 PM,0,0,On Time
+06/10,2) Magnolia PM,.9,97.62%,,CGI,.5,100.00%,,Magnolia PM - CGI,,MAGNOLIA,6/10/2015 5:55:00 PM,6/10/2015 5:57:00 PM,6/10/2015 5:56:00 PM,00:02:00,1,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Vienna Metro,2.33,66.67%,,Cypress PM - Vienna Metro,,CYPRESS,6/10/2015 4:05:00 PM,6/10/2015 4:06:00 PM,6/10/2015 4:05:00 PM,00:01:00,1,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Vienna Metro,2.33,66.67%,,Cypress PM - Vienna Metro,,CYPRESS,6/10/2015 5:34:00 PM,6/10/2015 5:36:00 PM,6/10/2015 5:30:00 PM,00:02:00,6,Late
+06/10,4) Cypress PM,1.57,81.82%,,Vienna Metro,2.33,66.67%,,Cypress PM - Vienna Metro,,CYPRESS,6/10/2015 6:54:00 PM,6/10/2015 6:55:00 PM,6/10/2015 6:55:00 PM,00:01:00,0,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Windsor Apts,3,50.00%,,Cypress PM - Windsor Apts,,CYPRESS,6/10/2015 4:23:00 PM,6/10/2015 4:23:00 PM,6/10/2015 4:23:00 PM,00:00:00,0,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Windsor Apts,3,50.00%,,Cypress PM - Windsor Apts,,CYPRESS,6/10/2015 5:54:00 PM,6/10/2015 5:54:00 PM,6/10/2015 5:48:00 PM,00:00:00,6,Late
+06/10,4) Cypress PM,1.57,81.82%,,Camden Apts,2,50.00%,,Cypress PM - Camden Apts,,CYPRESS,6/10/2015 4:23:00 PM,6/10/2015 4:23:00 PM,6/10/2015 4:24:00 PM,00:00:00,-1,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Camden Apts,2,50.00%,,Cypress PM - Camden Apts,,CYPRESS,6/10/2015 5:54:00 PM,6/10/2015 5:54:00 PM,6/10/2015 5:49:00 PM,00:00:00,5,Late
+06/10,4) Cypress PM,1.57,81.82%,,The Gates,,100.00%,,Cypress PM - The Gates,,,,,6/10/2015 4:27:00 PM,0,0,On Time
+06/10,4) Cypress PM,1.57,81.82%,,The Gates,,100.00%,,Cypress PM - The Gates,,,,,6/10/2015 5:52:00 PM,0,0,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Eaves Apts,3,50.00%,,Cypress PM - Eaves Apts,,,,,6/10/2015 4:30:00 PM,0,0,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Eaves Apts,3,50.00%,,Cypress PM - Eaves Apts,,CYPRESS,6/10/2015 6:01:00 PM,6/10/2015 6:01:00 PM,6/10/2015 5:55:00 PM,00:00:00,6,Late
+06/10,4) Cypress PM,1.57,81.82%,,Hyatt,4.5,50.00%,,Cypress PM - Hyatt,,,,,6/10/2015 4:33:00 PM,0,0,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Hyatt,4.5,50.00%,,Cypress PM - Hyatt,,CYPRESS,6/10/2015 6:06:00 PM,6/10/2015 6:07:00 PM,6/10/2015 5:58:00 PM,00:01:00,9,Late
+06/10,4) Cypress PM,1.57,81.82%,,East Market,8.5,0.00%,,Cypress PM - East Market,,CYPRESS,6/10/2015 4:42:00 PM,6/10/2015 4:43:00 PM,6/10/2015 4:36:00 PM,00:01:00,7,Late
+06/10,4) Cypress PM,1.57,81.82%,,East Market,8.5,0.00%,,Cypress PM - East Market,,CYPRESS,6/10/2015 6:10:00 PM,6/10/2015 6:11:00 PM,6/10/2015 6:01:00 PM,00:01:00,10,Late
+06/10,4) Cypress PM,1.57,81.82%,,The Arbors,-2,50.00%,,Cypress PM - The Arbors,,CYPRESS,6/10/2015 4:26:00 PM,6/10/2015 4:26:00 PM,6/10/2015 4:39:00 PM,00:00:00,-13,On Time
+06/10,4) Cypress PM,1.57,81.82%,,The Arbors,-2,50.00%,,Cypress PM - The Arbors,,CYPRESS,6/10/2015 6:11:00 PM,6/10/2015 6:13:00 PM,6/10/2015 6:04:00 PM,00:02:00,9,Late
+06/10,4) Cypress PM,1.57,81.82%,,Northrup Grumman,1,100.00%,,Cypress PM - Northrup Grumman,,CYPRESS,6/10/2015 3:11:00 PM,6/10/2015 3:31:00 PM,6/10/2015 3:30:00 PM,00:20:00,1,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Northrup Grumman,1,100.00%,,Cypress PM - Northrup Grumman,,CYPRESS,6/10/2015 4:56:00 PM,6/10/2015 4:56:00 PM,6/10/2015 4:55:00 PM,00:00:00,1,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Northrup Grumman,1,100.00%,,Cypress PM - Northrup Grumman,,CYPRESS,6/10/2015 6:21:00 PM,6/10/2015 6:21:00 PM,6/10/2015 6:20:00 PM,00:00:00,1,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Parkway Woods,,100.00%,,Cypress PM - Parkway Woods,,CYPRESS,6/10/2015 3:33:00 PM,6/10/2015 3:33:00 PM,6/10/2015 3:33:00 PM,00:00:00,0,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Parkway Woods,,100.00%,,Cypress PM - Parkway Woods,,CYPRESS,6/10/2015 4:58:00 PM,6/10/2015 4:58:00 PM,6/10/2015 4:58:00 PM,00:00:00,0,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Parkway Woods,,100.00%,,Cypress PM - Parkway Woods,,CYPRESS,6/10/2015 6:23:00 PM,6/10/2015 6:23:00 PM,6/10/2015 6:23:00 PM,00:00:00,0,On Time
+06/10,4) Cypress PM,1.57,81.82%,,SRA,1,100.00%,,Cypress PM - SRA,,CYPRESS,6/10/2015 3:36:00 PM,6/10/2015 3:38:00 PM,6/10/2015 3:36:00 PM,00:02:00,2,On Time
+06/10,4) Cypress PM,1.57,81.82%,,SRA,1,100.00%,,Cypress PM - SRA,,CYPRESS,6/10/2015 5:01:00 PM,6/10/2015 5:02:00 PM,6/10/2015 5:01:00 PM,00:01:00,1,On Time
+06/10,4) Cypress PM,1.57,81.82%,,SRA,1,100.00%,,Cypress PM - SRA,,CYPRESS,6/10/2015 6:25:00 PM,6/10/2015 6:26:00 PM,6/10/2015 6:26:00 PM,00:01:00,0,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Ellucian AFCEA,1,100.00%,,Cypress PM - Ellucian AFCEA,,CYPRESS,6/10/2015 3:38:00 PM,6/10/2015 3:39:00 PM,6/10/2015 3:37:00 PM,00:01:00,2,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Ellucian AFCEA,1,100.00%,,Cypress PM - Ellucian AFCEA,,CYPRESS,6/10/2015 5:02:00 PM,6/10/2015 5:03:00 PM,6/10/2015 5:02:00 PM,00:01:00,1,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Ellucian AFCEA,1,100.00%,,Cypress PM - Ellucian AFCEA,,CYPRESS,6/10/2015 6:27:00 PM,6/10/2015 6:27:00 PM,6/10/2015 6:27:00 PM,00:00:00,0,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Fair Lakes II,1,100.00%,,Cypress PM - Fair Lakes II,,CYPRESS,6/10/2015 3:40:00 PM,6/10/2015 3:41:00 PM,6/10/2015 3:39:00 PM,00:01:00,2,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Fair Lakes II,1,100.00%,,Cypress PM - Fair Lakes II,,CYPRESS,6/10/2015 5:04:00 PM,6/10/2015 5:04:00 PM,6/10/2015 5:04:00 PM,00:00:00,0,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Fair Lakes II,1,100.00%,,Cypress PM - Fair Lakes II,,CYPRESS,6/10/2015 6:29:00 PM,6/10/2015 6:30:00 PM,6/10/2015 6:29:00 PM,00:01:00,1,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Fair Lakes I,1,100.00%,,Cypress PM - Fair Lakes I,,CYPRESS,6/10/2015 3:42:00 PM,6/10/2015 3:42:00 PM,6/10/2015 3:40:00 PM,00:00:00,2,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Fair Lakes I,1,100.00%,,Cypress PM - Fair Lakes I,,CYPRESS,6/10/2015 5:05:00 PM,6/10/2015 5:06:00 PM,6/10/2015 5:05:00 PM,00:01:00,1,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Fair Lakes I,1,100.00%,,Cypress PM - Fair Lakes I,,CYPRESS,6/10/2015 6:30:00 PM,6/10/2015 6:30:00 PM,6/10/2015 6:30:00 PM,00:00:00,0,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Avaya,.67,100.00%,,Cypress PM - Avaya,,CYPRESS,6/10/2015 3:44:00 PM,6/10/2015 3:44:00 PM,6/10/2015 3:43:00 PM,00:00:00,1,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Avaya,.67,100.00%,,Cypress PM - Avaya,,CYPRESS,6/10/2015 5:08:00 PM,6/10/2015 5:08:00 PM,6/10/2015 5:08:00 PM,00:00:00,0,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Avaya,.67,100.00%,,Cypress PM - Avaya,,CYPRESS,6/10/2015 6:32:00 PM,6/10/2015 6:34:00 PM,6/10/2015 6:33:00 PM,00:02:00,1,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Argon Plaza,.33,100.00%,,Cypress PM - Argon Plaza,,CYPRESS,6/10/2015 3:45:00 PM,6/10/2015 3:46:00 PM,6/10/2015 3:45:00 PM,00:01:00,1,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Argon Plaza,.33,100.00%,,Cypress PM - Argon Plaza,,CYPRESS,6/10/2015 5:09:00 PM,6/10/2015 5:09:00 PM,6/10/2015 5:10:00 PM,00:00:00,-1,On Time
+06/10,4) Cypress PM,1.57,81.82%,,Argon Plaza,.33,100.00%,,Cypress PM - Argon Plaza,,CYPRESS,6/10/2015 6:35:00 PM,6/10/2015 6:36:00 PM,6/10/2015 6:35:00 PM,00:01:00,1,On Time
+06/10,4) Cypress PM,1.57,81.82%,,CGI,2,100.00%,,Cypress PM - CGI,,CYPRESS,6/10/2015 3:46:00 PM,6/10/2015 3:47:00 PM,6/10/2015 3:46:00 PM,00:01:00,1,On Time
+06/10,4) Cypress PM,1.57,81.82%,,CGI,2,100.00%,,Cypress PM - CGI,,CYPRESS,6/10/2015 5:13:00 PM,6/10/2015 5:15:00 PM,6/10/2015 5:11:00 PM,00:02:00,4,Late
+06/10,4) Cypress PM,1.57,81.82%,,CGI,2,100.00%,,Cypress PM - CGI,,CYPRESS,6/10/2015 6:36:00 PM,6/10/2015 6:37:00 PM,6/10/2015 6:36:00 PM,00:01:00,1,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,Vienna Metro,2.67,66.67%,,Magnolia PM - Vienna Metro,,MAGNOLIA,6/11/2015 4:54:00 PM,6/11/2015 4:55:00 PM,6/11/2015 4:50:00 PM,00:01:00,5,Late
+06/11,2) Magnolia PM,1.21,83.33%,,Vienna Metro,2.67,66.67%,,Magnolia PM - Vienna Metro,,,,,6/11/2015 6:15:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,Vienna Metro,2.67,66.67%,,Magnolia PM - Vienna Metro,,MAGNOLIA,6/11/2015 7:09:00 PM,6/11/2015 7:18:00 PM,6/11/2015 7:15:00 PM,00:09:00,3,Late
+06/11,2) Magnolia PM,1.21,83.33%,,Windsor Apts,4,33.33%,,Magnolia PM - Windsor Apts,,,,,6/11/2015 5:08:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,Windsor Apts,4,33.33%,,Magnolia PM - Windsor Apts,,MAGNOLIA,6/11/2015 6:38:00 PM,6/11/2015 6:38:00 PM,6/11/2015 6:33:00 PM,00:00:00,5,Late
+06/11,2) Magnolia PM,1.21,83.33%,,Windsor Apts,4,33.33%,,Magnolia PM - Windsor Apts,,MAGNOLIA,6/11/2015 7:37:00 PM,6/11/2015 7:37:00 PM,6/11/2015 7:30:00 PM,00:00:00,7,Late
+06/11,2) Magnolia PM,1.21,83.33%,,Camden Apts,4,33.33%,,Magnolia PM - Camden Apts,,,,,6/11/2015 5:09:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,Camden Apts,4,33.33%,,Magnolia PM - Camden Apts,,MAGNOLIA,6/11/2015 6:39:00 PM,6/11/2015 6:39:00 PM,6/11/2015 6:34:00 PM,00:00:00,5,Late
+06/11,2) Magnolia PM,1.21,83.33%,,Camden Apts,4,33.33%,,Magnolia PM - Camden Apts,,MAGNOLIA,6/11/2015 7:38:00 PM,6/11/2015 7:38:00 PM,6/11/2015 7:31:00 PM,00:00:00,7,Late
+06/11,2) Magnolia PM,1.21,83.33%,,The Gates,,100.00%,,Magnolia PM - The Gates,,,,,6/11/2015 5:12:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,The Gates,,100.00%,,Magnolia PM - The Gates,,,,,6/11/2015 6:37:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,The Gates,,100.00%,,Magnolia PM - The Gates,,,,,6/11/2015 7:34:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,Eaves Apts,,100.00%,,Magnolia PM - Eaves Apts,,,,,6/11/2015 5:15:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,Eaves Apts,,100.00%,,Magnolia PM - Eaves Apts,,,,,6/11/2015 6:40:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,Eaves Apts,,100.00%,,Magnolia PM - Eaves Apts,,,,,6/11/2015 7:37:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,Hyatt,1.67,66.67%,,Magnolia PM - Hyatt,,,,,6/11/2015 5:18:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,Hyatt,1.67,66.67%,,Magnolia PM - Hyatt,,MAGNOLIA,6/11/2015 6:48:00 PM,6/11/2015 6:48:00 PM,6/11/2015 6:43:00 PM,00:00:00,5,Late
+06/11,2) Magnolia PM,1.21,83.33%,,Hyatt,1.67,66.67%,,Magnolia PM - Hyatt,,,,,6/11/2015 7:40:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,East Market,2.67,66.67%,,Magnolia PM - East Market,,,,,6/11/2015 5:21:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,East Market,2.67,66.67%,,Magnolia PM - East Market,,MAGNOLIA,6/11/2015 6:51:00 PM,6/11/2015 6:53:00 PM,6/11/2015 6:46:00 PM,00:02:00,7,Late
+06/11,2) Magnolia PM,1.21,83.33%,,East Market,2.67,66.67%,,Magnolia PM - East Market,,MAGNOLIA,6/11/2015 7:43:00 PM,6/11/2015 7:44:00 PM,6/11/2015 7:43:00 PM,00:01:00,1,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,The Arbors,,100.00%,,Magnolia PM - The Arbors,,,,,6/11/2015 5:24:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,The Arbors,,100.00%,,Magnolia PM - The Arbors,,,,,6/11/2015 6:49:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,The Arbors,,100.00%,,Magnolia PM - The Arbors,,MAGNOLIA,6/11/2015 7:46:00 PM,6/11/2015 7:46:00 PM,6/11/2015 7:46:00 PM,00:00:00,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,Northrup Grumman,,100.00%,,Magnolia PM - Northrup Grumman,,,,,6/11/2015 4:15:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,Northrup Grumman,,100.00%,,Magnolia PM - Northrup Grumman,,,,,6/11/2015 5:40:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,Parkway Woods,,100.00%,,Magnolia PM - Parkway Woods,,,,,6/11/2015 4:18:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,Parkway Woods,,100.00%,,Magnolia PM - Parkway Woods,,,,,6/11/2015 5:43:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,SRA,,100.00%,,Magnolia PM - SRA,,,,,6/11/2015 4:21:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,SRA,,100.00%,,Magnolia PM - SRA,,,,,6/11/2015 5:46:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,Ellucian AFCEA,,100.00%,,Magnolia PM - Ellucian AFCEA,,,,,6/11/2015 4:22:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,Ellucian AFCEA,,100.00%,,Magnolia PM - Ellucian AFCEA,,,,,6/11/2015 5:47:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,Fair Lakes II,1.5,100.00%,,Magnolia PM - Fair Lakes II,,MAGNOLIA,6/11/2015 4:27:00 PM,6/11/2015 4:27:00 PM,6/11/2015 4:24:00 PM,00:00:00,3,Late
+06/11,2) Magnolia PM,1.21,83.33%,,Fair Lakes II,1.5,100.00%,,Magnolia PM - Fair Lakes II,,,,,6/11/2015 5:49:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,Fair Lakes I,,100.00%,,Magnolia PM - Fair Lakes I,,,,,6/11/2015 4:25:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,Fair Lakes I,,100.00%,,Magnolia PM - Fair Lakes I,,,,,6/11/2015 5:50:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,Avaya,,100.00%,,Magnolia PM - Avaya,,,,,6/11/2015 4:28:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,Avaya,,100.00%,,Magnolia PM - Avaya,,,,,6/11/2015 5:53:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,Argon Plaza,,100.00%,,Magnolia PM - Argon Plaza,,,,,6/11/2015 4:30:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,Argon Plaza,,100.00%,,Magnolia PM - Argon Plaza,,,,,6/11/2015 5:55:00 PM,0,0,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,CGI,1.5,100.00%,,Magnolia PM - CGI,,MAGNOLIA,6/11/2015 4:32:00 PM,6/11/2015 4:33:00 PM,6/11/2015 4:31:00 PM,00:01:00,2,On Time
+06/11,2) Magnolia PM,1.21,83.33%,,CGI,1.5,100.00%,,Magnolia PM - CGI,,MAGNOLIA,6/11/2015 5:45:00 PM,6/11/2015 5:57:00 PM,6/11/2015 5:56:00 PM,00:12:00,1,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Vienna Metro,3,100.00%,,Cypress PM - Vienna Metro,,CYPRESS,6/11/2015 4:04:00 PM,6/11/2015 4:06:00 PM,6/11/2015 4:05:00 PM,00:02:00,1,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Vienna Metro,3,100.00%,,Cypress PM - Vienna Metro,,CYPRESS,6/11/2015 5:32:00 PM,6/11/2015 5:34:00 PM,6/11/2015 5:30:00 PM,00:02:00,4,Late
+06/11,4) Cypress PM,1.82,88.64%,,Vienna Metro,3,100.00%,,Cypress PM - Vienna Metro,,CYPRESS,6/11/2015 6:58:00 PM,6/11/2015 6:59:00 PM,6/11/2015 6:55:00 PM,00:01:00,4,Late
+06/11,4) Cypress PM,1.82,88.64%,,Windsor Apts,8.5,50.00%,,Cypress PM - Windsor Apts,,CYPRESS,6/11/2015 4:23:00 PM,6/11/2015 4:23:00 PM,6/11/2015 4:23:00 PM,00:00:00,0,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Windsor Apts,8.5,50.00%,,Cypress PM - Windsor Apts,,CYPRESS,6/11/2015 6:05:00 PM,6/11/2015 6:05:00 PM,6/11/2015 5:48:00 PM,00:00:00,17,Late
+06/11,4) Cypress PM,1.82,88.64%,,Camden Apts,8.5,50.00%,,Cypress PM - Camden Apts,,CYPRESS,6/11/2015 4:24:00 PM,6/11/2015 4:24:00 PM,6/11/2015 4:24:00 PM,00:00:00,0,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Camden Apts,8.5,50.00%,,Cypress PM - Camden Apts,,CYPRESS,6/11/2015 6:06:00 PM,6/11/2015 6:06:00 PM,6/11/2015 5:49:00 PM,00:00:00,17,Late
+06/11,4) Cypress PM,1.82,88.64%,,The Gates,,100.00%,,Cypress PM - The Gates,,,,,6/11/2015 4:27:00 PM,0,0,On Time
+06/11,4) Cypress PM,1.82,88.64%,,The Gates,,100.00%,,Cypress PM - The Gates,,,,,6/11/2015 5:52:00 PM,0,0,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Eaves Apts,,100.00%,,Cypress PM - Eaves Apts,,,,,6/11/2015 4:30:00 PM,0,0,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Eaves Apts,,100.00%,,Cypress PM - Eaves Apts,,,,,6/11/2015 5:55:00 PM,0,0,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Hyatt,-.5,100.00%,,Cypress PM - Hyatt,,CYPRESS,6/11/2015 4:31:00 PM,6/11/2015 4:32:00 PM,6/11/2015 4:33:00 PM,00:01:00,-1,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Hyatt,-.5,100.00%,,Cypress PM - Hyatt,,,,,6/11/2015 5:58:00 PM,0,0,On Time
+06/11,4) Cypress PM,1.82,88.64%,,East Market,8.5,50.00%,,Cypress PM - East Market,,CYPRESS,6/11/2015 4:35:00 PM,6/11/2015 4:36:00 PM,6/11/2015 4:36:00 PM,00:01:00,0,On Time
+06/11,4) Cypress PM,1.82,88.64%,,East Market,8.5,50.00%,,Cypress PM - East Market,,CYPRESS,6/11/2015 6:16:00 PM,6/11/2015 6:18:00 PM,6/11/2015 6:01:00 PM,00:02:00,17,Late
+06/11,4) Cypress PM,1.82,88.64%,,The Arbors,8,50.00%,,Cypress PM - The Arbors,,CYPRESS,6/11/2015 4:37:00 PM,6/11/2015 4:38:00 PM,6/11/2015 4:39:00 PM,00:01:00,-1,On Time
+06/11,4) Cypress PM,1.82,88.64%,,The Arbors,8,50.00%,,Cypress PM - The Arbors,,CYPRESS,6/11/2015 6:19:00 PM,6/11/2015 6:21:00 PM,6/11/2015 6:04:00 PM,00:02:00,17,Late
+06/11,4) Cypress PM,1.82,88.64%,,Northrup Grumman,.67,100.00%,,Cypress PM - Northrup Grumman,,CYPRESS,6/11/2015 3:13:00 PM,6/11/2015 3:31:00 PM,6/11/2015 3:30:00 PM,00:18:00,1,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Northrup Grumman,.67,100.00%,,Cypress PM - Northrup Grumman,,CYPRESS,6/11/2015 4:56:00 PM,6/11/2015 4:56:00 PM,6/11/2015 4:55:00 PM,00:00:00,1,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Northrup Grumman,.67,100.00%,,Cypress PM - Northrup Grumman,,,,,6/11/2015 6:20:00 PM,0,0,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Parkway Woods,-6,100.00%,,Cypress PM - Parkway Woods,,CYPRESS,6/11/2015 3:33:00 PM,6/11/2015 3:33:00 PM,6/11/2015 3:33:00 PM,00:00:00,0,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Parkway Woods,-6,100.00%,,Cypress PM - Parkway Woods,,CYPRESS,6/11/2015 4:40:00 PM,6/11/2015 4:40:00 PM,6/11/2015 4:58:00 PM,00:00:00,-18,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Parkway Woods,-6,100.00%,,Cypress PM - Parkway Woods,,CYPRESS,6/11/2015 6:23:00 PM,6/11/2015 6:23:00 PM,6/11/2015 6:23:00 PM,00:00:00,0,On Time
+06/11,4) Cypress PM,1.82,88.64%,,SRA,.67,100.00%,,Cypress PM - SRA,,CYPRESS,6/11/2015 3:37:00 PM,6/11/2015 3:37:00 PM,6/11/2015 3:36:00 PM,00:00:00,1,On Time
+06/11,4) Cypress PM,1.82,88.64%,,SRA,.67,100.00%,,Cypress PM - SRA,,CYPRESS,6/11/2015 5:02:00 PM,6/11/2015 5:02:00 PM,6/11/2015 5:01:00 PM,00:00:00,1,On Time
+06/11,4) Cypress PM,1.82,88.64%,,SRA,.67,100.00%,,Cypress PM - SRA,,,,,6/11/2015 6:26:00 PM,0,0,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Ellucian AFCEA,.67,100.00%,,Cypress PM - Ellucian AFCEA,,CYPRESS,6/11/2015 3:37:00 PM,6/11/2015 3:38:00 PM,6/11/2015 3:37:00 PM,00:01:00,1,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Ellucian AFCEA,.67,100.00%,,Cypress PM - Ellucian AFCEA,,CYPRESS,6/11/2015 5:02:00 PM,6/11/2015 5:03:00 PM,6/11/2015 5:02:00 PM,00:01:00,1,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Ellucian AFCEA,.67,100.00%,,Cypress PM - Ellucian AFCEA,,,,,6/11/2015 6:27:00 PM,0,0,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Fair Lakes II,3.33,66.67%,,Cypress PM - Fair Lakes II,,CYPRESS,6/11/2015 3:38:00 PM,6/11/2015 3:39:00 PM,6/11/2015 3:39:00 PM,00:01:00,0,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Fair Lakes II,3.33,66.67%,,Cypress PM - Fair Lakes II,,CYPRESS,6/11/2015 5:05:00 PM,6/11/2015 5:05:00 PM,6/11/2015 5:04:00 PM,00:00:00,1,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Fair Lakes II,3.33,66.67%,,Cypress PM - Fair Lakes II,,CYPRESS,6/11/2015 6:37:00 PM,6/11/2015 6:38:00 PM,6/11/2015 6:29:00 PM,00:01:00,9,Late
+06/11,4) Cypress PM,1.82,88.64%,,Fair Lakes I,.33,100.00%,,Cypress PM - Fair Lakes I,,CYPRESS,6/11/2015 3:40:00 PM,6/11/2015 3:40:00 PM,6/11/2015 3:40:00 PM,00:00:00,0,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Fair Lakes I,.33,100.00%,,Cypress PM - Fair Lakes I,,CYPRESS,6/11/2015 5:06:00 PM,6/11/2015 5:06:00 PM,6/11/2015 5:05:00 PM,00:00:00,1,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Fair Lakes I,.33,100.00%,,Cypress PM - Fair Lakes I,,,,,6/11/2015 6:30:00 PM,0,0,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Avaya,.67,100.00%,,Cypress PM - Avaya,,CYPRESS,6/11/2015 3:41:00 PM,6/11/2015 3:44:00 PM,6/11/2015 3:43:00 PM,00:03:00,1,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Avaya,.67,100.00%,,Cypress PM - Avaya,,CYPRESS,6/11/2015 5:08:00 PM,6/11/2015 5:08:00 PM,6/11/2015 5:08:00 PM,00:00:00,0,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Avaya,.67,100.00%,,Cypress PM - Avaya,,CYPRESS,6/11/2015 6:34:00 PM,6/11/2015 6:34:00 PM,6/11/2015 6:33:00 PM,00:00:00,1,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Argon Plaza,.33,100.00%,,Cypress PM - Argon Plaza,,CYPRESS,6/11/2015 3:45:00 PM,6/11/2015 3:45:00 PM,6/11/2015 3:45:00 PM,00:00:00,0,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Argon Plaza,.33,100.00%,,Cypress PM - Argon Plaza,,CYPRESS,6/11/2015 5:09:00 PM,6/11/2015 5:10:00 PM,6/11/2015 5:10:00 PM,00:01:00,0,On Time
+06/11,4) Cypress PM,1.82,88.64%,,Argon Plaza,.33,100.00%,,Cypress PM - Argon Plaza,,CYPRESS,6/11/2015 6:35:00 PM,6/11/2015 6:36:00 PM,6/11/2015 6:35:00 PM,00:01:00,1,On Time
+06/11,4) Cypress PM,1.82,88.64%,,CGI,1,100.00%,,Cypress PM - CGI,,CYPRESS,6/11/2015 3:46:00 PM,6/11/2015 3:47:00 PM,6/11/2015 3:46:00 PM,00:01:00,1,On Time
+06/11,4) Cypress PM,1.82,88.64%,,CGI,1,100.00%,,Cypress PM - CGI,,CYPRESS,6/11/2015 5:11:00 PM,6/11/2015 5:12:00 PM,6/11/2015 5:11:00 PM,00:01:00,1,On Time
+06/11,4) Cypress PM,1.82,88.64%,,CGI,1,100.00%,,Cypress PM - CGI,,CYPRESS,6/11/2015 6:36:00 PM,6/11/2015 6:37:00 PM,6/11/2015 6:36:00 PM,00:01:00,1,On Time
+06/12,2) Magnolia PM,.6,97.62%,,Vienna Metro,2,66.67%,,Magnolia PM - Vienna Metro,,,,,6/12/2015 4:50:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,Vienna Metro,2,66.67%,,Magnolia PM - Vienna Metro,,,,,6/12/2015 6:15:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,Vienna Metro,2,66.67%,,Magnolia PM - Vienna Metro,,MAGNOLIA,6/12/2015 7:05:00 PM,6/12/2015 7:21:00 PM,6/12/2015 7:15:00 PM,00:16:00,6,Late
+06/12,2) Magnolia PM,.6,97.62%,,Windsor Apts,3.33,100.00%,,Magnolia PM - Windsor Apts,,MAGNOLIA,6/12/2015 5:12:00 PM,6/12/2015 5:12:00 PM,6/12/2015 5:08:00 PM,00:00:00,4,Late
+06/12,2) Magnolia PM,.6,97.62%,,Windsor Apts,3.33,100.00%,,Magnolia PM - Windsor Apts,,MAGNOLIA,6/12/2015 6:35:00 PM,6/12/2015 6:35:00 PM,6/12/2015 6:33:00 PM,00:00:00,2,On Time
+06/12,2) Magnolia PM,.6,97.62%,,Windsor Apts,3.33,100.00%,,Magnolia PM - Windsor Apts,,MAGNOLIA,6/12/2015 7:34:00 PM,6/12/2015 7:34:00 PM,6/12/2015 7:30:00 PM,00:00:00,4,Late
+06/12,2) Magnolia PM,.6,97.62%,,Camden Apts,1.33,100.00%,,Magnolia PM - Camden Apts,,MAGNOLIA,6/12/2015 5:13:00 PM,6/12/2015 5:13:00 PM,6/12/2015 5:09:00 PM,00:00:00,4,Late
+06/12,2) Magnolia PM,.6,97.62%,,Camden Apts,1.33,100.00%,,Magnolia PM - Camden Apts,,,,,6/12/2015 6:34:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,Camden Apts,1.33,100.00%,,Magnolia PM - Camden Apts,,,,,6/12/2015 7:31:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,The Gates,,100.00%,,Magnolia PM - The Gates,,,,,6/12/2015 5:12:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,The Gates,,100.00%,,Magnolia PM - The Gates,,,,,6/12/2015 6:37:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,The Gates,,100.00%,,Magnolia PM - The Gates,,,,,6/12/2015 7:34:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,Eaves Apts,.33,100.00%,,Magnolia PM - Eaves Apts,,,,,6/12/2015 5:15:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,Eaves Apts,.33,100.00%,,Magnolia PM - Eaves Apts,,MAGNOLIA,6/12/2015 6:41:00 PM,6/12/2015 6:41:00 PM,6/12/2015 6:40:00 PM,00:00:00,1,On Time
+06/12,2) Magnolia PM,.6,97.62%,,Eaves Apts,.33,100.00%,,Magnolia PM - Eaves Apts,,,,,6/12/2015 7:37:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,Hyatt,1.33,100.00%,,Magnolia PM - Hyatt,,MAGNOLIA,6/12/2015 5:22:00 PM,6/12/2015 5:22:00 PM,6/12/2015 5:18:00 PM,00:00:00,4,Late
+06/12,2) Magnolia PM,.6,97.62%,,Hyatt,1.33,100.00%,,Magnolia PM - Hyatt,,MAGNOLIA,6/12/2015 6:42:00 PM,6/12/2015 6:43:00 PM,6/12/2015 6:43:00 PM,00:01:00,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,Hyatt,1.33,100.00%,,Magnolia PM - Hyatt,,,,,6/12/2015 7:40:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,East Market,1.67,100.00%,,Magnolia PM - East Market,,MAGNOLIA,6/12/2015 5:23:00 PM,6/12/2015 5:25:00 PM,6/12/2015 5:21:00 PM,00:02:00,4,Late
+06/12,2) Magnolia PM,.6,97.62%,,East Market,1.67,100.00%,,Magnolia PM - East Market,,MAGNOLIA,6/12/2015 6:47:00 PM,6/12/2015 6:47:00 PM,6/12/2015 6:46:00 PM,00:00:00,1,On Time
+06/12,2) Magnolia PM,.6,97.62%,,East Market,1.67,100.00%,,Magnolia PM - East Market,,,,,6/12/2015 7:43:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,The Arbors,1,100.00%,,Magnolia PM - The Arbors,,MAGNOLIA,6/12/2015 5:27:00 PM,6/12/2015 5:27:00 PM,6/12/2015 5:24:00 PM,00:00:00,3,Late
+06/12,2) Magnolia PM,.6,97.62%,,The Arbors,1,100.00%,,Magnolia PM - The Arbors,,MAGNOLIA,6/12/2015 6:49:00 PM,6/12/2015 6:49:00 PM,6/12/2015 6:49:00 PM,00:00:00,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,The Arbors,1,100.00%,,Magnolia PM - The Arbors,,,,,6/12/2015 7:46:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,Northrup Grumman,,100.00%,,Magnolia PM - Northrup Grumman,,,,,6/12/2015 4:15:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,Northrup Grumman,,100.00%,,Magnolia PM - Northrup Grumman,,,,,6/12/2015 5:40:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,Parkway Woods,-5.5,100.00%,,Magnolia PM - Parkway Woods,,,,,6/12/2015 4:18:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,Parkway Woods,-5.5,100.00%,,Magnolia PM - Parkway Woods,,MAGNOLIA,6/12/2015 5:30:00 PM,6/12/2015 5:32:00 PM,6/12/2015 5:43:00 PM,00:02:00,-11,On Time
+06/12,2) Magnolia PM,.6,97.62%,,SRA,,100.00%,,Magnolia PM - SRA,,,,,6/12/2015 4:21:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,SRA,,100.00%,,Magnolia PM - SRA,,,,,6/12/2015 5:46:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,Ellucian AFCEA,1.5,100.00%,,Magnolia PM - Ellucian AFCEA,,,,,6/12/2015 4:22:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,Ellucian AFCEA,1.5,100.00%,,Magnolia PM - Ellucian AFCEA,,MAGNOLIA,6/12/2015 5:50:00 PM,6/12/2015 5:50:00 PM,6/12/2015 5:47:00 PM,00:00:00,3,Late
+06/12,2) Magnolia PM,.6,97.62%,,Fair Lakes II,,100.00%,,Magnolia PM - Fair Lakes II,,,,,6/12/2015 4:24:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,Fair Lakes II,,100.00%,,Magnolia PM - Fair Lakes II,,,,,6/12/2015 5:49:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,Fair Lakes I,,100.00%,,Magnolia PM - Fair Lakes I,,,,,6/12/2015 4:25:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,Fair Lakes I,,100.00%,,Magnolia PM - Fair Lakes I,,,,,6/12/2015 5:50:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,Avaya,,100.00%,,Magnolia PM - Avaya,,,,,6/12/2015 4:28:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,Avaya,,100.00%,,Magnolia PM - Avaya,,,,,6/12/2015 5:53:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,Argon Plaza,,100.00%,,Magnolia PM - Argon Plaza,,,,,6/12/2015 4:30:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,Argon Plaza,,100.00%,,Magnolia PM - Argon Plaza,,MAGNOLIA,6/12/2015 5:55:00 PM,6/12/2015 5:55:00 PM,6/12/2015 5:55:00 PM,00:00:00,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,CGI,,100.00%,,Magnolia PM - CGI,,,,,6/12/2015 4:31:00 PM,0,0,On Time
+06/12,2) Magnolia PM,.6,97.62%,,CGI,,100.00%,,Magnolia PM - CGI,,MAGNOLIA,6/12/2015 5:56:00 PM,6/12/2015 5:56:00 PM,6/12/2015 5:56:00 PM,00:00:00,0,On Time
+06/12,4) Cypress PM,.75,100.00%,,Vienna Metro,2.33,100.00%,,Cypress PM - Vienna Metro,,CYPRESS,6/12/2015 4:08:00 PM,6/12/2015 4:09:00 PM,6/12/2015 4:05:00 PM,00:01:00,4,Late
+06/12,4) Cypress PM,.75,100.00%,,Vienna Metro,2.33,100.00%,,Cypress PM - Vienna Metro,,CYPRESS,6/12/2015 5:30:00 PM,6/12/2015 5:33:00 PM,6/12/2015 5:30:00 PM,00:03:00,3,Late
+06/12,4) Cypress PM,.75,100.00%,,Vienna Metro,2.33,100.00%,,Cypress PM - Vienna Metro,,,,,6/12/2015 6:55:00 PM,0,0,On Time
+06/12,4) Cypress PM,.75,100.00%,,Windsor Apts,1,100.00%,,Cypress PM - Windsor Apts,,CYPRESS,6/12/2015 4:25:00 PM,6/12/2015 4:25:00 PM,6/12/2015 4:23:00 PM,00:00:00,2,On Time
+06/12,4) Cypress PM,.75,100.00%,,Windsor Apts,1,100.00%,,Cypress PM - Windsor Apts,,CYPRESS,6/12/2015 5:48:00 PM,6/12/2015 5:48:00 PM,6/12/2015 5:48:00 PM,00:00:00,0,On Time
+06/12,4) Cypress PM,.75,100.00%,,Camden Apts,,100.00%,,Cypress PM - Camden Apts,,CYPRESS,6/12/2015 4:25:00 PM,6/12/2015 4:25:00 PM,6/12/2015 4:24:00 PM,00:00:00,1,On Time
+06/12,4) Cypress PM,.75,100.00%,,Camden Apts,,100.00%,,Cypress PM - Camden Apts,,CYPRESS,6/12/2015 5:48:00 PM,6/12/2015 5:48:00 PM,6/12/2015 5:49:00 PM,00:00:00,-1,On Time
+06/12,4) Cypress PM,.75,100.00%,,The Gates,,100.00%,,Cypress PM - The Gates,,,,,6/12/2015 4:27:00 PM,0,0,On Time
+06/12,4) Cypress PM,.75,100.00%,,The Gates,,100.00%,,Cypress PM - The Gates,,,,,6/12/2015 5:52:00 PM,0,0,On Time
+06/12,4) Cypress PM,.75,100.00%,,Eaves Apts,.5,100.00%,,Cypress PM - Eaves Apts,,,,,6/12/2015 4:30:00 PM,0,0,On Time
+06/12,4) Cypress PM,.75,100.00%,,Eaves Apts,.5,100.00%,,Cypress PM - Eaves Apts,,CYPRESS,6/12/2015 5:55:00 PM,6/12/2015 5:56:00 PM,6/12/2015 5:55:00 PM,00:01:00,1,On Time
+06/12,4) Cypress PM,.75,100.00%,,Hyatt,2,100.00%,,Cypress PM - Hyatt,,CYPRESS,6/12/2015 4:36:00 PM,6/12/2015 4:37:00 PM,6/12/2015 4:33:00 PM,00:01:00,4,Late
+06/12,4) Cypress PM,.75,100.00%,,Hyatt,2,100.00%,,Cypress PM - Hyatt,,,,,6/12/2015 5:58:00 PM,0,0,On Time
+06/12,4) Cypress PM,.75,100.00%,,East Market,1,100.00%,,Cypress PM - East Market,,,,,6/12/2015 4:36:00 PM,0,0,On Time
+06/12,4) Cypress PM,.75,100.00%,,East Market,1,100.00%,,Cypress PM - East Market,,CYPRESS,6/12/2015 6:00:00 PM,6/12/2015 6:03:00 PM,6/12/2015 6:01:00 PM,00:03:00,2,On Time
+06/12,4) Cypress PM,.75,100.00%,,The Arbors,-3,100.00%,,Cypress PM - The Arbors,,CYPRESS,6/12/2015 4:31:00 PM,6/12/2015 4:33:00 PM,6/12/2015 4:39:00 PM,00:02:00,-6,On Time
+06/12,4) Cypress PM,.75,100.00%,,The Arbors,-3,100.00%,,Cypress PM - The Arbors,,CYPRESS,6/12/2015 6:04:00 PM,6/12/2015 6:04:00 PM,6/12/2015 6:04:00 PM,00:00:00,0,On Time
+06/12,4) Cypress PM,.75,100.00%,,Northrup Grumman,1,100.00%,,Cypress PM - Northrup Grumman,,CYPRESS,6/12/2015 3:31:00 PM,6/12/2015 3:31:00 PM,6/12/2015 3:30:00 PM,00:00:00,1,On Time
+06/12,4) Cypress PM,.75,100.00%,,Northrup Grumman,1,100.00%,,Cypress PM - Northrup Grumman,,CYPRESS,6/12/2015 4:42:00 PM,6/12/2015 4:56:00 PM,6/12/2015 4:55:00 PM,00:14:00,1,On Time
+06/12,4) Cypress PM,.75,100.00%,,Northrup Grumman,1,100.00%,,Cypress PM - Northrup Grumman,,CYPRESS,6/12/2015 6:10:00 PM,6/12/2015 6:21:00 PM,6/12/2015 6:20:00 PM,00:11:00,1,On Time
+06/12,4) Cypress PM,.75,100.00%,,Parkway Woods,,100.00%,,Cypress PM - Parkway Woods,,,,,6/12/2015 3:33:00 PM,0,0,On Time
+06/12,4) Cypress PM,.75,100.00%,,Parkway Woods,,100.00%,,Cypress PM - Parkway Woods,,CYPRESS,6/12/2015 4:58:00 PM,6/12/2015 4:58:00 PM,6/12/2015 4:58:00 PM,00:00:00,0,On Time
+06/12,4) Cypress PM,.75,100.00%,,Parkway Woods,,100.00%,,Cypress PM - Parkway Woods,,CYPRESS,6/12/2015 6:23:00 PM,6/12/2015 6:23:00 PM,6/12/2015 6:23:00 PM,00:00:00,0,On Time
+06/12,4) Cypress PM,.75,100.00%,,SRA,1.33,100.00%,,Cypress PM - SRA,,CYPRESS,6/12/2015 3:37:00 PM,6/12/2015 3:37:00 PM,6/12/2015 3:36:00 PM,00:00:00,1,On Time
+06/12,4) Cypress PM,.75,100.00%,,SRA,1.33,100.00%,,Cypress PM - SRA,,CYPRESS,6/12/2015 5:02:00 PM,6/12/2015 5:02:00 PM,6/12/2015 5:01:00 PM,00:00:00,1,On Time
+06/12,4) Cypress PM,.75,100.00%,,SRA,1.33,100.00%,,Cypress PM - SRA,,CYPRESS,6/12/2015 6:28:00 PM,6/12/2015 6:28:00 PM,6/12/2015 6:26:00 PM,00:00:00,2,On Time
+06/12,4) Cypress PM,.75,100.00%,,Ellucian AFCEA,1.67,100.00%,,Cypress PM - Ellucian AFCEA,,CYPRESS,6/12/2015 3:37:00 PM,6/12/2015 3:38:00 PM,6/12/2015 3:37:00 PM,00:01:00,1,On Time
+06/12,4) Cypress PM,.75,100.00%,,Ellucian AFCEA,1.67,100.00%,,Cypress PM - Ellucian AFCEA,,CYPRESS,6/12/2015 5:03:00 PM,6/12/2015 5:03:00 PM,6/12/2015 5:02:00 PM,00:00:00,1,On Time
+06/12,4) Cypress PM,.75,100.00%,,Ellucian AFCEA,1.67,100.00%,,Cypress PM - Ellucian AFCEA,,CYPRESS,6/12/2015 6:29:00 PM,6/12/2015 6:30:00 PM,6/12/2015 6:27:00 PM,00:01:00,3,Late
+06/12,4) Cypress PM,.75,100.00%,,Fair Lakes II,1,100.00%,,Cypress PM - Fair Lakes II,,CYPRESS,6/12/2015 3:38:00 PM,6/12/2015 3:39:00 PM,6/12/2015 3:39:00 PM,00:01:00,0,On Time
+06/12,4) Cypress PM,.75,100.00%,,Fair Lakes II,1,100.00%,,Cypress PM - Fair Lakes II,,CYPRESS,6/12/2015 5:04:00 PM,6/12/2015 5:05:00 PM,6/12/2015 5:04:00 PM,00:01:00,1,On Time
+06/12,4) Cypress PM,.75,100.00%,,Fair Lakes II,1,100.00%,,Cypress PM - Fair Lakes II,,CYPRESS,6/12/2015 6:31:00 PM,6/12/2015 6:31:00 PM,6/12/2015 6:29:00 PM,00:00:00,2,On Time
+06/12,4) Cypress PM,.75,100.00%,,Fair Lakes I,1.33,100.00%,,Cypress PM - Fair Lakes I,,CYPRESS,6/12/2015 3:40:00 PM,6/12/2015 3:40:00 PM,6/12/2015 3:40:00 PM,00:00:00,0,On Time
+06/12,4) Cypress PM,.75,100.00%,,Fair Lakes I,1.33,100.00%,,Cypress PM - Fair Lakes I,,CYPRESS,6/12/2015 5:06:00 PM,6/12/2015 5:06:00 PM,6/12/2015 5:05:00 PM,00:00:00,1,On Time
+06/12,4) Cypress PM,.75,100.00%,,Fair Lakes I,1.33,100.00%,,Cypress PM - Fair Lakes I,,CYPRESS,6/12/2015 6:32:00 PM,6/12/2015 6:33:00 PM,6/12/2015 6:30:00 PM,00:01:00,3,Late
+06/12,4) Cypress PM,.75,100.00%,,Avaya,.33,100.00%,,Cypress PM - Avaya,,CYPRESS,6/12/2015 3:42:00 PM,6/12/2015 3:43:00 PM,6/12/2015 3:43:00 PM,00:01:00,0,On Time
+06/12,4) Cypress PM,.75,100.00%,,Avaya,.33,100.00%,,Cypress PM - Avaya,,CYPRESS,6/12/2015 5:08:00 PM,6/12/2015 5:08:00 PM,6/12/2015 5:08:00 PM,00:00:00,0,On Time
+06/12,4) Cypress PM,.75,100.00%,,Avaya,.33,100.00%,,Cypress PM - Avaya,,CYPRESS,6/12/2015 6:34:00 PM,6/12/2015 6:34:00 PM,6/12/2015 6:33:00 PM,00:00:00,1,On Time
+06/12,4) Cypress PM,.75,100.00%,,Argon Plaza,,100.00%,,Cypress PM - Argon Plaza,,CYPRESS,6/12/2015 3:45:00 PM,6/12/2015 3:45:00 PM,6/12/2015 3:45:00 PM,00:00:00,0,On Time
+06/12,4) Cypress PM,.75,100.00%,,Argon Plaza,,100.00%,,Cypress PM - Argon Plaza,,CYPRESS,6/12/2015 5:09:00 PM,6/12/2015 5:10:00 PM,6/12/2015 5:10:00 PM,00:01:00,0,On Time
+06/12,4) Cypress PM,.75,100.00%,,Argon Plaza,,100.00%,,Cypress PM - Argon Plaza,,CYPRESS,6/12/2015 6:35:00 PM,6/12/2015 6:35:00 PM,6/12/2015 6:35:00 PM,00:00:00,0,On Time
+06/12,4) Cypress PM,.75,100.00%,,CGI,1,100.00%,,Cypress PM - CGI,,CYPRESS,6/12/2015 3:46:00 PM,6/12/2015 3:47:00 PM,6/12/2015 3:46:00 PM,00:01:00,1,On Time
+06/12,4) Cypress PM,.75,100.00%,,CGI,1,100.00%,,Cypress PM - CGI,,CYPRESS,6/12/2015 5:11:00 PM,6/12/2015 5:12:00 PM,6/12/2015 5:11:00 PM,00:01:00,1,On Time
+06/12,4) Cypress PM,.75,100.00%,,CGI,1,100.00%,,Cypress PM - CGI,,CYPRESS,6/12/2015 6:37:00 PM,6/12/2015 6:37:00 PM,6/12/2015 6:36:00 PM,00:00:00,1,On Time
+

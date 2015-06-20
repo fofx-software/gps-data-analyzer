@@ -10,17 +10,14 @@
       margin-left: auto;
       margin-right: auto;
     }
-    div {
+    #table-wrapper {
       overflow-y: auto;
-    }
-    .border-top {
-      border-top: 1px solid black;
     }
     td {
       position: relative;
     }
     td:first-child {
-      border-right: 1px solid rgb(200,200,200);
+      border-right: 1px solid gray;
     }
     tr {
       border-bottom: 1px solid gray;
@@ -32,10 +29,12 @@
       top: 10px;
     }
     .diff-td {
-      min-width: 10px;
-      max-width: 10px;
-      border-right: 1px solid rgb(200,200,200);
+      width: 10px;
+      border-right: 1px solid gray;
       text-align: center;
+    }
+    .diff-td:hover .tooltip {
+      display: block;
     }
     .tooltip {
       position: absolute;
@@ -48,25 +47,46 @@
       text-align: center;
       display: none;
     }
+    #change-avg {
+      position: fixed;
+    }
   </style>
 </head>
 <body>
-  <div><table id="data-table"></table></div>
+  <form id="change-avg">
+    Color data by average of:<br>
+    <input type="radio" name="avg-basis" value="good-data" checked>Good data
+    <br>
+    <input type="radio" name="avg-basis" value="all-data">All data
+  </form>
+  <div id="table-wrapper"><table id="data-table"></table></div>
   <script>
-    var shown;
-    document.addEventListener('mousemove', function(e) {
-      if(shown) shown.style.display = 'none';
-      if(/diff-td/.test(e.target.className) && e.target.getElementsByClassName('tooltip').length) {
-        shown = e.target.getElementsByClassName('tooltip')[0];
-        shown.style.display = 'block';
-      }
-    });
     document.getElementsByTagName('div')[0].style.height = window.innerHeight - 22 + 'px';
     var firstTR  = document.getElementsByTagName('tr')[0];
     var secondTR = document.getElementsByTagName('tr')[1];
     var firstTD = firstTR.getElementsByTagName('td')[0];
     var secondTD = secondTR.getElementsByTagName('td')[0];
     firstTD.style.width = window.getComputedStyle(secondTD).width;
+    [].forEach.call(document.querySelectorAll('input[type=radio]'), function(radio) {
+      radio.addEventListener('click', function() {
+        var basis = this.getAttribute('value').replace('-data','');
+        [].forEach.call(document.getElementsByClassName('tooltip'), function(tooltip) {
+          var td = tooltip.parentElement;
+          var bgc = td.style.backgroundColor;
+          var r = bgc.match(/[0-9]+/g)[0];
+          var g = bgc.match(/[0-9]+/g)[1];
+          var b = bgc.match(/[0-9]+/g)[2];
+          var a;
+          if(basis === 'all') {
+            a = td.dataset['allAvg'];
+          } else {
+            var allDateListings = td.parentElement.getElementsByClassName('date-listing');
+            a = tooltip.getElementsByClassName('date-listing').length / allDateListings.length;
+          }
+          td.style.backgroundColor = 'rgba('+r+','+g+','+b+','+a+')';
+        });
+      }, false);
+    });
   </script>
 </body>
 </html>
