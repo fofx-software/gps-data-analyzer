@@ -25,6 +25,8 @@ if(process.argv[3] === 'nodata') {
     var td = $('<td class="diff-td">').append(sign + '<br>' + Math.abs(diff));
     if(diff) {
       td.attr({ style: 'min-width:23px;max-width:23px;', colspan: '2' });
+    } else {
+      td.addClass('no-diff');
     }
     tr.append(td);
   }
@@ -50,6 +52,9 @@ if(process.argv[3] === 'nodata') {
    
       for(var i = minDiffEven; i <= maxDiffEven; i++) {
         var diffTd = $('<td>').attr({ class: 'diff-td', 'data-diff': i });
+        if(i < 0) diffTd.addClass('neg-diff');
+        if(!i) diffTd.addClass('no-diff');
+        if(i > 0) diffTd.addClass('pos-diff');
         tr.append(diffTd);
       }
     }
@@ -64,14 +69,14 @@ if(process.argv[3] === 'nodata') {
       }
       toolTip.append($('<div class="date-listing">').text(stopDescr.arrivalTime.format('M/D/YY')));
   
-      var allAvg = toolTip.find('.date-listing').length / (stopData.length / contractInfo.allStops.length);
-      if(allAvg >= 1) allAvg = "1.0";
+      var allPct = toolTip.find('.date-listing').length / (stopData.length / contractInfo.allStops.length);
+      if(allPct >= 1) allPct = "1.0";
       diffTd.css('background-color', 'rgba(' +
         (stopDescr.arriveDiff > 0 ? 255 : 0) + ',' +
         (stopDescr.arriveDiff ? 0 : 255) + ',' +
         (stopDescr.arriveDiff < 0 ? 255 : 0) + ',' +
-        allAvg + ')'
-      ).attr('data-all-avg', allAvg);
+        allPct + ')'
+      ).attr('data-darken-by-all', allPct);
     }
   });
 }

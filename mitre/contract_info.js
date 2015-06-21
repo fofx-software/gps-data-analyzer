@@ -1,5 +1,5 @@
 exports.sortByRoute = false;
-exports.minDiff = -16;
+exports.minDiff = -17;
 exports.maxDiff = 20;
 exports.allStops = [
   "McLean Metro650",
@@ -120,4 +120,4 @@ exports.allStops = [
   "MITRE21749",
   "MITRE21815"
 ];
-exports.goodData = 533;
+exports.goodData = 1066;

@@ -16,9 +16,6 @@
     td {
       position: relative;
     }
-    td:first-child {
-      border-right: 1px solid gray;
-    }
     tr {
       border-bottom: 1px solid gray;
     }
@@ -28,10 +25,16 @@
       background-color: white;
       top: 10px;
     }
+    tr:nth-child(-n+1) td:nth-child(n+2) {
+      border-left: 1px solid gray;
+    }
     .diff-td {
       width: 10px;
-      border-right: 1px solid gray;
       text-align: center;
+    }
+    .neg-diff:nth-child(even), .pos-diff:nth-child(odd), .no-diff {
+      border-left: 1px solid gray;
+      width: 11px;
     }
     .diff-td:hover .tooltip {
       display: block;
@@ -47,27 +50,40 @@
       text-align: center;
       display: none;
     }
-    #change-avg {
+    #forms {
       position: fixed;
     }
   </style>
 </head>
 <body>
-  <form id="change-avg">
-    Color data by average of:<br>
-    <input type="radio" name="avg-basis" value="good-data" checked>Good data
-    <br>
-    <input type="radio" name="avg-basis" value="all-data">All data
-  </form>
+  <div id="forms">
+    <form id="change-basis">
+      Darken data by percentage of:<br>
+      <input type="radio" name="change-basis" class="change-basis" value="good-data" checked>Data in row
+      <br>
+      <input type="radio" name="change-basis" class="change-basis" value="all-data">All data
+    </form>
+    <form id="filter-by-prev-and-curr">
+      Filter trips:<br>
+      <input type="radio" name="filter-by-prev-and-curr" class="filter-by-prev-and-curr" value="mclean_metro-rappahannock">McLean Metro-Rappahannock<br>
+      <input type="radio" name="filter-by-prev-and-curr" class="filter-by-prev-and-curr" value="rappahannock-mclean_metro">Rappahannock-McLean Metro<br>
+      <input type="radio" name="filter-by-prev-and-curr" class="filter-by-prev-and-curr" value="mclean_metro-mitre2">McLean Metro-MITRE2<br>
+      <input type="radio" name="filter-by-prev-and-curr" class="filter-by-prev-and-curr" value="mitre2-mclean_metro">MITRE2-McLean Metro<br>
+      <input type="radio" name="filter-by-prev-and-curr" class="filter-by-prev-and-curr" value="all">Show All
+    </form>
+  </div>
   <div id="table-wrapper"><table id="data-table"></table></div>
   <script>
-    document.getElementsByTagName('div')[0].style.height = window.innerHeight - 22 + 'px';
+    document.getElementById('table-wrapper').style.height = window.innerHeight - 22 + 'px';
     var firstTR  = document.getElementsByTagName('tr')[0];
     var secondTR = document.getElementsByTagName('tr')[1];
-    var firstTD = firstTR.getElementsByTagName('td')[0];
+    var firstTD  = firstTR.getElementsByTagName('td')[0];
     var secondTD = secondTR.getElementsByTagName('td')[0];
     firstTD.style.width = window.getComputedStyle(secondTD).width;
-    [].forEach.call(document.querySelectorAll('input[type=radio]'), function(radio) {
+    [].forEach.call(document.getElementsByTagName('tr'), function(tr) {
+      tr.getElementsByTagName('td')[0].style.width = firstTD.style.width;
+    });
+    [].forEach.call(document.getElementsByClassName('change-basis'), function(radio) {
       radio.addEventListener('click', function() {
         var basis = this.getAttribute('value').replace('-data','');
         [].forEach.call(document.getElementsByClassName('tooltip'), function(tooltip) {
@@ -78,7 +94,7 @@
           var b = bgc.match(/[0-9]+/g)[2];
           var a;
           if(basis === 'all') {
-            a = td.dataset['allAvg'];
+            a = td.dataset.darkenByAll;
           } else {
             var allDateListings = td.parentElement.getElementsByClassName('date-listing');
             a = tooltip.getElementsByClassName('date-listing').length / allDateListings.length;
@@ -87,6 +103,26 @@
         });
       }, false);
     });
+    document.getElementsByClassName('change-basis')[0].dispatchEvent(new MouseEvent('click'));
+    [].forEach.call(document.getElementsByClassName('filter-by-prev-and-curr'), function(radio) {
+      radio.addEventListener('click', function() {
+        var fromTo = this.getAttribute('value').split('-');
+        [].slice.call(document.getElementsByTagName('tr'), 2).forEach(function(tr) {
+          if(fromTo[0] === 'all') {
+            tr.style.display = '';
+          } else {
+            var prevStop = tr.dataset.prevstop;
+            var currStop = tr.dataset.stop;
+            if(prevStop && fromTo[0] === prevStop && fromTo[1] === currStop) {
+              tr.style.display = '';
+            } else {
+              tr.style.display = 'none';
+            }
+          }
+        });
+      });
+    });
+    document.querySelector('input.filter-by-prev-and-curr[value=all]').dispatchEvent(new MouseEvent('click'));
   </script>
 </body>
 </html>

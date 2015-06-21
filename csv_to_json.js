@@ -43,6 +43,7 @@ dataFiles.forEach(function(filename) {
       [[12, 'arrivalTime'], [13, 'departureTime']].forEach(function(subarr) {
         if(splitLine[subarr[0]]) {
           stopRecord[subarr[1]] = moment.tz(splitLine[subarr[0]], 'M/D/YYYY h:mm:ss A', 'America/New_York');
+          stopRecord[subarr[1]].set('second', 0);
         } else {
           stopRecord[subarr[1]] = undefined;
         }
