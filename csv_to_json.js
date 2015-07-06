@@ -1,6 +1,8 @@
 var fs = require('fs');
 var moment = require('moment-timezone');
 
+// node csv_to_json mitre all clear
+
 var contract = process.argv[2];
 
 var stopData = require('./' + contract + '/stop_data.js').stopData || [];

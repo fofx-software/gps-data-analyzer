@@ -2,6 +2,8 @@ var fs = require('fs');
 var moment = require('moment-timezone');
 var cheerio = require('cheerio');
 
+// node generate_html.js mitre [nodata]
+
 var contract = process.argv[2];
 var contractInfo = require('./' + contract + '/contract_info.js');
 var stopData = require('./' + contract + '/stop_data.js').stopData;
@@ -32,6 +34,8 @@ if(process.argv[3] === 'nodata') {
   }
   table.append(tr).append(tr.clone());
   
+  var goodData = 0;
+
   stopData.forEach(function(stopDescr, index) {
     var display = function(time) { return time.format('h:mm A'); }
     var camelizeName = function(stopName) { return stopName.toLowerCase().replace(/ /g,'_'); }
@@ -58,8 +62,10 @@ if(process.argv[3] === 'nodata') {
         tr.append(diffTd);
       }
     }
-  
+ 
     if(typeof stopDescr.arriveDiff !== 'undefined') {
+      goodData++;
+
       var diffTd = tr.find('[data-diff=' + stopDescr.arriveDiff + ']');
   
       var toolTip = diffTd.find('.tooltip');
@@ -79,6 +85,8 @@ if(process.argv[3] === 'nodata') {
       ).attr('data-darken-by-all', allPct);
     }
   });
+
+  $('#data-consistency').find('span').text(String(Math.floor(goodData / stopData.length * 100)));
 }
 
 fs.writeFile(['.', contract, 'index.html'].join('/'), $.html());

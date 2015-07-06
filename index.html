@@ -58,19 +58,20 @@
 <body>
   <div id="forms">
     <form id="change-basis">
-      Darken data by percentage of:<br>
+      <b>Darken data by percentage of:</b><br>
       <input type="radio" name="change-basis" class="change-basis" value="good-data" checked>Data in row
       <br>
-      <input type="radio" name="change-basis" class="change-basis" value="all-data">All data
+      <input type="radio" name="change-basis" class="change-basis" value="all-data">Data supposed to be in row
     </form>
     <form id="filter-by-prev-and-curr">
-      Filter trips:<br>
+      <b>Filter trips:</b><br>
       <input type="radio" name="filter-by-prev-and-curr" class="filter-by-prev-and-curr" value="mclean_metro-rappahannock">McLean Metro-Rappahannock<br>
       <input type="radio" name="filter-by-prev-and-curr" class="filter-by-prev-and-curr" value="rappahannock-mclean_metro">Rappahannock-McLean Metro<br>
       <input type="radio" name="filter-by-prev-and-curr" class="filter-by-prev-and-curr" value="mclean_metro-mitre2">McLean Metro-MITRE2<br>
       <input type="radio" name="filter-by-prev-and-curr" class="filter-by-prev-and-curr" value="mitre2-mclean_metro">MITRE2-McLean Metro<br>
       <input type="radio" name="filter-by-prev-and-curr" class="filter-by-prev-and-curr" value="all">Show All
     </form>
+    <div id="data-consistency"><b>Data consistency:</b> <span></span>%</div>
   </div>
   <div id="table-wrapper"><table id="data-table"></table></div>
   <script>
